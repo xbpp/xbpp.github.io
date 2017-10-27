@@ -21,8 +21,8 @@
 @minHeight: (@itemVerticalPadding * 2) + 1em;
 
 /* Menu Item */
-@itemVerticalPadding: @relativeSmall;
-@itemHorizontalPadding: @relativeLarge;
+@itemVerticalPadding: 17px;
+@itemHorizontalPadding: 24px;
 @itemTextTransform: none;
 @itemTransition:
   background @defaultDuration @defaultEasing,
@@ -421,7 +421,7 @@
 @invertedColoredActiveBackground: @strongTransparentBlack;
 
 /* Fixed */
-@fixedPrecedingGridMargin: 2.75rem;
+@fixedPrecedingGridMargin: 48px;
 
 /* Floated */
 @floatedDistance: 0.5rem;

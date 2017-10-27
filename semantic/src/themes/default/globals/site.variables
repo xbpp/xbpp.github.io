@@ -14,7 +14,7 @@
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
-@googleFontSizes   : '400,700,400italic,700italic';
+@googleFontSizes   : '300,400,600,700,400italic,700italic';
 @googleSubset      : 'latin';
 
 @googleProtocol    : 'https://';
@@ -47,8 +47,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+@primaryColor        : @indigo700;
+@secondaryColor      : @grey900;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -57,8 +57,8 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : bold;
-@headerLineHeight : unit((18 / 14), em);
+@headerFontWeight : 700;
+@headerLineHeight : unit( (48 / @emSize), rem);
 
 @h1 : unit((28 / 14), rem);
 @h2 : unit((24 / 14), rem);
@@ -72,7 +72,7 @@
 
 /* This adjusts the default form input across all elements */
 @inputBackground        : @white;
-@inputVerticalPadding   : @relative11px;
+@inputVerticalPadding   : @relative12px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
 
@@ -120,8 +120,8 @@
 @pageBackground      : #FFFFFF;
 @pageOverflowX       : hidden;
 
-@lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@lineHeight          : unit( (24 / @emSize), rem);
+@textColor           : #212121;
 
 /*-------------------
       Paragraph
@@ -134,7 +134,8 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
+@linkFontWeight      : 700;
+@linkColor           : @grey900;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -220,14 +221,16 @@
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
-@teal             : #00B5AD;
-@blue             : #2185D0;
+@teal             : #00897b;
+@blue             : #303F9F;
 @violet           : #6435C9;
 @purple           : #A333C8;
-@pink             : #E03997;
+@pink             : #ff8a80;
 @brown            : #A5673F;
-@grey             : #767676;
-@black            : #1B1C1D;
+@grey             : #FAFAFA;
+@black            : #B0BEC5;
+@indigo700        : #303f9f;
+@grey900          : #212121;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;
@@ -246,7 +249,7 @@
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
-@offWhite         : #F9FAFB;
+@offWhite         : #FAFAFA;
 @darkWhite        : #F3F4F5;
 @midWhite         : #DCDDDE;
 @white            : #FFFFFF;
@@ -395,11 +398,11 @@
 @massive         : unit( round(@massiveSize * @emSize) / @emSize, rem);
 
 /* em */
-@relativeMini    : unit( round(@miniSize * @emSize) / @emSize, em);
+@relativeMini    : 12px;
 @relativeTiny    : unit( round(@tinySize * @emSize) / @emSize, em);
 @relativeSmall   : unit( round(@smallSize * @emSize) / @emSize, em);
 @relativeMedium  : unit( round(@mediumSize * @emSize) / @emSize, em);
-@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
+@relativeLarge   : 24px;
 @relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
 @relativeHuge    : unit( round(@hugeSize * @emSize) / @emSize, em);
 @relativeMassive : unit( round(@massiveSize * @emSize) / @emSize, em);

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Site
+ * # Semantic UI 2.2.13 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13,7 +13,7 @@
              Page
 *******************************/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700,400italic,700italic&subset=latin');
 html,
 body {
   height: 100%;
@@ -29,9 +29,27 @@ body {
   background: #FFFFFF;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.71428571rem;
+  color: #212121;
   font-smoothing: antialiased;
+}
+
+
+/*******************************
+             Font
+*******************************/
+
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 
 
@@ -45,9 +63,9 @@ h3,
 h4,
 h5 {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  line-height: 1.28571429em;
-  margin: calc(2rem -  0.14285714em ) 0em 1rem;
-  font-weight: bold;
+  line-height: 3.42857143rem;
+  margin: calc(2rem -  1.21428571rem ) 0em 1rem;
+  font-weight: 700;
   padding: 0em;
 }
 h1 {
@@ -88,7 +106,7 @@ h5:last-child {
 
 p {
   margin: 0em 0em 1em;
-  line-height: 1.4285em;
+  line-height: 1.71428571rem;
 }
 p:first-child {
   margin-top: 0em;
@@ -102,11 +120,11 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #4183C4;
+  color: #212121;
   text-decoration: none;
 }
 a:hover {
-  color: #1e70bf;
+  color: #221616;
   text-decoration: none;
 }
 
@@ -125,32 +143,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 ::selection {
   background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 
 /* Force Simple Scrollbars */
@@ -201,3 +219,42 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
          Site Overrides
 *******************************/
 
+.text.offWhite {
+  color: #FAFAFA;
+}
+.text.grey900 {
+  color: #212121;
+}
+.text.white {
+  color: #FFFFFF;
+}
+.text.grey {
+  color: #FAFAFA;
+}
+.text.black {
+  color: #B0BEC5;
+}
+.text.yellow {
+  color: #FBBD08;
+}
+.text.teal {
+  color: #00897b;
+}
+.text.red {
+  color: #DB2828;
+}
+.text.purple {
+  color: #A333C8;
+}
+.text.pink {
+  color: #ff8a80;
+}
+.text.orange {
+  color: #F2711C;
+}
+.text.green {
+  color: #21BA45;
+}
+.text.blue {
+  color: #303F9F;
+}

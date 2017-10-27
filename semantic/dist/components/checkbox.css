@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Checkbox
+ * # Semantic UI 2.2.13 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -90,7 +90,7 @@
   height: 17px;
   text-align: center;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
   -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
@@ -105,7 +105,7 @@
 /* Inside */
 .ui.checkbox label,
 .ui.checkbox + label {
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
 }
@@ -141,7 +141,7 @@
 
 .ui.checkbox .box:active::before,
 .ui.checkbox label:active::before {
-  background: #F9FAFB;
+  background: #FAFAFA;
   border-color: rgba(34, 36, 38, 0.35);
 }
 .ui.checkbox .box:active::after,
@@ -310,7 +310,7 @@
   border-radius: 500rem;
   -webkit-transform: scale(0.46666667);
           transform: scale(0.46666667);
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: #212121;
 }
 
 /* Focus */
@@ -475,7 +475,7 @@
 .ui.toggle.checkbox label {
   min-height: 1.5rem;
   padding-left: 4.5rem;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 .ui.toggle.checkbox label {
   padding-top: 0.15em;
@@ -549,7 +549,7 @@
 }
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #2185D0 !important;
+  background-color: #303f9f !important;
 }
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
@@ -565,7 +565,7 @@
 }
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #0d71bb !important;
+  background-color: #1e2c89 !important;
 }
 
 

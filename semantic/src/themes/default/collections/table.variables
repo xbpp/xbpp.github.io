@@ -6,9 +6,9 @@
        Element
 --------------------*/
 
-@verticalMargin: 1em;
-@horizontalMargin: 0em;
-@margin: @verticalMargin @horizontalMargin;
+@verticalMargin: 0;
+@horizontalMargin: 0;
+@margin: 0;
 @borderCollapse: separate;
 @borderSpacing: 0px;
 @borderRadius: @defaultBorderRadius;
@@ -31,11 +31,13 @@
 @rowBorder: 1px solid @internalBorderColor;
 
 /* Table Cell */
-@cellVerticalPadding: @relativeMini;
-@cellHorizontalPadding: @relativeMini;
+@cellVerticalPadding: 12px;
+@cellHorizontalPadding: 24px;
 @cellVerticalAlign: inherit;
 @cellTextAlign: inherit;
 @cellBorder: 1px solid @internalBorderColor;
+
+
 
 /* Table Header */
 @headerBorder: 1px solid @internalBorderColor;
@@ -44,7 +46,7 @@
 @headerAlign: inherit;
 @headerVerticalAlign: inherit;
 @headerColor: @textColor;
-@headerVerticalPadding: @relativeSmall;
+@headerVerticalPadding: @cellVerticalPadding;
 @headerHorizontalPadding: @cellHorizontalPadding;
 @headerFontStyle: none;
 @headerFontWeight: bold;

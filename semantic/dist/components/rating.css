@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Rating
+ * # Semantic UI 2.2.13 - Rating
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -68,7 +68,7 @@
 .ui.rating .icon.selected,
 .ui.rating .icon.selected.active {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 
 /*-------------------

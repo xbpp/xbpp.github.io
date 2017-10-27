@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Item
+ * # Semantic UI 2.2.13 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -139,7 +139,7 @@
 }
 .ui.items > .item > .content > .header {
   display: inline-block;
-  margin: -0.21425em 0em 0em;
+  margin: -0.35714286rem 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
@@ -185,8 +185,8 @@
   margin-top: 0.6em;
   max-width: auto;
   font-size: 1em;
-  line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.71428571rem;
+  color: #212121;
 }
 
 /*--------------
@@ -241,7 +241,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #1e70bf;
+  color: #221616;
 }
 
 /* Meta */
@@ -249,7 +249,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.items > .item .meta > a:not(.ui):hover {
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 
 /*--------------
@@ -452,7 +452,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #1e70bf;
+  color: #221616;
 }
 
 /*--------------

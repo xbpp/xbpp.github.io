@@ -1,1043 +1,849 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>??? Prototype</title>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Daria Prototype</title>
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
-
 </head>
+
 <body>
+	<div class="ui top fixed menu">
+		<a class="item">Daria Prototype</a>
+		<div class="right menu">
+			<a class="item">Settings</a>
+			<a class="item">Support</a>
+			<a class="item">Account</a>
+		</div>
+	</div>
 
-<div class="ui menu">
-  <div class="header item">
-    <h3>??? Prototype</h3>
-  </div>
-  <div class="right menu">
-  <a class="item">
-    <h3><i class="setting icon"></i></h3>
-  </a>
-  <a class="item">
-    <h3><i class="help circle icon"></i></h3>
-  </a>
-  <a class="item">
-    <h3><i class="user circle icon"></i></h3>
-  </a>
-  </div>
-</div>
+	<div class="ui padded grid">
+		<div class="column">
+			<div class="ui four cards">
+				<a id="register" class="ui centered grid card">
+					<div class="row">
+						<div class="center aligned column">
+							<i class="add circle huge icon"></i>
+							<h3>Create a new project</h3>
+						</div>
+					</div>
+				</a>
+			  	<div class="card">
+				  	<div class="content">
+						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
+						<span class="left floated"><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+					</div>
+					<div class="content">	
+						<div class="header">Created at</div>
+					    <p>6/28/2017 5:58:06 PM</p>
+					</div>
+					<div class="content">	
+						<div class="header">Permission</div>
+					    <a class="ui label">
+					  		Anthony 
+					  		<div class="detail">
+					  			Owner
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Suzin 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Freddie 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Jenny 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Helen 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+					</div>
+					<div class="content">	
+						<div class="header">
+							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
+							<span>History</span>
+						</div>
+					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
+					    <p>Stevie Feliciano was added as an Administrator<br>
+						Updated 2 days ago</p>
+					    <p>Helen Troy added two models<br>
+						Updated 5 days ago</p>
+					</div>
+					<div class="content">	
+						<div class="header">Contents</div>
+					    <a class="ui label">
+					  		Datasets
+					  		<div class="detail">
+					  			5
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Experiments
+					  		<div class="detail">
+					  			25
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Models 
+					  		<div class="detail">
+					  			2
+					  		</div>
+						</a>
+					</div>
 
+					<div class="content">
+						<button class="ui button">Open Project</button>
+					</div>
+				</div>
+				
+				<div class="card">
+				  	<div class="content">
+						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
+						<span><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+					</div>
+					<div class="content">	
+						<div class="header">Created at</div>
+					    <p>6/28/2017 5:58:06 PM</p>
+					</div>
+					<div class="content">	
+						<div class="header">Permission</div>
+					    <a class="ui label">
+					  		Anthony 
+					  		<div class="detail">
+					  			Owner
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Suzin 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Freddie 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Jenny 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Helen 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+					</div>
+					<div class="content">	
+						<div class="header">
+							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
+							<span>History</span>
+						</div>
+					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
+					    <p>Stevie Feliciano was added as an Administrator<br>
+						Updated 2 days ago</p>
+					    <p>Helen Troy added two models<br>
+						Updated 5 days ago</p>
+					</div>
+					<div class="content">	
+						<div class="header">Contents</div>
+					    <a class="ui label">
+					  		Datasets
+					  		<div class="detail">
+					  			5
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Experiments
+					  		<div class="detail">
+					  			25
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Models 
+					  		<div class="detail">
+					  			2
+					  		</div>
+						</a>
+					</div>
 
-<div class="ui padded stackable four column grid">
-  <div class="four wide column">
-    
-  <div id="register" class="ui fluid raised link card">
-    <div class="ui container center aligned">
-      <br>
-      <i class="huge add circle icon"></i>
-      <br>
+					<div class="content">
+						<button class="ui button">Open Project</button>
+					</div>
+				</div>
+
+				<div class="card">
+				  	<div class="content">
+						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
+						<span><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+					</div>
+					<div class="content">	
+						<div class="header">Created at</div>
+					    <p>6/28/2017 5:58:06 PM</p>
+					</div>
+					<div class="content">	
+						<div class="header">Permission</div>
+					    <a class="ui label">
+					  		Anthony 
+					  		<div class="detail">
+					  			Owner
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Suzin 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Freddie 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Jenny 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Helen 
+					  		<div class="detail">
+					  			Write
+					  		</div>
+						</a>
+					</div>
+					<div class="content">	
+						<div class="header">
+							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
+							<span>History</span>
+						</div>
+					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
+					    <p>Stevie Feliciano was added as an Administrator<br>
+						Updated 2 days ago</p>
+					    <p>Helen Troy added two models<br>
+						Updated 5 days ago</p>
+					</div>
+					<div class="content">	
+						<div class="header">Contents</div>
+					    <a class="ui label">
+					  		Datasets
+					  		<div class="detail">
+					  			5
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Experiments
+					  		<div class="detail">
+					  			25
+					  		</div>
+						</a>
+						<a class="ui label">
+					  		Models 
+					  		<div class="detail">
+					  			2
+					  		</div>
+						</a>
+					</div>
+
+					<div class="content">
+						<button class="ui button">Open Project</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="ui padded grid">
+		<div class="column">
+			<table class="ui striped table">
+			  <thead>
+			    <tr>
+			    	<th>
+			    		<div class="ui form">
+		                  <div class="inline field">
+		                    <div class="ui checkbox">
+		                      <input type="checkbox" tabindex="0" class="hidden">
+		                      <label>Name</label>
+		                    </div>
+		                  </div>
+		                </div>
+					</th>
+			      <th>Created at</th>
+			      <th>Permission</th>
+			      <th>Last edit</th>
+			      <th>Contents</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>171029_Credit_risk_prediction_ver_0.1</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Suzin 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Jenny 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Helen 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+
+				  </td>
+				  <td>By <b>Freddie</b> 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+				<tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			    <tr>
+			      <td>
+		      		<div class="ui form">
+	                  <div class="inline field">
+	                    <div class="ui checkbox">
+	                      <input type="checkbox" tabindex="0" class="hidden">
+	                      <label><b><a>Credit risk prediction</a></b></label>
+	                    </div>
+	                  </div>
+	                </div>
+			      </td>
+			      <td>6/28/2017 5:58:06 PM</td>
+			      <td>
+			      	<a class="ui label">
+				  		Anthony 
+				  		<div class="detail">
+				  			Owner
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Freddie 
+				  		<div class="detail">
+				  			Write
+				  		</div>
+					</a>
+				  </td>
+				  <td>By Freddie 10 mins ago</td>
+				  <td>
+				  	<a class="ui label">
+				  		Datasets
+				  		<div class="detail">
+				  			5
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Experiments
+				  		<div class="detail">
+				  			25
+				  		</div>
+					</a>
+					<a class="ui label">
+				  		Models 
+				  		<div class="detail">
+				  			2
+				  		</div>
+					</a>
+				  </td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="register-modal" class="ui modal">
+      <i class="close icon"></i>
+      <div class="header">
+        Create a new project
+      </div>
+      <div class="content">
+        <form class="ui form">
+        	<div class="ui error message"></div>
+	        <div class="field">
+	            <label>Project Name</label>
+	       		<input type="text" placeholder="Project Name" name="project-name">
+	        </div>
+            <div class="field">
+              <label>Permission / Write</label>
+              	<div class="ui fluid multiple search selection dropdown">
+				  <input name="tags" type="hidden">
+				  <i class="dropdown icon"></i>
+				  <input class="search" type="text" name="email">
+				  <div class="default text">Search...</div>
+				  <div class="menu">
+				    <div class="item">Jinwoo Shin</div>
+				    <div class="item">Jungkap Park</div>
+				    <div class="item">Anthony Cha</div>
+				    <div class="item">Eunsoo Kim</div>
+				    <div class="item">Yonghyun Kwon</div>
+				    <div class="item">Kukhwan Park</div>
+				    <div class="item">Jongheon Jeong</div>
+				    <div class="item">Suzin You</div>
+				    <div class="item">Jongmin Kim</div>
+				    <div class="item">Jinyoung Choi</div>
+				    <div class="item">jinwoos@xbrain.team</div>
+				    <div class="item">jm.kim@xbrain.team</div>
+				    <div class="item">anthony@xbrain.team</div>
+				    <div class="item">freddie@xbrain.team</div>
+				    <div class="item">jongheonj@xbrain.team</div>
+				    <div class="item">suzin@xbrain.team</div>
+				    <div class="item">eunsoo.kim@xbrain.team</div>
+				    <div class="item">yonghyun@xbrain.team</div>
+				    <div class="item">kh.park@xbrain.team</div>
+				  </div>
+				</div>
+            </div>
+            <div class="field">
+              <label>Permission / Read only</label>
+              	<div class="ui fluid multiple search selection dropdown">
+				  <input name="tags" type="hidden">
+				  <i class="dropdown icon"></i>
+				  <input class="search">
+				  <div class="default text">Search...</div>
+				  <div class="menu">
+				    <div class="item">Jinwoo Shin</div>
+				    <div class="item">Jungkap Park</div>
+				    <div class="item">Anthony Cha</div>
+				    <div class="item">Eunsoo Kim</div>
+				    <div class="item">Yonghyun Kwon</div>
+				    <div class="item">Kukhwan Park</div>
+				    <div class="item">Jongheon Jeong</div>
+				    <div class="item">Suzin You</div>
+				    <div class="item">Jongmin Kim</div>
+				    <div class="item">Jinyoung Choi</div>
+				    <div class="item">jinwoos@xbrain.team</div>
+				    <div class="item">jm.kim@xbrain.team</div>
+				    <div class="item">anthony@xbrain.team</div>
+				    <div class="item">freddie@xbrain.team</div>
+				    <div class="item">jongheonj@xbrain.team</div>
+				    <div class="item">suzin@xbrain.team</div>
+				    <div class="item">eunsoo.kim@xbrain.team</div>
+				    <div class="item">yonghyun@xbrain.team</div>
+				    <div class="item">kh.park@xbrain.team</div>
+				  </div>
+				</div>
+            </div>
+            <div class="ui submit button">Submit</div>
+        </form>
+      </div>
+      <div class="actions">
+        <div class="ui deny button">
+          Cancel
+        </div>
+        <div class="ui button">
+          Create
+        </div>
+      </div>
     </div>
-    <div class="ui container center aligned">
-      <h3>Create a new project</h3>
-      <br>
-    </div>
-  </div>
 
-  </div>
+	<div class="ui bottom fixed menu">
+		<a class="item">Experiment Progress 1</a>
+		<a class="item">Experiment Progress 2</a>
+		<a class="item">Experiment Progress 3</a>
+		<a class="item">Experiment Progress 4</a>
+		<a class="item">Experiment Progress 5</a>
+	    <div class="right menu">
+			<a class="item"><b>Proceed to Experiments</b></a>
+		</div>
+	</div>
 
-
-  <div class="four wide column">
-    
-  <div class="ui fluid raised link card">
-    <div class="content">
-      <div class="header">Credit risk prediction 01</div>
-        <br>
-        <span class="right floated">
-          <div class="ui tiny label">
-            Rename
-          </div> 
-          <div class="ui tiny label">
-            Copy
-          </div>   
-          <div class="ui tiny label">
-            Delete
-          </div>   
-        </span>
-      </div>
-    <div class="content">
-    <h4 class="ui sub header">Created at</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               6/28/2017 5:58:06 PM
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Permission</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-              <a class="ui blue image label">
-                Anthony
-              <div class="detail">Owner</div>
-              <a class="ui teal image label">
-                Freddie
-              <div class="detail">Write</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Activity</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Freddie</a> added <a>Jenny Hess</a> to the project
-               <div class="description">Updated 10 mins ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Stevie Feliciano</a> was added as an <a>Administrator</a>
-               <div class="description">Updated 2 days ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Helen Troy</a> added two models
-               <div class="description">Updated 5 days ago</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Contents</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="ui label">
-              Datasets
-              <div class="detail">5</div>
-            </div>
-            <div class="ui label">
-              Experiments
-              <div class="detail">25</div>
-            </div>
-            <div class="ui label">
-              Models
-              <div class="detail">2</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="extra content">
-      <a href="datasets.html">
-      <button class="ui button">Open Project</button>
-      </a>
-    </div>
-  </div>
-
-  </div>
-  
-
-
-  <div class="four wide column">
-    
-  <div class="ui fluid raised link card">
-    <div class="content">
-      <div class="header">Credit risk prediction 02</div>
-        <br>
-        <span class="right floated">
-          <div class="ui tiny label">
-            Rename
-          </div> 
-          <div class="ui tiny label">
-            Copy
-          </div>   
-          <div class="ui tiny label">
-            Delete
-          </div>   
-        </span>
-    </div>
-    <div class="content">
-    <h4 class="ui sub header">Created at</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               6/28/2017 5:58:06 PM
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Permission</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-              <a class="ui blue image label">
-                Anthony
-              <div class="detail">Owner</div>
-              <a class="ui teal image label">
-                Freddie
-              <div class="detail">Write</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Activity</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Freddie</a> added <a>Jenny Hess</a> to the project
-               <div class="description">Updated 10 mins ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Stevie Feliciano</a> was added as an <a>Administrator</a>
-               <div class="description">Updated 2 days ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Helen Troy</a> added two models
-               <div class="description">Updated 5 days ago</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Contents</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="ui label">
-              Datasets
-              <div class="detail">5</div>
-            </div>
-            <div class="ui label">
-              Experiments
-              <div class="detail">25</div>
-            </div>
-            <div class="ui label">
-              Models
-              <div class="detail">2</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="extra content">
-      <button class="ui button">Open Project</button>
-    </div>
-  </div>
-
-  </div>
-  
-
-
-  <div class="four wide column">
-    
-  <div class="ui fluid raised link card">
-    <div class="content">
-      <div class="header">Credit risk prediction 03</div>
-        <br>
-        <span class="right floated">
-          <div class="ui tiny label">
-            Rename
-          </div> 
-          <div class="ui tiny label">
-            Copy
-          </div>   
-          <div class="ui tiny label">
-            Delete
-          </div>   
-        </span>
-    </div>
-    <div class="content">
-    <h4 class="ui sub header">Created at</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               6/28/2017 5:58:06 PM
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Permission</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-              <a class="ui blue image label">
-                Anthony
-              <div class="detail">Owner</div>
-              <a class="ui teal image label">
-                Freddie
-              <div class="detail">Write</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Activity</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Freddie</a> added <a>Jenny Hess</a> to the project
-               <div class="description">Updated 10 mins ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Stevie Feliciano</a> was added as an <a>Administrator</a>
-               <div class="description">Updated 2 days ago</div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="content">
-            <div class="summary">
-               <a>Helen Troy</a> added two models
-               <div class="description">Updated 5 days ago</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="ui sub header">Contents</h4>
-      <div class="ui small feed">
-        <div class="event">
-          <div class="content">
-            <div class="ui label">
-              Datasets
-              <div class="detail">5</div>
-            </div>
-            <div class="ui label">
-              Experiments
-              <div class="detail">25</div>
-            </div>
-            <div class="ui label">
-              Models
-              <div class="detail">2</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="extra content">
-      <button class="ui button">Open Project</button>
-    </div>
-  </div>
-
-
-
-  </div>
-
-
-</div>
-
-    <div class="ui one column padded grid">
-      <div class="column">
-        <span class="right floated">
-          <div class="ui label">
-            Rename
-          </div> 
-          <div class="ui label">
-            Copy
-          </div>   
-          <div class="ui label">
-            Delete
-          </div>   
-        </span>
-        <table class="ui striped selectable table">
-          <thead>
-            <tr>
-              <th>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </th>
-              <th>NAME</th>
-              <th>CREATED AT</th>
-              <th>PERMISSION</th>
-              <th>ACTIVITY</th>
-              <th>CONTENTS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 04</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 05</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 06</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
- 
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 07</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 08</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
- 
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 09</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
- 
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 10</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 11</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-  
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 12</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-   
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 13</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 14</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-  
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 15</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-     
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 16</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-    
-            <tr>
-              <td>
-                <div class="ui form">
-                  <div class="inline field">
-                    <div class="ui checkbox">
-                      <input type="checkbox" tabindex="0" class="hidden">
-                      <label></label>
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td>Credit risk prediction 17</td>
-              <td>6/28/2017 5:58:06 PM</td>
-              <td>
-                <a class="ui blue image label">
-                  Anthony
-                <div class="detail">Owner</div>
-                <a class="ui teal image label">
-                  Freddie
-                <div class="detail">Write</div>
-                </a>
-              </td>
-              <td>
-                <a>Freddie</a> added <a>Jenny Hess</a> to the project
-                <div class="description">Updated 10 mins ago</div>
-              </td>
-              <td>
-                <div class="ui label">
-                  Datasets
-                  <div class="detail">5</div>
-                </div>
-                <div class="ui label">
-                  Experiments
-                  <div class="detail">25</div>
-                </div>
-                <div class="ui label">
-                  Models
-                  <div class="detail">2</div>
-                </div>
-              </td>
-            </tr>   
-          </tbody>
-        </table>
-
-        <div id="register-modal" class="ui modal">
-          <i class="close icon"></i>
-          <div class="header">
-            Create a new project
-          </div>
-          <div class="content">
-            <form class="ui form">
-              <div class="field">
-                <label>Project Name</label>
-                <input type="text" placeholder="Project Name">
-              </div>
-              <div class="ui form">
-                <div class="field">
-                  <label>Permission</label>
-                  <textarea rows="2"></textarea>
-                </div>
-                <button class="ui button" type="submit">Add</button>
-              </div>
-            </form>
-          </div>
-          <div class="actions">
-            <div class="ui black deny button">
-              Cancel
-            </div>
-            <div class="ui positive button">
-              Create
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-</div>
-
-<script type="text/javascript">
-  $('.tabular.menu .item').tab();
-</script>
-<script type="text/javascript">
+  <script type="text/javascript">
   $('.ui.checkbox')
-  .checkbox()
-;
-</script>
-<script>
+  .checkbox();
+  </script>
+  <script>
   $(document).ready(function(){
       $('#register').click(function(){
           $('#register-modal').modal('show');
       });
   });
+  $('.ui.dropdown')
+  .dropdown({
+    allowAdditions: true
+  });
+
+
+  $('.ui.form')
+  .form({
+    fields: {
+      password: {
+        identifier: 'project-name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a project name'
+          },
+          {
+            type   : 'maxLength[40]',
+            prompt : 'Your project name must be under {ruleValue} characters'
+          }
+        ]
+      }
+    }
+  })
+;
 </script>
+
 
 </body>
 </html>

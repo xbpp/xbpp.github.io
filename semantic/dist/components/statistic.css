@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Statistic
+ * # Semantic UI 2.2.13 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -106,7 +106,7 @@
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
-  color: #1B1C1D;
+  color: #B0BEC5;
   text-transform: uppercase;
   text-align: center;
 }
@@ -120,7 +120,7 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
   text-transform: uppercase;
   text-align: center;
 }
@@ -345,12 +345,12 @@
 .ui.teal.statistics .statistic > .value,
 .ui.statistics .teal.statistic > .value,
 .ui.teal.statistic > .value {
-  color: #00B5AD;
+  color: #00897b;
 }
 .ui.blue.statistics .statistic > .value,
 .ui.statistics .blue.statistic > .value,
 .ui.blue.statistic > .value {
-  color: #2185D0;
+  color: #303F9F;
 }
 .ui.violet.statistics .statistic > .value,
 .ui.statistics .violet.statistic > .value,
@@ -365,7 +365,7 @@
 .ui.pink.statistics .statistic > .value,
 .ui.statistics .pink.statistic > .value,
 .ui.pink.statistic > .value {
-  color: #E03997;
+  color: #ff8a80;
 }
 .ui.brown.statistics .statistic > .value,
 .ui.statistics .brown.statistic > .value,
@@ -375,7 +375,7 @@
 .ui.grey.statistics .statistic > .value,
 .ui.statistics .grey.statistic > .value,
 .ui.grey.statistic > .value {
-  color: #767676;
+  color: #FAFAFA;
 }
 
 /*--------------

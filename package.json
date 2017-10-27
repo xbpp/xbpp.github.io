@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-css",
-  "version": "2.2.11",
+  "version": "2.2.13",
   "title": "Semantic UI",
   "description": "CSS Only distribution of Semantic UI",
   "homepage": "http://www.semantic-ui.com",
@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "jquery": "x.*",
-    "semantic-ui": "^2.2.11"
+    "semantic-ui": "^2.2.13"
   }
 }

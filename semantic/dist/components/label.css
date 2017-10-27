@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Label
+ * # Semantic UI 2.2.13 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17,10 +17,10 @@
   display: inline-block;
   line-height: 1;
   vertical-align: baseline;
-  margin: 0em 0.14285714em;
+  margin: 3px 0;
   background-color: #E8E8E8;
   background-image: none;
-  padding: 0.5833em 0.833em;
+  padding: 6px 12px;
   color: rgba(0, 0, 0, 0.6);
   text-transform: none;
   font-weight: bold;
@@ -57,7 +57,7 @@ a.ui.label {
 .ui.label > img {
   width: auto !important;
   vertical-align: middle;
-  height: 2.1666em !important;
+  height: 13em !important;
 }
 
 /* Icon */
@@ -98,7 +98,7 @@ a.ui.label {
 --------------------*/
 
 .ui.labels > .label {
-  margin: 0em 0.5em 0.5em 0em;
+  margin: 0em 3px 0 0em;
 }
 
 /*-------------------
@@ -106,7 +106,7 @@ a.ui.label {
 --------------------*/
 
 .ui.header > .ui.label {
-  margin-top: -0.29165em;
+  margin-top: -3px;
 }
 
 /* Remove border radius on attached segment */
@@ -148,7 +148,7 @@ a.ui.label {
   vertical-align: baseline;
   text-transform: none;
   background: #E8E8E8;
-  padding: 0.5833em 0.833em 0.5833em 0.5em;
+  padding: 6px 12px 6px 12px;
   border-radius: 0.28571429rem;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -156,14 +156,14 @@ a.ui.label {
 .ui.image.label img {
   display: inline-block;
   vertical-align: top;
-  height: 2.1666em;
-  margin: -0.5833em 0.5em -0.5833em -0.5em;
+  height: 13em;
+  margin: -6px 12px -6px -12px;
   border-radius: 0.28571429rem 0em 0em 0.28571429rem;
 }
 .ui.image.label .detail {
   background: rgba(0, 0, 0, 0.1);
-  margin: -0.5833em -0.833em -0.5833em 0.5em;
-  padding: 0.5833em 0.833em;
+  margin: -6px -12px -6px 12px;
+  padding: 6px 12px;
   border-radius: 0em 0.28571429rem 0.28571429rem 0em;
 }
 
@@ -256,7 +256,7 @@ a.ui.label {
   position: relative;
   top: 0.64285714em;
   left: 0.78571429em;
-  font-size: 1.14285714em;
+  font-size: 24px;
   margin: 0em;
 }
 
@@ -356,16 +356,16 @@ a.ui.label {
 .ui.card .image > .ui[class*="right ribbon"].label,
 .ui.image > .ui[class*="right ribbon"].label {
   left: calc(100% +  -0.05rem  +  1.2em );
-  padding-left: 0.833em;
+  padding-left: 12px;
 }
 
 /* Inside Table */
 .ui.table td > .ui.ribbon.label {
-  left: calc( -0.78571429em  -  1.2em );
+  left: calc( -12px  -  1.2em );
 }
 .ui.table td > .ui[class*="right ribbon"].label {
-  left: calc(100% +  0.78571429em  +  1.2em );
-  padding-left: 0.833em;
+  left: calc(100% +  12px  +  1.2em );
+  padding-left: 12px;
 }
 
 /*-------------------
@@ -715,16 +715,16 @@ a.ui.basic.green.label:hover {
 
 .ui.teal.labels .label,
 .ui.teal.label {
-  background-color: #00B5AD !important;
-  border-color: #00B5AD !important;
+  background-color: #00897b !important;
+  border-color: #00897b !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.teal.labels .label:hover,
 a.ui.teal.label:hover {
-  background-color: #009c95 !important;
-  border-color: #009c95 !important;
+  background-color: #007064 !important;
+  border-color: #007064 !important;
   color: #FFFFFF !important;
 }
 
@@ -736,36 +736,36 @@ a.ui.teal.label:hover {
 
 /* Ribbon */
 .ui.teal.ribbon.label {
-  border-color: #00827c !important;
+  border-color: #00564d !important;
 }
 
 /* Basic */
 .ui.basic.teal.label {
   background-color: #FFFFFF !important;
-  color: #00B5AD !important;
-  border-color: #00B5AD !important;
+  color: #00897b !important;
+  border-color: #00897b !important;
 }
 .ui.basic.teal.labels a.label:hover,
 a.ui.basic.teal.label:hover {
   background-color: #FFFFFF !important;
-  color: #009c95 !important;
-  border-color: #009c95 !important;
+  color: #007064 !important;
+  border-color: #007064 !important;
 }
 
 /*--- Blue ---*/
 
 .ui.blue.labels .label,
 .ui.blue.label {
-  background-color: #2185D0 !important;
-  border-color: #2185D0 !important;
+  background-color: #303F9F !important;
+  border-color: #303F9F !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.blue.labels .label:hover,
 a.ui.blue.label:hover {
-  background-color: #1678c2 !important;
-  border-color: #1678c2 !important;
+  background-color: #253490 !important;
+  border-color: #253490 !important;
   color: #FFFFFF !important;
 }
 
@@ -777,20 +777,20 @@ a.ui.blue.label:hover {
 
 /* Ribbon */
 .ui.blue.ribbon.label {
-  border-color: #1a69a4 !important;
+  border-color: #242f78 !important;
 }
 
 /* Basic */
 .ui.basic.blue.label {
   background-color: #FFFFFF !important;
-  color: #2185D0 !important;
-  border-color: #2185D0 !important;
+  color: #303F9F !important;
+  border-color: #303F9F !important;
 }
 .ui.basic.blue.labels a.label:hover,
 a.ui.basic.blue.label:hover {
   background-color: #FFFFFF !important;
-  color: #1678c2 !important;
-  border-color: #1678c2 !important;
+  color: #253490 !important;
+  border-color: #253490 !important;
 }
 
 /*--- Violet ---*/
@@ -879,16 +879,16 @@ a.ui.basic.purple.label:hover {
 
 .ui.pink.labels .label,
 .ui.pink.label {
-  background-color: #E03997 !important;
-  border-color: #E03997 !important;
+  background-color: #ff8a80 !important;
+  border-color: #ff8a80 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.pink.labels .label:hover,
 a.ui.pink.label:hover {
-  background-color: #e61a8d !important;
-  border-color: #e61a8d !important;
+  background-color: #ff7366 !important;
+  border-color: #ff7366 !important;
   color: #FFFFFF !important;
 }
 
@@ -900,20 +900,20 @@ a.ui.pink.label:hover {
 
 /* Ribbon */
 .ui.pink.ribbon.label {
-  border-color: #c71f7e !important;
+  border-color: #ff5b4d !important;
 }
 
 /* Basic */
 .ui.basic.pink.label {
   background-color: #FFFFFF !important;
-  color: #E03997 !important;
-  border-color: #E03997 !important;
+  color: #ff8a80 !important;
+  border-color: #ff8a80 !important;
 }
 .ui.basic.pink.labels a.label:hover,
 a.ui.basic.pink.label:hover {
   background-color: #FFFFFF !important;
-  color: #e61a8d !important;
-  border-color: #e61a8d !important;
+  color: #ff7366 !important;
+  border-color: #ff7366 !important;
 }
 
 /*--- Brown ---*/
@@ -961,16 +961,16 @@ a.ui.basic.brown.label:hover {
 
 .ui.grey.labels .label,
 .ui.grey.label {
-  background-color: #767676 !important;
-  border-color: #767676 !important;
+  background-color: #FAFAFA !important;
+  border-color: #FAFAFA !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.grey.labels .label:hover,
 a.ui.grey.label:hover {
-  background-color: #838383 !important;
-  border-color: #838383 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
   color: #FFFFFF !important;
 }
 
@@ -988,30 +988,30 @@ a.ui.grey.label:hover {
 /* Basic */
 .ui.basic.grey.label {
   background-color: #FFFFFF !important;
-  color: #767676 !important;
-  border-color: #767676 !important;
+  color: #FAFAFA !important;
+  border-color: #FAFAFA !important;
 }
 .ui.basic.grey.labels a.label:hover,
 a.ui.basic.grey.label:hover {
   background-color: #FFFFFF !important;
-  color: #838383 !important;
-  border-color: #838383 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
 }
 
 /*--- Black ---*/
 
 .ui.black.labels .label,
 .ui.black.label {
-  background-color: #1B1C1D !important;
-  border-color: #1B1C1D !important;
+  background-color: #B0BEC5 !important;
+  border-color: #B0BEC5 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.black.labels .label:hover,
 a.ui.black.label:hover {
-  background-color: #27292a !important;
-  border-color: #27292a !important;
+  background-color: #bfcad0 !important;
+  border-color: #bfcad0 !important;
   color: #FFFFFF !important;
 }
 
@@ -1029,14 +1029,14 @@ a.ui.black.label:hover {
 /* Basic */
 .ui.basic.black.label {
   background-color: #FFFFFF !important;
-  color: #1B1C1D !important;
-  border-color: #1B1C1D !important;
+  color: #B0BEC5 !important;
+  border-color: #B0BEC5 !important;
 }
 .ui.basic.black.labels a.label:hover,
 a.ui.basic.black.label:hover {
   background-color: #FFFFFF !important;
-  color: #27292a !important;
-  border-color: #27292a !important;
+  color: #bfcad0 !important;
+  border-color: #bfcad0 !important;
 }
 
 /*-------------------
@@ -1045,8 +1045,8 @@ a.ui.basic.black.label:hover {
 
 .ui.basic.label {
   background: none #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
+  border: 0 solid rgba(34, 36, 38, 0.15);
+  color: #212121;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1055,9 +1055,9 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #1e70bf;
-  -webkit-box-shadow: 1px solid rgba(34, 36, 38, 0.15);
-          box-shadow: 1px solid rgba(34, 36, 38, 0.15);
+  color: #221616;
+  -webkit-box-shadow: 0 solid rgba(34, 36, 38, 0.15);
+          box-shadow: 0 solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1094,7 +1094,7 @@ a.ui.basic.label:hover {
 .ui.horizontal.labels .label,
 .ui.horizontal.label {
   margin: 0em 0.5em 0em 0em;
-  padding: 0.4em 0.833em;
+  padding: 0.4em 12px;
   min-width: 3em;
   text-align: center;
 }
@@ -1162,7 +1162,7 @@ a.ui.basic.label:hover {
 }
 .ui.pointing.label:before,
 .ui[class*="pointing above"].label:before {
-  border-width: 1px 0px 0px 1px;
+  border-width: 0 0px 0px 0;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 0%;
@@ -1178,7 +1178,7 @@ a.ui.basic.label:hover {
 }
 .ui[class*="bottom pointing"].label:before,
 .ui[class*="pointing below"].label:before {
-  border-width: 0px 1px 1px 0px;
+  border-width: 0px 0 0 0px;
   top: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -1194,7 +1194,7 @@ a.ui.basic.label:hover {
   margin-left: 0.6666em;
 }
 .ui[class*="left pointing"].label:before {
-  border-width: 0px 0px 1px 1px;
+  border-width: 0px 0px 0 0;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
           transform: translateX(-50%) translateY(-50%) rotate(45deg);
   bottom: auto;
@@ -1210,7 +1210,7 @@ a.ui.basic.label:hover {
   margin-right: 0.6666em;
 }
 .ui[class*="right pointing"].label:before {
-  border-width: 1px 1px 0px 0px;
+  border-width: 0 0 0px 0px;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
           transform: translateX(50%) translateY(-50%) rotate(45deg);
   top: 50%;
@@ -1225,7 +1225,7 @@ a.ui.basic.label:hover {
 
 .ui.basic.pointing.label:before,
 .ui.basic[class*="pointing above"].label:before {
-  margin-top: -1px;
+  margin-top: 0;
 }
 
 /*--- Below ---*/
@@ -1234,21 +1234,21 @@ a.ui.basic.label:hover {
 .ui.basic[class*="pointing below"].label:before {
   bottom: auto;
   top: 100%;
-  margin-top: 1px;
+  margin-top: 0;
 }
 
 /*--- Left ---*/
 
 .ui.basic[class*="left pointing"].label:before {
   top: 50%;
-  left: -1px;
+  left: 0;
 }
 
 /*--- Right ---*/
 
 .ui.basic[class*="right pointing"].label:before {
   top: 50%;
-  right: -1px;
+  right: 0;
 }
 
 /*------------------
@@ -1305,6 +1305,9 @@ a.ui.basic.label:hover {
          Theme Overrides
 *******************************/
 
+.ui.label {
+  margin-right: 3px;
+}
 
 
 /*******************************

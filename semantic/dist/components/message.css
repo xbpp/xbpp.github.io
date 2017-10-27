@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Message
+ * # Semantic UI 2.2.13 - Message
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -19,8 +19,8 @@
   margin: 1em 0em;
   background: #F8F8F9;
   padding: 1em 1.5em;
-  line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.71428571rem;
+  color: #212121;
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
@@ -46,12 +46,12 @@
   display: block;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin: -0.14285714em 0em 0rem 0em;
+  margin: -1.21428571rem 0em 0rem 0em;
 }
 
 /* Default font size */
 .ui.message .header:not(.ui) {
-  font-size: 1.14285714em;
+  font-size: 24px;
 }
 
 /* Paragraph */
@@ -110,7 +110,7 @@
   cursor: pointer;
   position: absolute;
   margin: 0em;
-  top: 0.78575em;
+  top: 0.64285714em;
   right: 0.5em;
   opacity: 0.7;
   -webkit-transition: opacity 0.1s ease;
@@ -264,7 +264,7 @@
 ---------------*/
 
 .ui.black.message {
-  background-color: #1B1C1D;
+  background-color: #B0BEC5;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -360,7 +360,7 @@
 /* Colors */
 .ui.inverted.message,
 .ui.black.message {
-  background-color: #1B1C1D;
+  background-color: #B0BEC5;
   color: rgba(255, 255, 255, 0.9);
 }
 .ui.red.message {
@@ -419,12 +419,12 @@
 }
 .ui.blue.message {
   background-color: #DFF0FF;
-  color: #2185D0;
-  -webkit-box-shadow: 0px 0px 0px 1px #2185D0 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 0px 1px #2185D0 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #303F9F;
+  -webkit-box-shadow: 0px 0px 0px 1px #303F9F inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 0px 1px #303F9F inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .ui.blue.message .header {
-  color: #1e77ba;
+  color: #2a378b;
 }
 .ui.violet.message {
   background-color: #EAE7FF;
@@ -446,12 +446,12 @@
 }
 .ui.pink.message {
   background-color: #FFE3FB;
-  color: #E03997;
-  -webkit-box-shadow: 0px 0px 0px 1px #E03997 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 0px 1px #E03997 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #ff8a80;
+  -webkit-box-shadow: 0px 0px 0px 1px #ff8a80 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 0px 1px #ff8a80 inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .ui.pink.message .header {
-  color: #dd238b;
+  color: #ff7366;
 }
 .ui.brown.message {
   background-color: #F1E2D3;
@@ -468,7 +468,7 @@
 ---------------*/
 
 .ui.mini.message {
-  font-size: 0.78571429em;
+  font-size: 12px;
 }
 .ui.tiny.message {
   font-size: 0.85714286em;
@@ -480,7 +480,7 @@
   font-size: 1em;
 }
 .ui.large.message {
-  font-size: 1.14285714em;
+  font-size: 24px;
 }
 .ui.big.message {
   font-size: 1.28571429em;

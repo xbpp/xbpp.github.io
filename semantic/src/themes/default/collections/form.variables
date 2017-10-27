@@ -14,13 +14,13 @@
 @paragraphMargin: @rowDistance 0em;
 
 /* Field */
-@fieldMargin: 0em 0em @rowDistance;
+@fieldMargin: 0 0 24px 0;
 
 /* Fields */
 @fieldsMargin: 0em -(@gutterWidth / 2) @rowDistance;
 
 /* Form Label */
-@labelDistance: @4px;
+@labelDistance: @6px;
 @labelMargin: 0em 0em @labelDistance 0em;
 @labelFontSize: @relativeSmall;
 @labelFontWeight: bold;

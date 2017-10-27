@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Breadcrumb
+ * # Semantic UI 2.2.13 - Breadcrumb
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -44,10 +44,10 @@
 
 /* Link */
 .ui.breadcrumb a {
-  color: #4183C4;
+  color: #212121;
 }
 .ui.breadcrumb a:hover {
-  color: #1e70bf;
+  color: #221616;
 }
 
 /* Icon Divider */
@@ -69,7 +69,7 @@
 /* Loose Coupling */
 .ui.breadcrumb.segment {
   display: inline-block;
-  padding: 0.78571429em 1em;
+  padding: 12px 1em;
 }
 
 

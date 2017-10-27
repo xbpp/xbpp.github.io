@@ -15,7 +15,7 @@
 @display: flex;
 @background: @white;
 @borderRadius: @defaultBorderRadius;
-@margin: 1em 0em;
+@margin: 0px;
 @minHeight: 0px;
 @padding: 0em;
 @width: 290px;
@@ -35,7 +35,7 @@
 /* Card Group */
 @horizontalSpacing: 1em;
 @rowSpacing: 1.75em;
-
+        
 @groupMargin: -(@rowSpacing / 2) -(@horizontalSpacing / 2);
 @groupDisplay: flex;
 
@@ -62,7 +62,7 @@
 @contentDivider: @borderWidth solid @internalBorderColor;
 @contentMargin: 0em;
 @contentBackground: none;
-@contentPadding: 1em 1em;
+@contentPadding: 12px 24px;
 @contentFontSize: 1em;
 @contentBorderRadius: 0em;
 @contentBoxShadow: none;
@@ -74,7 +74,8 @@
 @headerFontWeight: bold;
 @headerFontSize: @relativeBig;
 @headerLineHeightOffset: -(@lineHeight - 1em) / 2;
-@headerColor: @darkTextColor;
+@headerColor: @grey900;
+@headerFontSize: unit((15 / 14), rem);
 
 /* Metadata */
 @metaFontSize: @relativeMedium;
@@ -130,7 +131,7 @@
 @extraTop: 0em;
 @extraLeft: 0em;
 @extraMargin: 0em 0em;
-@extraPadding: 0.75em 1em;
+@extraPadding: 24px;
 @extraBoxShadow: none;
 @extraColor: @lightTextColor;
 @extraTransition: color @defaultDuration @defaultEasing;
@@ -173,12 +174,12 @@
 
 /* Card Count */
 @wideCardSpacing: 1em;
-@cardSpacing: 0.75em;
+@cardSpacing: 12px;
 @smallCardSpacing: 0.5em;
 
 @oneCardSpacing: 0em;
-@twoCardSpacing: @wideCardSpacing;
-@threeCardSpacing: @wideCardSpacing;
+@twoCardSpacing: @cardSpacing;
+@threeCardSpacing: @cardSpacing;
 @fourCardSpacing: @cardSpacing;
 @fiveCardSpacing: @cardSpacing;
 @sixCardSpacing: @cardSpacing;

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Modal
+ * # Semantic UI 2.2.13 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -79,7 +79,7 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   margin: 0em;
-  padding: 1.25rem 1.5rem;
+  padding: 12px 24px;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: rgba(0, 0, 0, 0.85);
@@ -87,7 +87,7 @@
 }
 .ui.modal > .header:not(.ui) {
   font-size: 1.42857143rem;
-  line-height: 1.28571429em;
+  line-height: 3.42857143rem;
   font-weight: bold;
 }
 
@@ -100,7 +100,7 @@
   width: 100%;
   font-size: 1em;
   line-height: 1.4;
-  padding: 1.5rem;
+  padding: 24px;
   background: #FFFFFF;
 }
 .ui.modal > .image.content {
@@ -169,8 +169,8 @@
 ---------------*/
 
 .ui.modal > .actions {
-  background: #F9FAFB;
-  padding: 1rem 1rem;
+  background: #FAFAFA;
+  padding: 12px 24px;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   text-align: right;
 }
@@ -221,9 +221,9 @@
     padding-right: 2.25rem;
   }
   .ui.modal > .close {
-    top: 1.0535rem;
+    top: 12.08928571px;
     right: 1rem;
-    color: rgba(0, 0, 0, 0.87);
+    color: #212121;
   }
 }
 
@@ -314,7 +314,7 @@
   right: 1.5rem;
 }
 .ui.inverted.dimmer > .basic.modal {
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 .ui.inverted.dimmer > .ui.basic.modal > .header {
   color: rgba(0, 0, 0, 0.85);
@@ -332,6 +332,11 @@
              States
 *******************************/
 
+.ui.loading.modal {
+  display: block;
+  visibility: hidden;
+  z-index: -1;
+}
 .ui.active.modal {
   display: block;
 }
@@ -410,9 +415,9 @@
   padding-right: 2.25rem;
 }
 .ui.fullscreen.modal > .close {
-  top: 1.0535rem;
+  top: 12.08928571px;
   right: 1rem;
-  color: rgba(0, 0, 0, 0.87);
+  color: #212121;
 }
 
 /*--------------
