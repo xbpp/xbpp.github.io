@@ -719,6 +719,13 @@ a.ui.inverted.grey.header:hover {
          Theme Overrides
 *******************************/
 
+.wrap {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  overflow: hidden;
+}
 
 
 /*******************************

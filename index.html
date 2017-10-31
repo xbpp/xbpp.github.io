@@ -7,16 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Daria Prototype</title>
-  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
+ 	<title>Daria Prototype</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
+  	<script src="semantic/dist/semantic.min.js"></script>
 </head>
 
 <body>
+	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
 		<a class="item">Daria Prototype</a>
 		<div class="right menu">
@@ -26,9 +26,12 @@
 		</div>
 	</div>
 
+	<!-- Card Four Grid -->
 	<div class="ui padded grid">
 		<div class="column">
 			<div class="ui four cards">
+
+				<!-- Card Create a new project -->
 				<a id="register" class="ui centered grid card">
 					<div class="row">
 						<div class="center aligned column">
@@ -37,10 +40,21 @@
 						</div>
 					</div>
 				</a>
+
+				<!-- Card Recent project 1 -->
 			  	<div class="card">
 				  	<div class="content">
-						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
-						<span class="left floated"><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+						<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+						<span class="right floated">
+							<div class="ui icon top right pointing dropdown">
+								<h3><i class="ellipsis horizontal icon"></i></h3>
+								<div class="menu">
+								    <div class="item" data-value="">Rename</div>
+								    <div class="item" data-value="">Duplicate</div>
+								    <div class="item" data-value="">Delete</div>
+								</div>
+							</div>
+						</span>
 					</div>
 					<div class="content">	
 						<div class="header">Created at</div>
@@ -81,7 +95,6 @@
 					</div>
 					<div class="content">	
 						<div class="header">
-							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
 							<span>History</span>
 						</div>
 					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
@@ -117,10 +130,20 @@
 					</div>
 				</div>
 				
+				<!-- Card Recent project 2 -->
 				<div class="card">
 				  	<div class="content">
-						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
-						<span><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+				  		<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+						<span class="right floated">
+							<div class="ui icon top right pointing dropdown">
+								<h3><i class="ellipsis horizontal icon"></i></h3>
+								<div class="menu">
+								    <div class="item" data-value="">Rename</div>
+								    <div class="item" data-value="">Duplicate</div>
+								    <div class="item" data-value="">Delete</div>
+								</div>
+							</div>
+						</span>
 					</div>
 					<div class="content">	
 						<div class="header">Created at</div>
@@ -161,7 +184,6 @@
 					</div>
 					<div class="content">	
 						<div class="header">
-							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
 							<span>History</span>
 						</div>
 					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
@@ -197,10 +219,20 @@
 					</div>
 				</div>
 
+				<!-- Card Recent project 3 -->
 				<div class="card">
 				  	<div class="content">
-						<span class="right floated"><h3><i class="ellipsis vertical icon"></i></h3></span>
-						<span><h3>171029_Credit_risk_prediction_ver_0.1</h3></span>
+				  		<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+						<span class="right floated">
+							<div class="ui icon top right pointing dropdown">
+								<h3><i class="ellipsis horizontal icon"></i></h3>
+								<div class="menu">
+								    <div class="item" data-value="">Rename</div>
+								    <div class="item" data-value="">Duplicate</div>
+								    <div class="item" data-value="">Delete</div>
+								</div>
+							</div>
+						</span>
 					</div>
 					<div class="content">	
 						<div class="header">Created at</div>
@@ -241,7 +273,6 @@
 					</div>
 					<div class="content">	
 						<div class="header">
-							<span class="right floated"><a><i class="ellipsis vertical icon"></i></a></span>
 							<span>History</span>
 						</div>
 					    <p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
@@ -271,16 +302,15 @@
 					  		</div>
 						</a>
 					</div>
-
 					<div class="content">
 						<button class="ui button">Open Project</button>
 					</div>
-				</div>
-				
+				</div>				
 			</div>
 		</div>
 	</div>
 
+	<!-- Table Projects -->
 	<div class="ui padded grid">
 		<div class="column">
 			<table class="ui striped table">
@@ -309,7 +339,7 @@
 	                  <div class="inline field">
 	                    <div class="ui checkbox">
 	                      <input type="checkbox" tabindex="0" class="hidden">
-	                      <label><b><a>171029_Credit_risk_prediction_ver_0.1</a></b></label>
+	                      <label><span class="wrap">171029_Credit_risk_prediction_ver_0.1132</span></label>
 	                    </div>
 	                  </div>
 	                </div>
@@ -376,7 +406,7 @@
 	                  <div class="inline field">
 	                    <div class="ui checkbox">
 	                      <input type="checkbox" tabindex="0" class="hidden">
-	                      <label><b><a>Credit risk prediction</a></b></label>
+	                      <label><span><b class="wrap"> 171029_Credit_risk_prediction_ver_0.1132</b></span></label>
 	                    </div>
 	                  </div>
 	                </div>
@@ -711,6 +741,7 @@
 		</div>
 	</div>
 
+	<!-- Modal Create a new project -->
 	<div id="register-modal" class="ui modal">
       <i class="close icon"></i>
       <div class="header">
@@ -718,11 +749,14 @@
       </div>
       <div class="content">
         <form class="ui form">
+        	<!-- Form Project Name -->
         	<div class="ui error message"></div>
 	        <div class="field">
 	            <label>Project Name</label>
 	       		<input type="text" placeholder="Project Name" name="project-name">
 	        </div>
+
+	        <!-- Form Permission / Write -->
             <div class="field">
               <label>Permission / Write</label>
               	<div class="ui fluid multiple search selection dropdown">
@@ -753,6 +787,8 @@
 				  </div>
 				</div>
             </div>
+
+            <!-- Form Permission / Read -->
             <div class="field">
               <label>Permission / Read only</label>
               	<div class="ui fluid multiple search selection dropdown">
@@ -796,6 +832,7 @@
       </div>
     </div>
 
+    <!-- Menu Bottom Fixed -->
 	<div class="ui bottom fixed menu">
 		<a class="item">Experiment Progress 1</a>
 		<a class="item">Experiment Progress 2</a>
@@ -807,42 +844,47 @@
 		</div>
 	</div>
 
-  <script type="text/javascript">
-  $('.ui.checkbox')
-  .checkbox();
-  </script>
-  <script>
-  $(document).ready(function(){
-      $('#register').click(function(){
-          $('#register-modal').modal('show');
-      });
-  });
-  $('.ui.dropdown')
-  .dropdown({
-    allowAdditions: true
-  });
+  	<script type="text/javascript">
 
+		//Checkbox
+	    $('.ui.checkbox')
+	    .checkbox();
 
-  $('.ui.form')
-  .form({
-    fields: {
-      password: {
-        identifier: 'project-name',
-        rules: [
-          {
-            type   : 'empty',
-            prompt : 'Please enter a project name'
-          },
-          {
-            type   : 'maxLength[40]',
-            prompt : 'Your project name must be under {ruleValue} characters'
-          }
-        ]
-      }
-    }
-  })
-;
-</script>
+	    //Modal
+	    $(document).ready(function(){
+	        $('#register').click(function(){
+	            $('#register-modal').modal('show');
+	        });
+	    });
+ 
+	    //Dropdown
+	    $('.ui.dropdown')
+	  		.dropdown({
+		    	on: 'hover'
+		    })
+		  ;
+
+		//Modal Prompt 
+	    $('.ui.form')
+	    	.form({
+	    		fields: {
+	    		password: {
+	    		identifier: 'project-name',
+	        	rules: [
+	        	{
+	            	type   : 'empty',
+	            	prompt : 'Please enter a project name'
+	            },
+	            {
+	            	type   : 'maxLength[40]',
+	            	prompt : 'Your project name must be under {ruleValue} characters'
+	            }
+	        	]
+	        }
+	        }
+	    	})
+		;
+	</script>
 
 
 </body>
