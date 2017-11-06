@@ -59,7 +59,7 @@
 @actionPadding: 12px 24px;
 @actionAlign: right;
 
-@buttonDistance: 0.75em;
+@buttonDistance: 6px;
 
 /* Inner Close Position (Tablet/Mobile) */
 @innerCloseTop: (@headerVerticalPadding - @closeHitBoxOffset + (@lineHeight - 1em));

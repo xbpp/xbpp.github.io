@@ -12,11 +12,11 @@
 @lineHeight: @headerLineHeight;
 @lineHeightOffset: @headerLineHeightOffset;
 
-@topMargin: @headerTopMargin;
-@bottomMargin: @headerBottomMargin;
-@margin: @topMargin 0em @bottomMargin;
+@topMargin: 0;
+@bottomMargin: 0;
+@margin: 0;
 
-@firstMargin: -@lineHeightOffset;
+@firstMargin: 0;
 @lastMargin: 0em;
 @horizontalPadding: 0em;
 @verticalPadding: 0em;
@@ -125,11 +125,11 @@
 @hugeBlock: @huge;
 
 /* Attached */
-@attachedOffset: -1px;
+@attachedOffset: 0;
 @attachedBoxShadow: none;
-@attachedBorder: 1px solid @solidBorderColor;
-@attachedVerticalPadding: @blockVerticalPadding;
-@attachedHorizontalPadding: @blockHorizontalPadding;
+@attachedBorder: 0px solid @solidBorderColor;
+@attachedVerticalPadding: 12px;
+@attachedHorizontalPadding: 24px;
 @attachedBackground: @white;
 @attachedBorderRadius: @blockBorderRadius;
 

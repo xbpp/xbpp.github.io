@@ -8,7 +8,7 @@
 
 /* Button */
 @verticalMargin: 0em;
-@horizontalMargin: 5px;
+@horizontalMargin: 0;
 @backgroundColor: #E0E1E2;
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
