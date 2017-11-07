@@ -18,7 +18,7 @@
 <body>
 	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
-		<a class="item">Daria Prototype</a>
+		<a class="item" href="index.html">Daria Prototype</a>
 		<div class="right menu">
 			<a class="item">Settings</a>
 			<a class="item">Support</a>
@@ -28,197 +28,339 @@
 
 	<!-- Table Projects -->
 	<div class="ui padded grid">
-		<h3>Project Participant</h3>
+		<h3>Project info</h3>
 	</div>
 	<div class="ui padded grid">
 		<div class="column">
-			<table class="ui striped table">
-				<thead>
-					<tr> 
-						<th>Edited at</th>
-						<th>Edited by</th>
-						<th>Contents</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					
-					
-				</tbody>
-			</table>
-		</div>
-	</div>
+            <div class="header">
+                <h3>171029_Credit_risk_prediction_ver_0.1132</h3>
+            </div>
+            <div class="header">Created</div>
+            <p>6/28/2017 5:58:06 PM</p>
+            <div class="header">Owner</div>
+            <p>6/28/2017 5:58:06 PM</p>		
+        </div>
+    </div>
 
-	<!-- Table Projects -->
-	<div class="ui padded grid">
-		<h3>Full History</h3>
-	</div>
-	<div class="ui padded grid">
-		<div class="column">
-			<table class="ui striped table">
-				<thead>
-					<tr> 
-						<th>Edited at</th>
-						<th>Edited by</th>
-						<th>Contents</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
-					<tr>
-						<td>6/28/2017 5:58:06 PM</td>
-						<td>
-							<a class="ui label">
-								Anthony 
-								<div class="detail">
-									Owner
-								</div>
-							</a>
-						</td>
-						<td>
-							Anthony added Jenny Hess to the project
-						</td>
-					</tr>
 
-				</tbody>
-			</table>
-		</div>
-	</div>
 
-	<!-- Menu Bottom Fixed -->
-	<div class="ui bottom fixed menu">
-		<a class="item">Experiment Progress 1</a>
-		<a class="item">Experiment Progress 2</a>
-		<a class="item">Experiment Progress 3</a>
-		<a class="item">Experiment Progress 4</a>
-		<a class="item">Experiment Progress 5</a>
-	</div>
+    <!-- Table Participants -->
+    <div class="ui padded grid">
+        <h3>Project Participants</h3>
+    </div>
+    <div class="ui padded grid">
+        <div class="column">
+        <button id="permission" class="ui button">Add</button>
+         <button id="delete" class="ui button right floated">Delete</button>
+         <table class="ui striped table">
+             <thead>
+                <tr>
+                   <th>
+                      <div class="ui form">
+                       <div class="inline field">
+                         <div class="ui checkbox">
+                           <input type="checkbox" tabindex="0" class="hidden">
+                           <label></label>
+                       </div>
+                   </div>
+               </div>
+           </th>
+           <th>Full Name</th>
+           <th>Email</th>
+           <th>Permission</th>
+           <th>Created at</th>
+           <th>Involved at</th>
+           <th>Last login</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+             <div class="ui form">
+               <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label></label>
+              </div>
+          </div>
+      </div>
+    </td>
+    <td>Anthony Cha</td>
+    <td>anthony@xbrain.team</td>
+    <td>Project Owner</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    </tr>
+    <tr>
+      <td>
+         <div class="ui form">
+           <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label></label>
+          </div>
+      </div>
+    </div>
+    </td>
+    <td>Anthony Cha</td>
+    <td>anthony@xbrain.team</td>
+    <td>Project Owner</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    </tr>
+    <tr>
+      <td>
+         <div class="ui form">
+           <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label></label>
+          </div>
+      </div>
+    </div>
+    </td>
+    <td>Anthony Cha</td>
+    <td>anthony@xbrain.team</td>
+    <td>Project Owner</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    </tr>
+    <tr>
+      <td>
+         <div class="ui form">
+           <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label></label>
+          </div>
+      </div>
+    </div>
+    </td>
+    <td>Anthony Cha</td>
+    <td>anthony@xbrain.team</td>
+    <td>Project Owner</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    </tr>
+    <tr>
+      <td>
+         <div class="ui form">
+           <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label></label>
+          </div>
+      </div>
+    </div>
+    </td>
+    <td>Anthony Cha</td>
+    <td>anthony@xbrain.team</td>
+    <td>Project Owner</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>6/28/2017 5:58:06 PM</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
 
-	<script type="text/javascript">
+    <!-- Table Full History -->
+    <div class="ui padded grid">
+      <h3>Full History</h3>
+    </div>
+    <div class="ui padded grid">
+      <div class="column">
+         <table class="ui striped table">
+            <thead>
+               <tr> 
+                  <th>Edited by</th>
+                  <th>Edited at</th>
+                  <th>Contents</th>
+              </tr>
+          </thead>
+          <tbody>
+           <tr>
+              <td>
+                 <a class="ui label">
+                    Anthony 
+                    <div class="detail">
+                       Owner
+                   </div>
+               </a>
+           </td>
+           <td>6/28/2017 5:58:06 PM</td>
+           <td>Anthony added Jenny Hess to the project</td>
+       </tr>
+       <tr>
+          <td>
+             <a class="ui label">
+                Anthony 
+                <div class="detail">
+                   Owner
+               </div>
+           </a>
+       </td>
+       <td>6/28/2017 5:58:06 PM</td>
+       <td>Anthony added Jenny Hess to the project</td>
+    </tr>
+    <tr>
+      <td>
+         <a class="ui label">
+            Anthony 
+            <div class="detail">
+               Owner
+           </div>
+       </a>
+    </td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>Anthony added Jenny Hess to the project</td>
+    </tr>
+    <tr>
+      <td>
+         <a class="ui label">
+            Anthony 
+            <div class="detail">
+               Owner
+           </div>
+       </a>
+    </td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>Anthony added Jenny Hess to the project</td>
+    </tr>
+    <tr>
+      <td>
+         <a class="ui label">
+            Anthony 
+            <div class="detail">
+               Owner
+           </div>
+       </a>
+    </td>
+    <td>6/28/2017 5:58:06 PM</td>
+    <td>Anthony added Jenny Hess to the project</td>
+    </tr>
+
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <br><br>
+
+<!-- Menu Bottom Fixed -->
+<div class="ui bottom fixed menu">
+  <a class="item">Experiment Progress 1</a>
+  <a class="item">Experiment Progress 2</a>
+  <a class="item">Experiment Progress 3</a>
+  <a class="item">Experiment Progress 4</a>
+  <a class="item">Experiment Progress 5</a>
+</div>
+
+    <!-- Modal Add permission -->
+    <div id="permission-modal" class="ui modal">
+      <i class="close icon"></i>
+      <div class="header">
+        Add new permissions
+      </div>
+      <div class="content">
+        <form class="ui form">
+
+            <!-- Form Permission / Write -->
+            <div class="field">
+              <label>Permission / Write</label>
+                <div class="ui fluid multiple search selection dropdown">
+                  <input name="tags" type="hidden">
+                  <i class="dropdown icon"></i>
+                  <input class="search" type="text" name="email">
+                  <div class="default text">Search...</div>
+                  <div class="menu">
+                    <div class="item">Jinwoo Shin</div>
+                    <div class="item">Jungkap Park</div>
+                    <div class="item">Anthony Cha</div>
+                    <div class="item">Eunsoo Kim</div>
+                    <div class="item">Yonghyun Kwon</div>
+                    <div class="item">Kukhwan Park</div>
+                    <div class="item">Jongheon Jeong</div>
+                    <div class="item">Suzin You</div>
+                    <div class="item">Jongmin Kim</div>
+                    <div class="item">Jinyoung Choi</div>
+                    <div class="item">jinwoos@xbrain.team</div>
+                    <div class="item">jm.kim@xbrain.team</div>
+                    <div class="item">anthony@xbrain.team</div>
+                    <div class="item">freddie@xbrain.team</div>
+                    <div class="item">jongheonj@xbrain.team</div>
+                    <div class="item">suzin@xbrain.team</div>
+                    <div class="item">eunsoo.kim@xbrain.team</div>
+                    <div class="item">yonghyun@xbrain.team</div>
+                    <div class="item">kh.park@xbrain.team</div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Form Permission / Read -->
+            <div class="field">
+              <label>Permission / Read only</label>
+                <div class="ui fluid multiple search selection dropdown">
+                  <input name="tags" type="hidden">
+                  <i class="dropdown icon"></i>
+                  <input class="search">
+                  <div class="default text">Search...</div>
+                  <div class="menu">
+                    <div class="item">Jinwoo Shin</div>
+                    <div class="item">Jungkap Park</div>
+                    <div class="item">Anthony Cha</div>
+                    <div class="item">Eunsoo Kim</div>
+                    <div class="item">Yonghyun Kwon</div>
+                    <div class="item">Kukhwan Park</div>
+                    <div class="item">Jongheon Jeong</div>
+                    <div class="item">Suzin You</div>
+                    <div class="item">Jongmin Kim</div>
+                    <div class="item">Jinyoung Choi</div>
+                    <div class="item">jinwoos@xbrain.team</div>
+                    <div class="item">jm.kim@xbrain.team</div>
+                    <div class="item">anthony@xbrain.team</div>
+                    <div class="item">freddie@xbrain.team</div>
+                    <div class="item">jongheonj@xbrain.team</div>
+                    <div class="item">suzin@xbrain.team</div>
+                    <div class="item">eunsoo.kim@xbrain.team</div>
+                    <div class="item">yonghyun@xbrain.team</div>
+                    <div class="item">kh.park@xbrain.team</div>
+                  </div>
+                </div>
+            </div>
+            <div class="ui submit button">Submit</div>
+        </form>
+      </div>
+      <div class="actions">
+        <div class="ui deny button">
+          Cancel
+        </div>
+        <div class="ui button">
+          Create
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Delete Project -->
+    <div id="delete-modal" class="ui modal">
+        <i class="close icon"></i>
+            <div class="header">
+                Delete a project
+            </div>
+        <div class="content">
+            Are you sure you want to delete this participant?
+        </div>
+        <div class="ui actions form">
+            <div class="ui cancel button">Cancel</div>
+            <div class="ui approve button">Approve</div>
+        </div>
+    </div>
+
+<script type="text/javascript">
 
 		//Checkbox
 		$('.ui.checkbox')
@@ -226,14 +368,14 @@
 
 	    //Modal
 	    $(document).ready(function(){
-	    	$('#register').click(function(){
-	    		$('#register-modal').modal('show');
+	    	$('#permission').click(function(){
+	    		$('#permission-modal').modal('show');
 	    	});
 	    });
 
 	    $(document).ready(function(){
-	    	$('#rename').click(function(){
-	    		$('#rename-modal').modal('show');
+	    	$('#delete').click(function(){
+	    		$('#delete-modal').modal('show');
 	    	});
 	    });
 
