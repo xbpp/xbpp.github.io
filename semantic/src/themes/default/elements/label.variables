@@ -45,7 +45,7 @@
 @imageHeight: (1em + @verticalPadding * 2);
 
 /* Detail */
-@detailFontWeight: bold;
+@detailFontWeight: normal;
 @detailOpacity: 0.8;
 @detailIconDistance: 0.25em;
 @detailMargin: 1em;

@@ -5,5 +5,3 @@ This repository is automatically synced with the main [Semantic UI](https://gith
 This package **does not support theming** and includes generated CSS files of the default theme only.
 
 You can view more on Semantic UI at [LearnSemantic.com](http://www.learnsemantic.com) and [Semantic-UI.com](http://www.semantic-ui.com)
-
-HI

@@ -4,3 +4,6 @@
 .ui.label {
 	margin-right: 3px;
 }
+.ui.image.label {
+	margin-bottom: 3px;
+}

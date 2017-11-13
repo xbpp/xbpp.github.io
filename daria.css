@@ -1,0 +1,11 @@
+.ui.grid > .row.daria_padding_bottom_0 {
+	padding-bottom: 0;
+}
+
+.ui.grid > .column.daria_padding_bottom_0 {
+	padding-bottom: 0;
+}
+
+.ui.grid > .column.daria_padding_top_12 {
+	padding-top: 12px !important;
+}

@@ -854,7 +854,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  margin: 0em 0 0em 0em;
+  margin: 0em 0 0 0em;
   padding: 0.85714286em 24px 0.85714286em;
   text-transform: none;
   text-shadow: none;
@@ -4928,7 +4928,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   flex-direction: row;
   font-size: 0em;
   vertical-align: baseline;
-  margin: 0em 0 0em 0em;
+  margin: 0 0 0em 0em;
 }
 
 .ui.buttons:not(.basic):not(.inverted) {
@@ -5019,6 +5019,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.button {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.ui.button.ov_button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ui.button.ov_button_left {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 6px;
 }
 
 /*******************************
@@ -12808,7 +12819,7 @@ a.ui.label {
 .ui.label > .detail {
   display: inline-block;
   vertical-align: top;
-  font-weight: bold;
+  font-weight: normal;
   margin-left: 1em;
   opacity: 0.8;
 }
@@ -14159,6 +14170,10 @@ a.ui.basic.label:hover {
 
 .ui.label {
   margin-right: 3px;
+}
+
+.ui.image.label {
+  margin-bottom: 3px;
 }
 
 /*******************************
@@ -28887,7 +28902,7 @@ a.ui.card:hover,
   font-style: normal;
   min-height: 17px;
   font-size: 1rem;
-  line-height: 17px;
+  line-height: 0;
   min-width: 17px;
 }
 
@@ -31760,7 +31775,7 @@ select.ui.dropdown {
 }
 
 .ui.modal .actions > .button {
-  margin-left: 6px;
+  margin-left: 3px;
 }
 
 /*-------------------

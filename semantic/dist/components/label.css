@@ -70,7 +70,7 @@ a.ui.label {
 .ui.label > .detail {
   display: inline-block;
   vertical-align: top;
-  font-weight: bold;
+  font-weight: normal;
   margin-left: 1em;
   opacity: 0.8;
 }
@@ -1307,6 +1307,9 @@ a.ui.basic.label:hover {
 
 .ui.label {
   margin-right: 3px;
+}
+.ui.image.label {
+  margin-bottom: 3px;
 }
 
 

@@ -1,7 +1,16 @@
 /*******************************
          Theme Overrides
 *******************************/
-.ui.button {
+.ui.button{
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+.ui.button.ov_button{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.ui.button.ov_button_left{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 6px;
 }
