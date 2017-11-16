@@ -330,25 +330,31 @@
 					<div class="card">
 						<div class="content">
 							<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+							<!-- 
+								최대 40자 제한
+								ellipsis(...) 중앙으로 이동 필요
+							-->
 							<span class="right floated">
 								<div class="ui icon top right pointing dropdown">
 									<h3><i class="ellipsis horizontal icon"></i></h3>
 									<div class="menu">
-										<div id="rename" class="item"> 			
+										<div id="rename" class="item"> 		
 											<i class="write icon"></i>
 											Rename Project
 										</div>
-										<div class="item">
+										<div id="copy" class="item">
 											<i class="copy icon"></i>
 											Make a copy
 										</div>
-										<div class="item">
+										<div id="delete" class="item">
 											<i class="trash icon"></i>
 											Delete
 										</div>
 										<div class="item">
-											<i class="options icon"></i>
-											Configuration
+											<a href="configuration.html">
+												<i class="options icon"></i>
+												Configuration
+											</a>
 										</div>
 									</div>
 								</div>
@@ -359,41 +365,72 @@
 							<p>6/28/2017 5:58:06 PM</p>
 						</div>
 						<div class="content">	
-							<div class="header">Permission</div>
-							<a class="ui label">
+							<div class="header">
+								<span>Permission</span> 
+								<span id="permission" class="right floated">
+									<i class="add circle icon"></i>
+								</span>
+							</div>
+							<a id="participants" class="ui image label">
 								Anthony 
 								<div class="detail">
-									Owner
+									o
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Suzin 
 								<div class="detail">
-									Write
+									w / r
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Jenny 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Helen 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
+							
+
+							<div id="more" class="ui label dropdown">
+								5 more... 
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item"> 			
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+								</div>
+							</div>
+							<!-- 
+								hover 구현 필요
+							-->
 						</div>
 						<div class="content">	
 							<div class="header">
-								<span>History</span>
+								History
 							</div>
 							<p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
 							<p>Stevie Feliciano was added as an Administrator<br>
@@ -403,19 +440,19 @@
 						</div>
 						<div class="content">	
 							<div class="header">Contents</div>
-							<a class="ui label">
+							<a class="ui image label">
 								Datasets
 								<div class="detail">
 									5
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Experiments
 								<div class="detail">
 									25
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Models 
 								<div class="detail">
 									2
@@ -431,25 +468,31 @@
 					<div class="card">
 						<div class="content">
 							<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+							<!-- 
+								최대 40자 제한
+								ellipsis(...) 중앙으로 이동 필요
+							-->
 							<span class="right floated">
 								<div class="ui icon top right pointing dropdown">
 									<h3><i class="ellipsis horizontal icon"></i></h3>
 									<div class="menu">
-										<div id="rename" class="item"> 			
+										<div id="rename" class="item"> 		
 											<i class="write icon"></i>
 											Rename Project
 										</div>
-										<div class="item">
+										<div id="copy" class="item">
 											<i class="copy icon"></i>
 											Make a copy
 										</div>
-										<div class="item">
+										<div id="delete" class="item">
 											<i class="trash icon"></i>
 											Delete
 										</div>
 										<div class="item">
-											<i class="options icon"></i>
-											Configuration
+											<a href="configuration.html">
+												<i class="options icon"></i>
+												Configuration
+											</a>
 										</div>
 									</div>
 								</div>
@@ -460,41 +503,72 @@
 							<p>6/28/2017 5:58:06 PM</p>
 						</div>
 						<div class="content">	
-							<div class="header">Permission</div>
-							<a class="ui label">
+							<div class="header">
+								<span>Permission</span> 
+								<span id="permission" class="right floated">
+									<i class="add circle icon"></i>
+								</span>
+							</div>
+							<a id="participants" class="ui image label">
 								Anthony 
 								<div class="detail">
-									Owner
+									o
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Suzin 
 								<div class="detail">
-									Write
+									w / r
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Jenny 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Helen 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
+							
+
+							<div id="more" class="ui label dropdown">
+								5 more... 
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item"> 			
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+								</div>
+							</div>
+							<!-- 
+								hover 구현 필요
+							-->
 						</div>
 						<div class="content">	
 							<div class="header">
-								<span>History</span>
+								History
 							</div>
 							<p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
 							<p>Stevie Feliciano was added as an Administrator<br>
@@ -504,19 +578,19 @@
 						</div>
 						<div class="content">	
 							<div class="header">Contents</div>
-							<a class="ui label">
+							<a class="ui image label">
 								Datasets
 								<div class="detail">
 									5
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Experiments
 								<div class="detail">
 									25
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Models 
 								<div class="detail">
 									2
@@ -532,25 +606,31 @@
 					<div class="card">
 						<div class="content">
 							<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+							<!-- 
+								최대 40자 제한
+								ellipsis(...) 중앙으로 이동 필요
+							-->
 							<span class="right floated">
 								<div class="ui icon top right pointing dropdown">
 									<h3><i class="ellipsis horizontal icon"></i></h3>
 									<div class="menu">
-										<div id="rename" class="item"> 			
+										<div id="rename" class="item"> 		
 											<i class="write icon"></i>
 											Rename Project
 										</div>
-										<div class="item">
+										<div id="copy" class="item">
 											<i class="copy icon"></i>
 											Make a copy
 										</div>
-										<div class="item">
+										<div id="delete" class="item">
 											<i class="trash icon"></i>
 											Delete
 										</div>
 										<div class="item">
-											<i class="options icon"></i>
-											Configuration
+											<a href="configuration.html">
+												<i class="options icon"></i>
+												Configuration
+											</a>
 										</div>
 									</div>
 								</div>
@@ -561,41 +641,72 @@
 							<p>6/28/2017 5:58:06 PM</p>
 						</div>
 						<div class="content">	
-							<div class="header">Permission</div>
-							<a class="ui label">
+							<div class="header">
+								<span>Permission</span> 
+								<span id="permission" class="right floated">
+									<i class="add circle icon"></i>
+								</span>
+							</div>
+							<a id="participants" class="ui image label">
 								Anthony 
 								<div class="detail">
-									Owner
+									o
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Suzin 
 								<div class="detail">
-									Write
+									w / r
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Jenny 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Helen 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
+							
+
+							<div id="more" class="ui label dropdown">
+								5 more... 
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item"> 			
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+								</div>
+							</div>
+							<!-- 
+								hover 구현 필요
+							-->
 						</div>
 						<div class="content">	
 							<div class="header">
-								<span>History</span>
+								History
 							</div>
 							<p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
 							<p>Stevie Feliciano was added as an Administrator<br>
@@ -605,19 +716,19 @@
 						</div>
 						<div class="content">	
 							<div class="header">Contents</div>
-							<a class="ui label">
+							<a class="ui image label">
 								Datasets
 								<div class="detail">
 									5
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Experiments
 								<div class="detail">
 									25
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Models 
 								<div class="detail">
 									2
@@ -633,25 +744,31 @@
 					<div class="card">
 						<div class="content">
 							<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+							<!-- 
+								최대 40자 제한
+								ellipsis(...) 중앙으로 이동 필요
+							-->
 							<span class="right floated">
 								<div class="ui icon top right pointing dropdown">
 									<h3><i class="ellipsis horizontal icon"></i></h3>
 									<div class="menu">
-										<div id="rename" class="item"> 			
+										<div id="rename" class="item"> 		
 											<i class="write icon"></i>
 											Rename Project
 										</div>
-										<div class="item">
+										<div id="copy" class="item">
 											<i class="copy icon"></i>
 											Make a copy
 										</div>
-										<div class="item">
+										<div id="delete" class="item">
 											<i class="trash icon"></i>
 											Delete
 										</div>
 										<div class="item">
-											<i class="options icon"></i>
-											Configuration
+											<a href="configuration.html">
+												<i class="options icon"></i>
+												Configuration
+											</a>
 										</div>
 									</div>
 								</div>
@@ -662,41 +779,72 @@
 							<p>6/28/2017 5:58:06 PM</p>
 						</div>
 						<div class="content">	
-							<div class="header">Permission</div>
-							<a class="ui label">
+							<div class="header">
+								<span>Permission</span> 
+								<span id="permission" class="right floated">
+									<i class="add circle icon"></i>
+								</span>
+							</div>
+							<a id="participants" class="ui image label">
 								Anthony 
 								<div class="detail">
-									Owner
+									o
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Suzin 
 								<div class="detail">
-									Write
+									w / r
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Jenny 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Helen 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
+							
+
+							<div id="more" class="ui label dropdown">
+								5 more... 
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item"> 			
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+								</div>
+							</div>
+							<!-- 
+								hover 구현 필요
+							-->
 						</div>
 						<div class="content">	
 							<div class="header">
-								<span>History</span>
+								History
 							</div>
 							<p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
 							<p>Stevie Feliciano was added as an Administrator<br>
@@ -706,19 +854,19 @@
 						</div>
 						<div class="content">	
 							<div class="header">Contents</div>
-							<a class="ui label">
+							<a class="ui image label">
 								Datasets
 								<div class="detail">
 									5
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Experiments
 								<div class="detail">
 									25
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Models 
 								<div class="detail">
 									2
@@ -734,25 +882,31 @@
 					<div class="card">
 						<div class="content">
 							<span><h3 class="wrap">171029_Credit_risk_prediction_ver_0.1132</h3></span>
+							<!-- 
+								최대 40자 제한
+								ellipsis(...) 중앙으로 이동 필요
+							-->
 							<span class="right floated">
 								<div class="ui icon top right pointing dropdown">
 									<h3><i class="ellipsis horizontal icon"></i></h3>
 									<div class="menu">
-										<div id="rename" class="item"> 			
+										<div id="rename" class="item"> 		
 											<i class="write icon"></i>
 											Rename Project
 										</div>
-										<div class="item">
+										<div id="copy" class="item">
 											<i class="copy icon"></i>
 											Make a copy
 										</div>
-										<div class="item">
+										<div id="delete" class="item">
 											<i class="trash icon"></i>
 											Delete
 										</div>
 										<div class="item">
-											<i class="options icon"></i>
-											Configuration
+											<a href="configuration.html">
+												<i class="options icon"></i>
+												Configuration
+											</a>
 										</div>
 									</div>
 								</div>
@@ -763,41 +917,72 @@
 							<p>6/28/2017 5:58:06 PM</p>
 						</div>
 						<div class="content">	
-							<div class="header">Permission</div>
-							<a class="ui label">
+							<div class="header">
+								<span>Permission</span> 
+								<span id="permission" class="right floated">
+									<i class="add circle icon"></i>
+								</span>
+							</div>
+							<a id="participants" class="ui image label">
 								Anthony 
 								<div class="detail">
-									Owner
+									o
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Suzin 
 								<div class="detail">
-									Write
+									w / r
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Jenny 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
-							<a class="ui label">
-								Helen 
+							<a class="ui image label">
+								Freddie 
 								<div class="detail">
-									Write
+									r
 								</div>
 							</a>
+							
+
+							<div id="more" class="ui label dropdown">
+								5 more... 
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item"> 			
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+									<div class="item">
+										Helen (Write)
+									</div>
+								</div>
+							</div>
+							<!-- 
+								hover 구현 필요
+							-->
 						</div>
 						<div class="content">	
 							<div class="header">
-								<span>History</span>
+								History
 							</div>
 							<p>Freddie added Jenny Hess to the project<br> Updated 10 mins ago</p>
 							<p>Stevie Feliciano was added as an Administrator<br>
@@ -807,19 +992,19 @@
 						</div>
 						<div class="content">	
 							<div class="header">Contents</div>
-							<a class="ui label">
+							<a class="ui image label">
 								Datasets
 								<div class="detail">
 									5
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Experiments
 								<div class="detail">
 									25
 								</div>
 							</a>
-							<a class="ui label">
+							<a class="ui image label">
 								Models 
 								<div class="detail">
 									2

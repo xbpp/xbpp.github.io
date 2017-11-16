@@ -4,7 +4,7 @@
 
 @checkboxSize: 17px;
 @checkboxColor: @textColor;
-@checkboxLineHeight: 0;
+@checkboxLineHeight: @checkboxSize;
 
 
 /* Label */
