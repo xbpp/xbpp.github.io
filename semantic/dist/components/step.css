@@ -70,7 +70,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0em 0em;
-  padding: 24px 2em;
+  padding: 12px 2em;
   background: #FFFFFF;
   color: #212121;
   -webkit-box-shadow: none;
@@ -136,7 +136,7 @@
 /* Title */
 .ui.steps .step .title {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
 }
 .ui.steps .step > .title {
@@ -239,12 +239,12 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: 0em;
-  padding: 24px 2em;
+  padding: 12px 2em;
   border-right: none;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 .ui.vertical.steps .step:first-child {
-  padding: 24px 2em;
+  padding: 12px 2em;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 .ui.vertical.steps .step:last-child {
@@ -301,10 +301,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 0em;
-    padding: 24px 2em;
+    padding: 12px 2em;
   }
   .ui.steps:not(.unstackable) .step:first-child {
-    padding: 24px 2em;
+    padding: 12px 2em;
     border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   }
   .ui.steps:not(.unstackable) .step:last-child {
@@ -444,10 +444,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 0em;
-    padding: 24px 2em;
+    padding: 12px 2em;
   }
   .ui[class*="tablet stackable"].steps .step:first-child {
-    padding: 24px 2em;
+    padding: 12px 2em;
     border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   }
   .ui[class*="tablet stackable"].steps .step:last-child {
