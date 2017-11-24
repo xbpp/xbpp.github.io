@@ -46,7 +46,7 @@
         </div>
 	</div>
 
-    <!-- Table Create a new dataset -->
+    <!-- Titled Section -->
     <div class="ui padded grid">
         <div class="column daria_padding_bottom_0">
             <div class="ui breadcrumb">
@@ -72,42 +72,50 @@
         <h3>Create a new dataset</h3>
     </div>
     <div class="ui padded grid">
-        <div class="column">
-            
-                <div class="ui four steps">
-                    <div class="step">
-                        <div class="content">
-                            <div class="title left aligned">1. Select Dataset Location</div>
-                        </div>                    
+        <div class="column">        
+            <div class="ui three steps">
+                <div class="active step">
+                    <div class="content">
+                        <div class="title left aligned">1. Select Dataset Location</div>
+                    </div>                    
+                </div>
+                <div class="step">
+                    <div class="ui tab content" data-tab="local">
+                        <div class="title">2. Import file from local</div>
                     </div>
-                    <div class="ui tab step">
-                        <div class="ui tab content" data-tab="local">
-                            <div class="title">2. Import file from local</div>
-                        </div>
-                        <div class="ui tab content" data-tab="url">
-                            <div class="title">2. Import file from URL via HTTP</div>
-                        </div>
-                        <div class="ui tab content" data-tab="rdbms">
-                            <div class="title">2. Connect file from RDBMS</div>
-                        </div>
-                        <div class="ui tab content" data-tab="cloud">
-                            <div class="title">2. Connect file from cloud</div>
-                        </div> 
+                    <div class="ui tab content" data-tab="url">
+                        <div class="title">2. Import file from URL via HTTP</div>
                     </div>
-                    <div class="ui tab step">
-                        <div class="ui tab content" data-tab="local_parsing">
-                            <div class="title">3. Parsing Options</div>
-                        </div>
-                        <div class="ui tab content" data-tab="rdbms_tables">
-                            <div class="title">3. Tables</div>
-                        </div>
+                    <div class="ui tab content" data-tab="rdbms">
+                        <div class="title">2. Connect file from RDBMS</div>
                     </div>
-                    <div class="ui tab step">
-                        <div class="ui tab content" data-tab="local_detail">
-                            <div class="title">4. Dataset Detail</div>
-                        </div>
+                    <div class="ui tab content" data-tab="cloud">
+                        <div class="title">2. Connect file from cloud</div>
                     </div>
                 </div>
+                <div class="step">
+                    <div class="ui tab content" data-tab="local">
+                    </div>
+                    <div class="ui tab content" data-tab="local_parsing">
+                        <div class="title">3. Parsing Options</div>
+                    </div>
+                    <div class="ui tab content" data-tab="url">
+                    </div>
+                    <div class="ui tab content" data-tab="url_parsing">
+                        <div class="title">3. Parsing Options</div>
+                    </div>
+                    <div class="ui tab content" data-tab="rdbms">
+                    </div>
+                    <div class="ui tab content" data-tab="rdbms_tables">
+                        <div class="title">3. Tables</div>
+                    </div>
+                    <div class="ui tab content" data-tab="cloud">
+                    </div>
+                    <div class="ui tab content" data-tab="cloud_">
+                        <div class="title">3. Tables</div>
+                    </div>
+                </div>
+            </div>
             <table class="ui fixed single line celled table">
                 <tbody>
                     <tr class="top aligned">
@@ -207,6 +215,36 @@
                                 <div class="ui tab" data-tab="rdbms">
                                     <form class="ui form">
                                         <div class="field">
+                                            <label>Existing Connections</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="">
+                                                <div class="default text">Select Existing Connection</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">Name / mySQL</div>
+                                                    <div class="item">Name / MS-SQL</div>
+                                                    <div class="item">Name / PostgreSQL</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
                                             <label>Connection Name</label>
                                             <div class="ui input">
                                                 <input placeholder="" type="text">
@@ -276,6 +314,8 @@
                         </td>
                         <td>
                             <div id="context2">
+                                <div class="ui tab" data-tab="local">
+                                </div>
                                 <div class="ui tab" data-tab="local_parsing">
                                     <form class="ui form">
                                         <div class="field">
@@ -311,6 +351,9 @@
                                             </a>
                                         </div> 
                                     </form>
+                                </div>
+
+                                <div class="ui tab" data-tab="url">
                                 </div>
                                 <div class="ui tab" data-tab="url_parsing">
                                     <form class="ui form">
@@ -348,28 +391,17 @@
                                         </div> 
                                     </form>
                                 </div>
+
+                                <div class="ui tab" data-tab="rdbms"> 
+                                </div>
                                 <div class="ui tab" data-tab="rdbms_tables">
                                     table 
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div id="context2">
-                                <div class="ui tab" data-tab="local_detail">
-                                    Local detail
-                                    <div class="ui secondary vertical fluid menu">
-                                        <a class="item">
-                                            <b>Schema</b>
-                                        </a>
-                                    </div> 
+
+                                <div class="ui tab" data-tab="cloud">
                                 </div>
-                                <div class="ui tab" data-tab="url_detail">
-                                    URL detail
-                                    <div class="ui secondary vertical fluid menu">
-                                        <a class="item">
-                                            <b>Schema</b>
-                                        </a>
-                                    </div> 
+                                <div class="ui tab" data-tab="cloud_">
+                                    table 
                                 </div>
                             </div>
                         </td>

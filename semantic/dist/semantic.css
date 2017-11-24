@@ -25456,6 +25456,10 @@ Floated Menu / Item
   font-size: 1.1em;
 }
 
+.ui.fixed.table td {
+  overflow: visible;
+}
+
 /*******************************
          Site Overrides
 *******************************/
