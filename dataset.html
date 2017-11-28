@@ -140,12 +140,6 @@
                                             RDBMS
                                         </b>
                                     </a>
-                                    <a class="item" data-tab="cloud">
-                                        <b>
-                                            <i class="cloud download icon"></i>
-                                            Cloud Storage
-                                        </b>
-                                    </a>
                                 </div>
                             </div>
                         </td>
@@ -156,7 +150,7 @@
                                         <div class="field">
                                             <label>Browse File</label>
                                             <div class="ui action input">
-                                                <input placeholder="Upload a new dataset from a local file" type="text">
+                                                <input placeholder="Upload a new dataset from a local file">
                                                 <button class="ui button">Browse</button>
                                             </div>
                                         </div>
@@ -167,19 +161,15 @@
                                                 <div class="default text">Select file type</div>
                                                 <i class="dropdown icon"></i>
                                                 <div class="menu">
-                                                    <div class="item" data-value="4">.csv</div>
-                                                    <div class="item" data-value="3">.tsv</div>
-                                                    <div class="item" data-value="2">.txt</div>
-                                                    <div class="item" data-value="1">.xls</div>
-                                                    <div class="item" data-value="0">.xlss</div>
+                                                    <div class="item" data-value="csv">.csv</div>
+                                                    <div class="item" data-value="tsv">.tsv</div>
+                                                    <div class="item" data-value="txt">.txt</div>
+                                                    <div class="item" data-value="xls">.xls</div>
+                                                    <div class="item" data-value="xlss">.xlss</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ui secondary vertical fluid menu">
-                                            <a class="item" data-tab="local_parsing">
-                                                <b>Connect (Download to our server)</b>
-                                            </a>
-                                        </div>    
+                                        <div class="ui button local">Connect (Download to our server)</div>
                                     </form>
                                 </div>
                                 <div class="ui tab" data-tab="url">
@@ -205,11 +195,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ui secondary vertical fluid menu">
-                                            <a class="item" data-tab="url_parsing">
-                                                <b>Connect (Download to our server)</b>
-                                            </a>
-                                        </div>    
+                                        <div class="ui button url">Connect (Download to our server)</div>
                                     </form>
                                 </div>
                                 <div class="ui tab" data-tab="rdbms">
@@ -221,26 +207,86 @@
                                                 <div class="default text">Select Existing Connection</div>
                                                 <i class="dropdown icon"></i>
                                                 <div class="menu">
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
-                                                    <div class="item">Name / mySQL</div>
-                                                    <div class="item">Name / MS-SQL</div>
-                                                    <div class="item">Name / PostgreSQL</div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,15 +346,8 @@
                                                 <label>Conn. Info Save Flag</label>
                                             </div>
                                         </div>
-                                        <div class="ui secondary vertical fluid menu">
-                                            <a class="item" data-tab="rdbms_tables">
-                                                <b>Connect (Fetch tables from DB)</b>
-                                            </a>
-                                        </div>    
+                                        <div class="ui button rdbms">Connect (Fetch tables from DB)</div>
                                     </form>
-                                </div>
-                                <div class="ui tab" data-tab="cloud">
-                                    논의가 덜 되었다.
                                 </div>
                             </div>
                         </td>
@@ -338,19 +377,24 @@
                                             </div>
                                         </div>
                                         <div class="field">
+                                            <label>Separator</label>
+                                            <input placeholder=", tab or customizable" type="text">
+                                        </div>
+                                        <div class="field">
                                             <label>Quoting Characters</label>
-                                            <input placeholder="Input Field with default value: "" type="text">
+                                            <input placeholder="&#34;" type="text">
                                         </div>
                                         <div class="field">
                                             <label>Escape Character</label>
-                                            <input placeholder="Input Field with default value: /" type="text">
+                                            <input placeholder="/" type="text">
                                         </div>
-                                        <div class="ui secondary vertical fluid menu">
-                                            <a class="item" data-tab="local_detail">
-                                                <b>Submit</b>
-                                            </a>
-                                        </div> 
-                                    </form>
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="radio">
+                                            <label>Select Sheets</label>
+                                        </div>
+                                    </form><br>
+                                    <div class="ui button">Submit</div><br><br>
+                                    <button class="fluid ui button">Schema</button>
                                 </div>
 
                                 <div class="ui tab" data-tab="url">
@@ -377,6 +421,10 @@
                                             </div>
                                         </div>
                                         <div class="field">
+                                            <label>Separator</label>
+                                            <input placeholder=", tab or customizable" type="text">
+                                        </div>
+                                        <div class="field">
                                             <label>Quoting Characters</label>
                                             <input placeholder="Input Field with default value: "" type="text">
                                         </div>
@@ -384,24 +432,64 @@
                                             <label>Escape Character</label>
                                             <input placeholder="Input Field with default value: /" type="text">
                                         </div>
-                                        <div class="ui secondary vertical fluid menu">
-                                            <a class="item" data-tab="url_detail">
-                                                <b>Submit</b>
-                                            </a>
-                                        </div> 
-                                    </form>
+                                    </form><br>
+                                    <div class="ui button">Submit</div><br><br>
+                                    <button class="fluid ui button">Schema</button>
                                 </div>
 
                                 <div class="ui tab" data-tab="rdbms"> 
                                 </div>
                                 <div class="ui tab" data-tab="rdbms_tables">
-                                    table 
-                                </div>
-
-                                <div class="ui tab" data-tab="cloud">
-                                </div>
-                                <div class="ui tab" data-tab="cloud_">
-                                    table 
+                                    <table class="ui single line table">
+                                        <thead>
+                                            <th>Header</th>   
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table><br>
+                                    <button class="fluid ui button">Schema</button>
                                 </div>
                             </div>
                         </td>
@@ -866,13 +954,29 @@
 </div>
 
 <script type="text/javascript">
-  $('.ui.dropdown')
-  .dropdown()
-;
+
+$('.ui.dropdown')
+    .dropdown();
 
 $('.menu .item')
-  .tab()
-;
+    .tab();
+
+$('.ui.button.local')
+    .on('click', function() {
+    ;
+    $.tab('change tab', 'local_parsing');
+  });
+$('.ui.button.url')
+    .on('click', function() {
+    ;
+    $.tab('change tab', 'url_parsing');
+  });
+$('.ui.button.rdbms')
+    .on('click', function() {
+    ;
+    $.tab('change tab', 'rdbms_tables');
+  });
+
 </script>
 
 
