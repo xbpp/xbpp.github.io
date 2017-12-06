@@ -165,7 +165,7 @@
                                                     <div class="item" data-value="tsv">.tsv</div>
                                                     <div class="item" data-value="txt">.txt</div>
                                                     <div class="item" data-value="xls">.xls</div>
-                                                    <div class="item" data-value="xlss">.xlss</div>
+                                                    <div class="item" data-value="xlsx">.xlsx</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@
                                                     <div class="item" data-value="3">.tsv</div>
                                                     <div class="item" data-value="2">.txt</div>
                                                     <div class="item" data-value="1">.xls</div>
-                                                    <div class="item" data-value="0">.xlss</div>
+                                                    <div class="item" data-value="0">.xlsx</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -373,7 +373,7 @@
                                         <div class="field">
                                             <label>Encoding</label>
                                             <div class="ui dropdown selection">
-                                                <input type="hidden" name="gender">
+                                                <input type="hidden">
                                                 <div class="default text">UTF-8</div>
                                                 <i class="dropdown icon"></i>
                                                 <div class="menu">
@@ -394,12 +394,20 @@
                                             <label>Escape Character</label>
                                             <input placeholder="/" type="text">
                                         </div>
-                                        <div class="ui radio checkbox">
-                                            <input type="radio" name="radio">
-                                            <label>Select Sheets</label>
+                                        <div class="field">
+                                            <label>Select a sheet</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">Sheet 1</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Sheet 1</div>
+                                                    <div class="item" data-value="0">Sheet 2</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form><br><br>
-                                    <button class="fluid ui button">Schema</button>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
                                 </div>
 
                                 <div class="ui tab" data-tab="url">
@@ -416,7 +424,7 @@
                                         <div class="field">
                                             <label>Encoding</label>
                                             <div class="ui dropdown selection">
-                                                <input type="hidden" name="gender">
+                                                <input type="hidden">
                                                 <div class="default text">UTF-8</div>
                                                 <i class="dropdown icon"></i>
                                                 <div class="menu">
@@ -437,8 +445,20 @@
                                             <label>Escape Character</label>
                                             <input placeholder="Input Field with default value: /" type="text">
                                         </div>
+                                        <div class="field">
+                                            <label>Select a sheet</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">Sheet 1</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Sheet 1</div>
+                                                    <div class="item" data-value="0">Sheet 2</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form><br><br>
-                                    <button class="fluid ui button">Schema</button>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
                                 </div>
 
                                 <div class="ui tab" data-tab="rdbms"> 
@@ -516,7 +536,7 @@
                                             </div>
                                         </div>
                                     </form><br>
-                                    <button class="fluid ui button">Schema</button>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
                                 </div>
                             </div>
                         </td>
@@ -534,7 +554,7 @@
     </div>
     <div class="ui padded grid">
         <div class="column daria_padding_bottom_0  daria_padding_top_12">
-            <button id="register" class="ui button ov_button">Schema</button>
+            <button id="schemaAfter" class="ui button ov_button">Schema (After Parsing)</button>
             <button id="delete" class="ui button ov_button_left right floated">
                 <i class="trash icon"></i>
                 Delete
@@ -965,20 +985,2461 @@
         <a class="active item right floated"><i class="arrow circle right icon"></i>Proceed to Experiments</a>
     </div>
 
-<!-- Modal Delete Project -->
-<div id="delete-modal" class="ui modal">
-  <i class="close icon"></i>
-  <div class="header">
-    Delete a project
-</div>
-<div class="content">
-    Are you sure you want to delete this participant?
-</div>
-<div class="ui actions form">
-    <div class="ui cancel button">Cancel</div>
-    <div class="ui approve button">Approve</div>
-</div>
-</div>
+<!-- Modal Schema Common -->
+    <div class="ui fullscreen modal" id="schemaCommon-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            <i class="write icon"></i>
+            Dataset Name
+            <div class="ui form">
+                <div class="two wide field">
+                    <input type="text" placeholder="Search Column">
+                </div>
+            </div>
+        </div>
+
+        <div class="scrolling content">
+            <table class="ui single line compact striped table">
+                <thead>
+                    <tr>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name1
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name2
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name3
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name4
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name5
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name6
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name7
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name8
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name9
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name10
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name11
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name12
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name13
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name14
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name15
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name16
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name17
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name18
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name19
+                        </th>
+                        <th>
+                            <i class="write icon"></i>
+                            Column Name20
+                        </th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="ui inline dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">string</div>
+                                <div class="menu">
+                                    <div class="item">string</div>
+                                    <div class="item">int</div>
+                                    <div class="item">float</div>
+                                    <div class="item">binary</div>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+
+                </tbody>
+            </table>    
+        </div>    
+        <div class="actions">
+            <div class="ui deny button">
+                Cancel
+            </div>
+            <div class="ui right labeled icon button">
+                Create a new Dataset
+            </div>
+        </div>
+    </div>
+
+<!-- Modal Schema After Pasing -->
+    <div class="ui fullscreen modal" id="schemaAfter-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            <i class="write icon"></i>
+            Dataset Name
+            <div class="ui form">
+                <div class="two wide field">
+                    <input type="text" placeholder="Search Column">
+                </div>
+            </div>
+            <div class="ui icon buttons">
+                <button class="ui button tableView"><i class="table icon"></i></button>
+                <button class="ui button listView"><i class="list icon"></i></button>
+            </div>
+        </div>
+            <div class="scrolling content">
+                <div class="ui active tab" data-tab="schemaAfter_table">
+                    <table class="ui single line compact striped table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name1
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name2
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name3
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name4
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name5
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name6
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name7
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name8
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name9
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name10
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name11
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name12
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name13
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name14
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name15
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name16
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name17
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name18
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name19
+                                </th>
+                                <th>
+                                    <i class="write icon"></i>
+                                    Column Name20
+                                </th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Statistics<br> 
+                                        Min<br>
+                                        Max<br>
+                                        Mean<br>
+                                        Median<br>
+                                        StdDev<br>
+                                        Mode<br>
+                                        IQR<br>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="content">
+                                        Distribution<br><br>
+                                        <img src="distribution.png"> 
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>    
+                <div class="ui tab" data-tab="schemaAfter_list">
+                    <table class="ui single line celled striped table">
+                        <thead>
+                            <tr>
+                                <th>Column Name / Type</th>
+                                <th>Distribution</th>
+                                <th>Statistics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                            <tr class="center aligned">
+                                <td class="four wide">
+                                    <h3><i class="write icon"></i>Column Name</h3>
+                                    <div class="ui inline dropdown">
+                                        <i class="dropdown icon"></i>
+                                        <div class="text">string</div>
+                                        <div class="menu">
+                                            <div class="item">string</div>
+                                            <div class="item">int</div>
+                                            <div class="item">float</div>
+                                            <div class="item">binary</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="eight wide">
+                                    <img src="distribution.png">
+                                </td>
+                                <td class="four wide left aligned">
+                                    Min<br>
+                                    Max<br>
+                                    Mean<br>
+                                    Median<br>
+                                    StdDev<br>
+                                    Mode<br>
+                                    IQR<br>
+                                </td>
+                            </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>    
+
+        <div class="actions">
+            <div class="ui deny button">
+                Cancel
+            </div>
+            <div class="ui right labeled icon button">
+                Save Changes
+            </div>
+        </div>
+    </div>
+
 
 <script type="text/javascript">
 
@@ -1003,6 +3464,33 @@ $('.ui.button.rdbms')
     ;
     $.tab('change tab', 'rdbms_tables');
   });
+$('.ui.button.tableView')
+    .on('click', function() {
+    ;
+    $.tab('change tab', 'schemaAfter_table');
+  });
+$('.ui.button.listView')
+    .on('click', function() {
+    ;
+    $.tab('change tab', 'schemaAfter_list');
+  });
+//Modal
+    $(document).ready(function(){
+        $('#schemaCommon').click(function(){
+            $('#schemaCommon-modal').modal('show');
+        });
+    });
+
+    $(document).ready(function(){
+        $('#schemaAfter').click(function(){
+            $('#schemaAfter-modal').modal('show');
+        });
+    });
+
+$('.ui.accordion')
+  .accordion()
+;
+
 
 </script>
 

@@ -237,7 +237,7 @@
 
 /* Compact */
 @compactVerticalPadding: 0.5em;
-@compactHorizontalPadding: 0.7em;
+@compactHorizontalPadding: @cellHorizontalPadding;
 @veryCompactVerticalPadding: 0.4em;
 @veryCompactHorizontalPadding: 0.6em;
 

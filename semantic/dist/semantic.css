@@ -25415,12 +25415,12 @@ Floated Menu / Item
 ---------------*/
 
 .ui.compact.table th {
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .ui.compact.table td {
-  padding: 0.5em 0.7em;
+  padding: 0.5em 24px;
 }
 
 /* Very */
@@ -32028,7 +32028,7 @@ select.ui.dropdown {
 /* Scrolling Content */
 
 .ui.modal .scrolling.content {
-  max-height: calc(70vh);
+  max-height: 700px;
   overflow: auto;
 }
 

@@ -395,7 +395,7 @@
 
 /* Scrolling Content */
 .ui.modal .scrolling.content {
-  max-height: calc(70vh);
+  max-height: 700px;
   overflow: auto;
 }
 
