@@ -147,6 +147,61 @@
                             <div id="context2">
                                 <div class="ui tab" data-tab="local">
                                     <form class="ui form">
+
+                                        <div class="ui message">
+                                            <i class="close icon"></i>
+                                            <div class="ui accordion">
+                                                <div class="title">
+                                                    <i class="icon dropdown"></i>
+                                                    <i class="warning circle icon"></i> Incomplete Tasks (5)
+                                                </div>
+                                                <div class="content">
+                                                    <div class="ui list">
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_01
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_02
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_03
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_04
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_05
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+
                                         <div class="field">
                                             <label>Browse File</label>
                                             <div class="ui action input">
@@ -169,11 +224,68 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <p><i class="warning circle icon"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         <div class="ui button local">Connect (Download to our server)</div>
+
                                     </form>
                                 </div>
                                 <div class="ui tab" data-tab="url">
                                     <form class="ui form">
+
+                                        <div class="ui message">
+                                            <i class="close icon"></i>
+                                            <div class="ui accordion">
+                                                <div class="title">
+                                                    <i class="icon dropdown"></i>
+                                                    <i class="warning circle icon"></i> Incomplete Tasks (5)
+                                                </div>
+                                                <div class="content">
+                                                    <div class="ui list">
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_01
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_02
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_03
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_04
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_05
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+
                                         <div class="field">
                                             <label>File URL</label>
                                             <div class="ui input">
@@ -3491,6 +3603,14 @@ $('.ui.accordion')
   .accordion()
 ;
 
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
 
 </script>
 
