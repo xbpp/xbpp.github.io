@@ -102,7 +102,6 @@
             </a>
         </div>
 	</div>
-
     <!-- Titled Section -->
     <div class="ui padded grid">
         <div class="column daria_padding_bottom_0">
@@ -111,364 +110,620 @@
                 <i class="right chevron icon divider"></i>
                 <a class="section" href="index.html">171029_Credit_risk_prediction_ver_0.1132</a>
                 <i class="right chevron icon divider"></i>
-                <div class="active section">Datasets</div>
+                <div class="section">Datasets</div>
+                <i class="right chevron icon divider"></i>
+                <div class="active section">Create a new datasets</div>
             </div>
         </div>
     </div>
 
     <div class="ui padded grid">
-        <div class="eight wide column daria_padding_top_0 daria_padding_bottom_0">
-            <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
+        <div class="two column row daria_padding_top_0 daria_padding_bottom_0">
+            <div class="left floated column">
+                <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
+            </div>
+            <div class="right floated column">
+                <button class="ui button right floated ov_button_left" onclick="window.location.href = 'dataset.html';">
+                    <i class="arrow left icon"></i>
+                    Return to dataset list
+                </button>
+            </div>
         </div>
     </div>
 
     <div class="ui divider"></div>
 
-    <!-- Table Existing Datasets -->
+    <!-- Card Project Info -->
     <div class="ui padded grid">
-        <h3>Datasets</h3>
+        <h3>Create a new dataset</h3>
     </div>
     <div class="ui padded grid">
-        <div class="column daria_padding_bottom_0  daria_padding_top_12">
-            <button class="ui button ov_button" onclick="window.location.href = 'dataset_new.html';">
-                <i class="add circle icon"></i>
-                Create a new dataset
-            </button>
-            <button id="delete" class="ui button ov_button_left right floated">
-                <i class="trash icon"></i>
-                Delete
-            </button>
-            <button id="copy" class="ui button ov_button_left right floated">
-                <i class="copy icon"></i>
-                Make a copy
-            </button>
-            <button id="schemaAfter" class="ui button ov_button right floated">
-                <i class="list icon"></i>
-                Schema (After Parsing)
-            </button>
-        </div>
-    </div>
-    <div class="ui padded grid">
-        <div class="column daria_padding_top_12">
-            <table class="ui striped table">
-                <thead>
-                    <tr>
-                        <th>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </th> 
-                        <th>Dataset Name</th>
-                        <th>Created by</th>
-                        <th>Last Edited</th>
-                        <th>Number of Features</th>
-                        <th>Number of Records</th>
-                        <th>Size</th>
-                    </tr>
-                </thead>
+        <div class="column">        
+            <div class="ui three steps">
+                <div class="active step">
+                    <div class="content">
+                        <div class="title left aligned">1. Select Dataset Location</div>
+                    </div>                    
+                </div>
+                <div class="step">
+                    <div class="ui tab content" data-tab="local">
+                        <div class="title">2. Import file from local</div>
+                    </div>
+                    <div class="ui tab content" data-tab="url">
+                        <div class="title">2. Import file from URL via HTTP</div>
+                    </div>
+                    <div class="ui tab content" data-tab="rdbms">
+                        <div class="title">2. Connect file from RDBMS</div>
+                    </div>
+                    <div class="ui tab content" data-tab="cloud">
+                        <div class="title">2. Connect file from cloud</div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="ui tab content" data-tab="local">
+                    </div>
+                    <div class="ui tab content" data-tab="local_parsing">
+                        <div class="title">3. Parsing Options</div>
+                    </div>
+                    <div class="ui tab content" data-tab="url">
+                    </div>
+                    <div class="ui tab content" data-tab="url_parsing">
+                        <div class="title">3. Parsing Options</div>
+                    </div>
+                    <div class="ui tab content" data-tab="rdbms">
+                    </div>
+                    <div class="ui tab content" data-tab="rdbms_tables">
+                        <div class="title">3. Tables</div>
+                    </div>
+                    <div class="ui tab content" data-tab="cloud">
+                    </div>
+                    <div class="ui tab content" data-tab="cloud_">
+                        <div class="title">3. Tables</div>
+                    </div>
+                </div>
+            </div>
+            <table class="ui fixed single line celled table">
                 <tbody>
-                    <tr>
+                    <tr class="top aligned">
                         <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
+                            <div id="context2">
+                                <div class="ui secondary vertical fluid menu">
+                                    <a class="item" data-tab="local">
+                                        <b>
+                                            <i class="folder open icon"></i>
+                                            Local File
+                                        </b>
+                                    </a>
+                                    <a class="item" data-tab="url">
+                                        <b>
+                                            <i class="download icon"></i>
+                                            Web URL via HTTP
+                                        </b>
+                                    </a>
+                                    <a class="item" data-tab="rdbms">
+                                        <b>
+                                            <i class="database icon"></i>
+                                            RDBMS
+                                        </b>
+                                    </a>
                                 </div>
                             </div>
                         </td>
                         <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
+                            <div id="context2">
+                                <div class="ui tab" data-tab="local">
+                                    <form class="ui form">
+
+                                        <div class="ui message">
+                                            <i class="close icon"></i>
+                                            <div class="ui accordion">
+                                                <div class="title">
+                                                    <i class="icon dropdown"></i>
+                                                    <i class="warning circle icon"></i> Incomplete Tasks (5)
+                                                </div>
+                                                <div class="content">
+                                                    <div class="ui list">
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_01
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_02
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_03
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_04
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_05
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+
+                                        <div class="field">
+                                            <label>Browse File</label>
+                                            <div class="ui action input">
+                                                <input placeholder="Upload a new dataset from a local file">
+                                                <button class="ui button">Browse</button>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>File Types</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="">
+                                                <div class="default text">Select file type</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="csv">.csv</div>
+                                                    <div class="item" data-value="tsv">.tsv</div>
+                                                    <div class="item" data-value="txt">.txt</div>
+                                                    <div class="item" data-value="xls">.xls</div>
+                                                    <div class="item" data-value="xlsx">.xlsx</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p><i class="warning circle icon"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <div class="ui button local">Connect (Download to our server)</div>
+
+                                    </form>
+                                </div>
+                                <div class="ui tab" data-tab="url">
+                                    <form class="ui form">
+
+                                        <div class="ui message">
+                                            <i class="close icon"></i>
+                                            <div class="ui accordion">
+                                                <div class="title">
+                                                    <i class="icon dropdown"></i>
+                                                    <i class="warning circle icon"></i> Incomplete Tasks (5)
+                                                </div>
+                                                <div class="content">
+                                                    <div class="ui list">
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_01
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_02
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_03
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_04
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="content right floated">
+                                                                <i class="trash icon"></i>
+                                                            </div>
+                                                            <div class="content">
+                                                                file_name_05
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+
+                                        <div class="field">
+                                            <label>File URL</label>
+                                            <div class="ui input">
+                                                <input placeholder="Insert your file url" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>File Types</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="">
+                                                <div class="default text">Select file type</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="4">.csv</div>
+                                                    <div class="item" data-value="3">.tsv</div>
+                                                    <div class="item" data-value="2">.txt</div>
+                                                    <div class="item" data-value="1">.xls</div>
+                                                    <div class="item" data-value="0">.xlsx</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui button url">Connect (Download to our server)</div>
+                                    </form>
+                                </div>
+                                <div class="ui tab" data-tab="rdbms">
+                                    <form class="ui form">
+                                        <div class="field">
+                                            <label>Existing Connections</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="">
+                                                <div class="default text">Select Existing Connection</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / MS-SQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                    <div class="item">
+                                                        Name / PostgreSQL
+                                                        <i class="remove circle icon right floated"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="two fields">
+                                            <div class="field">
+                                                <label>Connection Name</label>
+                                                <div class="ui input">
+                                                    <input placeholder="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Database Type</label>
+                                                <div class="ui dropdown selection">
+                                                    <input type="">
+                                                    <div class="default text">Select database type</div>
+                                                    <i class="dropdown icon"></i>
+                                                    <div class="menu">
+                                                        <div class="item" data-value="2">MS-SQL</div>
+                                                        <div class="item" data-value="1">PostgreSQL</div>
+                                                        <div class="item" data-value="0">mySQL</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="two fields">
+                                            <div class="field">
+                                                <label>Database Host</label>
+                                                <div class="ui input">
+                                                    <input placeholder="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Database Port</label>
+                                                <div class="ui input">
+                                                    <input placeholder="" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Database Name</label>
+                                            <div class="ui input">
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="two fields">
+                                            <div class="field">
+                                                <label>Database Username</label>
+                                                <div class="ui input">
+                                                    <input placeholder="" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Database Password</label>
+                                                <div class="ui input">
+                                                    <input placeholder="" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Conn. Info Save Flag</label>
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" tabindex="0" class="hidden">
+                                                <label>Conn. Info Save Flag</label>
+                                            </div>
+                                        </div>
+                                        <div class="ui button rdbms">Connect (Fetch tables from DB)</div>
+                                    </form>
                                 </div>
                             </div>
                         </td>
                         <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
+                            <div id="context2">
+                                <div class="ui tab" data-tab="local">
+                                </div>
+                                <div class="ui tab" data-tab="local_parsing">
+                                    <form class="ui form">
+                                        <div class="field">
+                                            <label>Header Row Flag</label>
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" tabindex="0" class="hidden">
+                                                <label>Has Header Row Flag</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Encoding</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">UTF-8</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">UTF-8</div>
+                                                    <div class="item" data-value="0">EUC-KR</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Separator</label>
+                                            <input placeholder=", tab or customizable" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Quoting Characters</label>
+                                            <input placeholder="&#34;" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Escape Character</label>
+                                            <input placeholder="/" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Select a sheet</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">Sheet 1</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Sheet 1</div>
+                                                    <div class="item" data-value="0">Sheet 2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form><br><br>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
+                                </div>
+
+                                <div class="ui tab" data-tab="url">
+                                </div>
+                                <div class="ui tab" data-tab="url_parsing">
+                                    <form class="ui form">
+                                        <div class="field">
+                                            <label>Header Row Flag</label>
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" tabindex="0" class="hidden">
+                                                <label>Has Header Row Flag</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Encoding</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">UTF-8</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">UTF-8</div>
+                                                    <div class="item" data-value="0">EUC-KR</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label>Separator</label>
+                                            <input placeholder=", tab or customizable" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Quoting Characters</label>
+                                            <input placeholder="Input Field with default value:" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Escape Character</label>
+                                            <input placeholder="Input Field with default value: /" type="text">
+                                        </div>
+                                        <div class="field">
+                                            <label>Select a sheet</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="hidden">
+                                                <div class="default text">Sheet 1</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item" data-value="1">Sheet 1</div>
+                                                    <div class="item" data-value="0">Sheet 2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form><br><br>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
+                                </div>
+
+                                <div class="ui tab" data-tab="rdbms"> 
+                                </div>
+                                <div class="ui tab" data-tab="rdbms_tables">
+                                    <form class="ui form">
+                                        <div class="field">
+                                            <label>Table Name</label>
+                                            <div class="ui dropdown selection">
+                                                <input type="">
+                                                <div class="default text">Select...</div>
+                                                <i class="dropdown icon"></i>
+                                                <div class="menu">
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                    <div class="item">
+                                                        Name 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form><br>
+                                    <button class="fluid ui button" id="schemaCommon">Schema (Common)</button>
                                 </div>
                             </div>
                         </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <div class="ui padded grid centered">
-        <div class="ui pagination menu">
-            <a class="active item">
-                1
-            </a>
-            <div class="disabled item">
-                ...
-            </div>
-            <a class="item">
-                10
-            </a>
-            <a class="item">
-                11
-            </a>
-            <a class="item">
-                12
-            </a>
-        </div>
-    </div>
-    <br><br><br>
-
     
-
     <!-- Menu Bottom Fixed -->
     <div class="ui bottom fixed menu">
         <a class="item">Experiment Progress 1</a>

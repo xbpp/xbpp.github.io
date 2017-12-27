@@ -27,9 +27,66 @@
 	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
 		<a class="item" href="index.html">Daria Prototype</a>
-        <a class="item" href="index.html">Projects</a>
-        <a class="item" href="dataset.html">Datasets</a>
-        <a class="active item" href="experiments.html">Experiments</a>
+        <a href="index.html">
+            <div class="ui simple dropdown item">
+                Projects
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="index.html">
+                        <div class="item">
+                            <i class="history icon"></i>
+                            Recent projects
+                        </div>
+                    </a>
+                    <a href="index_table.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            All projects
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
+        <a href="dataset.html">
+            <div class="ui simple dropdown item">
+                Datasets
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="dataset.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            Dataset List
+                        </div>
+                    </a>
+                    <a href="dataset_new.html">
+                        <div class="item">
+                            <i class="add circle icon"></i>
+                            Create a new dataset
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
+        <a href="experiments.html">
+            <div class="ui simple dropdown item">
+                Experiments
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="experiments.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            Experiments List
+                        </div>
+                    </a>
+                    <a href="experiments_new.html">
+                        <div class="item">
+                            <i class="add circle icon"></i>
+                            Create a new experiment
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
         <a class="item" href="#">Models</a>
         <a class="item" href="#">Deployment</a>
 
@@ -44,7 +101,7 @@
                 <i class="user circle icon"></i>
             </a>
         </div>
-    </div>
+	</div>
 
     <!-- Titled Section -->
     <div class="ui padded grid">
@@ -64,138 +121,309 @@
             <div class="left floated column">
                 <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
             </div>
-            <div class="right floated column">
-                <button class="ui button right floated ov_button_left" id="experimentList">
-                    <i class="list layout icon"></i>
-                    Experiment list
-                </button>
-                <button class="ui button right floated ov_button_left" onclick="window.location.href = 'experiments.html';">
-                    <i class="add circle icon"></i>
-                    New experiment
-                </button>
-            </div>
         </div>
     </div>
 
     <div class="ui equal width horizontally celled grid"> 
-        <div class="three column" style="height: 83vh; overflow: scroll;">
+        <div class="eight column" style="height: 85vh; overflow: scroll;">
             <div class="row">
-                <h4>Operations</h4>
-                <div class="ui accordion">
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        Dataset list
+                <h4>Experiments</h4>
+                <div class="ui grid">
+                    <div class="column">
+                        <button class="ui button ov_button" onclick="window.location.href = 'experiments.html';">
+                            <i class="add circle icon"></i>
+                            Create a new experiment
+                        </button>
+                        <button id="delete" class="ui button ov_button_left right floated">
+                            <i class="trash icon"></i>
+                            Delete
+                        </button>
+                        <button id="copy" class="ui button ov_button_left right floated">
+                            <i class="copy icon"></i>
+                            Make a copy
+                        </button>
                     </div>
-                    <div class="content">
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <i class="database icon"></i>
-                            dataset_name_0000
-                        </div>
+                </div><br>
+                <table class="ui striped table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </th>
+                            <th>Name</th>
+                            <th>Last edit</th>
+                            <th>Edited by</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox table_checkbox_padding_top">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>	
+                            </td>
+                            <td>
+                                <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
+                            </td>
+                            <td>
+                                6/28/2017 5:58:06 PM
+                            </td>
+                            <td>
+                                <a id="participants" class="ui image label">
+                                    Anthony 
+                                    <div class="detail">
+                                        o
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br>
+            <div class="ui padded grid centered">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                        1
+                    </a>
+                    <div class="disabled item">
+                        ...
                     </div>
-                    <div class="title">
-                        <i class="dropdown icon"></i>
-                        Operation list
-                    </div>
-                    <div class="content">
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Join
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Union
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Extract
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Oversampling
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Undersampling
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                imputation
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Outlier Detection
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Rescaling
-                            </b>
-                        </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Transform
-                            </b>
-                        </div>
-                    </div>
+                    <a class="item">
+                        10
+                    </a>
+                    <a class="item">
+                        11
+                    </a>
+                    <a class="item">
+                        12
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="ten wide column" style="height: 83vh; width: 1500px; overflow: scroll;">
-            <h4>DAG</h4>
-        </div>
-        <div class="three column" style="height: 83vh; overflow: scroll;">
-            <h4>Properties</h4>
+        <div class="eight wide column" style="height: 85vh; width: 1500px; overflow: scroll;">
+            <h4>
+                <i class="lab icon"></i>
+                171029_experiment_sample_0000
+            </h4>
+            <div class="ui grid">
+                <div class="column">
+                    <button class="ui button ov_button">
+                        <i class="folder open icon"></i>
+                        Open Experiment
+                    </button>
+                    <button class="circular ui icon button ov_button right floated">
+                        <i class="minus icon"></i>
+                    </button>
+                    <button class="circular ui icon button ov_button right floated">
+                        <i class="plus icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ui grid centered">
+                <img src="dag_sample.svg" style="height: 750px;">
+            </div>
         </div>
     </div>
 
@@ -209,8 +437,7 @@
     <a class="item">Experiment Progress 6</a>
     <a class="item">Experiment Progress 7</a>
     <a class="item">Experiment Progress 8</a>
-    <a class="item">Show more...</a>
-    <a class="active item right floated"><i class="arrow circle right icon"></i>Proceed to Models</a>
+    <a class="item right floated">Show more...</a>
 </div>
 
 <!-- Experiment List -->
@@ -234,464 +461,7 @@
 				</button>
 			</div>
 		</div><br>
-        <table class="ui striped table">
-            <thead>
-                <tr>
-                    <th>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>
-                    </th>
-                    <th>Name</th>
-                    <th>Last edit</th>
-                    <th>Edited by</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="ui checkbox table_checkbox_padding_top">
-                            <input type="checkbox">
-                            <label></label>
-                        </div>	
-                    </td>
-                    <td>
-                        <a href=""><b><i class="lab icon"></i> 171029_experiment_sample_0000</b></a>
-                    </td>
-                    <td>
-                        6/28/2017 5:58:06 PM
-                    </td>
-                    <td>
-                        <a id="participants" class="ui image label">
-                            Anthony 
-                            <div class="detail">
-                                o
-                            </div>
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        
     </div>
     <div class="actions">
         <div class="ui cancel button">Cancel</div>

@@ -27,9 +27,66 @@
 	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
 		<a class="item" href="index.html">Daria Prototype</a>
-        <a class="item" href="index.html">Projects</a>
-        <a class="item" href="dataset.html">Datasets</a>
-        <a class="active item" href="experiments.html">Experiments</a>
+        <a href="index.html">
+            <div class="ui simple dropdown item">
+                Projects
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="index.html">
+                        <div class="item">
+                            <i class="history icon"></i>
+                            Recent projects
+                        </div>
+                    </a>
+                    <a href="index_table.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            All projects
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
+        <a href="dataset.html">
+            <div class="ui simple dropdown item">
+                Datasets
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="dataset.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            Dataset List
+                        </div>
+                    </a>
+                    <a href="dataset_new.html">
+                        <div class="item">
+                            <i class="add circle icon"></i>
+                            Create a new dataset
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
+        <a href="experiments.html">
+            <div class="ui simple dropdown item">
+                Experiments
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a href="experiments.html">
+                        <div class="item">
+                            <i class="list icon"></i>
+                            Experiments List
+                        </div>
+                    </a>
+                    <a href="experiments_new.html">
+                        <div class="item">
+                            <i class="add circle icon"></i>
+                            Create a new experiment
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </a>
         <a class="item" href="#">Models</a>
         <a class="item" href="#">Deployment</a>
 
@@ -44,7 +101,7 @@
                 <i class="user circle icon"></i>
             </a>
         </div>
-    </div>
+	</div>
 
     <!-- Titled Section -->
     <div class="ui padded grid">
@@ -245,7 +302,7 @@
     </div>
     <div class="actions">
         <div class="ui cancel button">Stay on this page</div>
-        <div class="ui approve button" onclick="window.location.href = 'experiments_2.html';">Leave this page</div>
+        <div class="ui approve button" onclick="window.location.href = 'experiments.html';">Leave this page</div>
     </div>
 </div>
 
