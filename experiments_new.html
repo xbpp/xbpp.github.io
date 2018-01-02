@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
     
     <!-- less로 잡아내기 어려운 부분 Style -->
@@ -21,6 +22,7 @@
 		padding-top: 3px !important;
 	}
 	</style>
+    
 </head>
 
 <body>
@@ -65,16 +67,14 @@
             </div>
         </div>
         
-        <div class="ui simple dropdown item" onclick="location.href='experiments.html'">
+        <div class="ui simple dropdown item" id="alert">
             Experiments
             <i class="dropdown icon"></i>
             <div class="menu">
-                <a href="experiments.html">
-                    <div class="item">
-                        <i class="list icon"></i>
-                        Experiments List
-                    </div>
-                </a>
+                <div class="item" id="alert">
+                    <i class="list icon"></i>
+                    Experiments List
+                </div>
                 <a href="experiments_new.html">
                     <div class="item">
                         <i class="add circle icon"></i>
@@ -108,7 +108,7 @@
                 <i class="right chevron icon divider"></i>
                 <a class="section" href="index.html">171029_Credit_risk_prediction_ver_0.1132</a>
                 <i class="right chevron icon divider"></i>
-                <a class="section" href="experiments.html">Experiments</a>
+                <a class="section" id="alert">Experiments</a>
                 <i class="right chevron icon divider"></i>
                 <div class="active section">171029_experiment_sample_0000</div>
             </div>
@@ -121,6 +121,10 @@
                 <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
             </div>
             <div class="right floated column">
+                <button class="ui button right floated ov_button_left" id="trainModel">
+                    <i class="play icon"></i>
+                    Train Model
+                </button>
                 <button class="ui button right floated ov_button_left">
                     <i class="save icon"></i>
                     Save Changes
@@ -134,146 +138,145 @@
     </div>
 
     <div class="ui equal width horizontally celled grid"> 
-        <div class="three column" style="height: 83vh; overflow: scroll;">
+        <div class="three column" style="height: 84vh; overflow: scroll;">
             <div class="row">
-                <h4>Operations</h4>
+                <h3>Operators</h3>
+            </div>
+            <div class="row">
                 <div class="ui accordion">
                     <div class="title">
                         <i class="dropdown icon"></i>
-                        Dataset list
+                        <i class="database icon"></i>
+                        Dataset
                     </div>
-                    <div class="content">
-                        <div class="ui secondary segment" style="cursor: move;">
+                    <div class="content menu">
+                        <div class="ui segment item" data-tab="dataset" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
+                        <div class="ui segment" style="cursor: move;">
                             <i class="database icon"></i>
                             dataset_name_0000
                         </div>
                     </div>
                     <div class="title">
                         <i class="dropdown icon"></i>
-                        Operation list
+                        <i class="fork icon"></i>
+                        Operators
                     </div>
-                    <div class="content">
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Join
-                            </b>
+                    <div class="content menu">
+                        <div class="ui segment item" data-tab="operator" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Join
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Union
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Union
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Extract
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Extract
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Oversampling
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Oversampling
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Undersampling
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Undersampling
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                imputation
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            imputation
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Outlier Detection
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Outlier Detection
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Rescaling
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Rescaling
                         </div>
-                        <div class="ui secondary segment" style="cursor: move;">
-                            <b>
-                                <i class="fork icon"></i>
-                                Transform
-                            </b>
+                        <div class="ui segment" style="cursor: move;">
+                            <i class="fork icon"></i>
+                            Transform
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ten wide column" style="height: 83vh; width: 1500px; overflow: scroll;">
-            <h4>
-                <i class="lab icon"></i>
-                171029_experiment_sample_0000
-            </h4>
-            <div class="ui grid">
-                <div class="column">
-                    <button class="circular ui icon button ov_button_left right floated">
-                        <i class="icon minus"></i>
-                    </button>
-                    <button class="circular ui icon button ov_button_left right floated">
-                        <i class="icon plus"></i>
-                    </button>
-                    <button class="circular ui icon button ov_button_left right floated">
-                        <i class="maximize icon"></i>
-                    </button>
-                    <button class="circular ui icon button ov_button_left right floated">
-                        <i class="move icon"></i>
-                    </button>
-                </div>
+        <div class="ten wide column" style="height: 84vh; width: 1500px; overflow: scroll;">
+            <div class="column">
+                <h3>
+                    171029_experiment_sample_0000
+                </h3>
+            </div>
+            <div class="column">
+                <button class="circular ui icon button ov_button_left right floated">
+                    <i class="icon minus"></i>
+                </button>
+                <button class="circular ui icon button ov_button_left right floated">
+                    <i class="icon plus"></i>
+                </button>
+                <button class="circular ui icon button ov_button_left right floated">
+                    <i class="maximize icon"></i>
+                </button>
+                <button class="circular ui icon button ov_button_left right floated">
+                    <i class="move icon"></i>
+                </button>
             </div>
             <div class="ui grid centered">
-                <img src="dag_sample.svg" style="height: 750px;">
+                <div id="draggable" class="ui-widget-content">
+                    <div class="ui segment item" data-tab="dataset" style="width: 300px; cursor: move;">
+                        <i class="database icon"></i>
+                        dataset_name_0000
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="three column" style="height: 83vh; overflow: scroll;">
-            <h4>Properties</h4>
+        <div class="three column" style="height: 84vh; overflow: scroll;">
+            <h3>Properties</h3>
+            <div class="ui tab" data-tab="dataset">
+                dataset name<br>
+                column statistics<br>
+                column distribution
+            </div>
+            <div class="ui tab" data-tab="operator">
+                parameters<br>
+                support
+            </div>
         </div>
     </div>
 
@@ -301,6 +304,49 @@
         <div class="ui approve button" onclick="window.location.href = 'experiments.html';">Leave this page</div>
     </div>
 </div>
+    
+<!-- Train Model -->
+<div class="ui modal" id="trainModel-modal">
+    <div class="header">Train Model</div>
+    <div class="scrolling content">
+        <form class="ui form">
+            <div class="field">
+                <label>Model Name</label>
+                <input type="text" placeholder="Sample_Model_0000">
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Auto Preprocessing</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Model Selection</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Training Time Limit</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Custom Test Set</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="actions">
+        <div class="ui cancel button">Cancel</div>
+        <div class="ui approve button">Train Model</div>
+    </div>
+</div>
+    
+
 
 <script type="text/javascript">
 
@@ -335,6 +381,7 @@
         ;
         $.tab('change tab', 'schemaAfter_list');
     });
+    
 //Modal
 $(document).ready(function(){
     $('#experimentList').click(function(){
@@ -343,23 +390,31 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('#schemaAfter').click(function(){
-        $('#schemaAfter-modal').modal('show');
+    $('#trainModel').click(function(){
+        $('#trainModel-modal').modal('show');
     });
 });
 
+$(document).ready(function(){
+    $('#alert').click(function(){
+        $('#experimentList-modal').modal('show');
+    });
+});    
+    
 $('.ui.accordion')
 .accordion()
 ;
     
-    //Dropdown
-	   
-	    $('.ui.dropdown')
-	    .dropdown({
-	    	allowAdditions: true
-	    });
+//Dropdown
+$('.ui.dropdown')
+.dropdown({
+    allowAdditions: true
+});
 
-
+//Draggable
+$( function() {
+$( "#draggable" ).draggable();
+} );
 </script>
 
 
