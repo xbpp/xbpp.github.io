@@ -34,14 +34,6 @@ body {
 	padding-top: 3px;
 }
 
-.ui.grid > .row.daria_darggable {
-    border-top: 1px solid #d4d5d6;
-    border-bottom: 1px solid #d4d5d6; 
-    border-left: 10px solid #d4d5d6; 
-    border-right: 1px solid #d4d5d6; 
-    cursor: move;
-}
-
 .grabbable {
     cursor: move; /* fallback: no `url()` support or images disabled */
     cursor: url(images/grab.cur); /* fallback: Internet Explorer */
@@ -56,4 +48,5 @@ body {
     cursor: -webkit-grabbing;
     cursor:    -moz-grabbing;
     cursor:         grabbing;
+    background-color: lightgray;
 }
