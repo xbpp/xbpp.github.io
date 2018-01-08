@@ -25,7 +25,7 @@
     
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
 		<a class="item" href="index.html">Daria Prototype</a>
@@ -263,18 +263,41 @@
                     </button>
                 </div>
             </div>
-            <div class="ui grid centered">
+            <div class="ui grid">
                 <div id="draggable" class="ui-widget-content">
-                    <div class="ui left aligned segment item grabbable" style="width: 300px;">
-                        <i class="database icon"></i>
-                        dataset_name_0000
+                    <div class="container">
+                        <div class="content">
+                            <div class="ui left aligned segment item grabbable" style="width: 300px;">
+                                <i class="database icon"></i>
+                                dataset_name_0000
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
+                
+                
+                <ul class="contextmenu">
+                    <div class="ui vertical mini menu">
+                        <a class="link item">
+                            <i class="trash icon"></i>
+                            Delete</a>
+                        <a class="link item">
+                            <i class="copy icon"></i>
+                            Copy
+                        </a>
+                        <a class="link item">
+                            <i class="paste icon"></i>
+                            Paste
+                        </a>
+                    </div>
+                </ul>
+                
             </div>
         </div>
         <div class="three column" style="height: 84vh; overflow: scroll;">
-            <h3>Properties</h3>
             <div class="ui tab" data-tab="dataset">
+                <h3>Column List</h3>
                 <div class="ui fluid card"> 
                     <div class="content">
                         <div class="ui grid">
@@ -549,6 +572,7 @@
                 </div>
             </div>
             <div class="ui tab" data-tab="operator">
+                <h3>Parameters</h3>
                 <div class="ui form">
                     <div class="field">
                         <label>Join Types</label>
@@ -796,10 +820,28 @@ $('.ui.dropdown')
     allowAdditions: true
 });
 
-//Draggable
-$( function() {
-$( "#draggable" ).draggable();
-} );
+    //Draggable
+    $(function() {
+    $("#draggable").draggable();
+        $("#draggable").offset({left: 800, top: 300});
+    } );
+ 
+    //Contextmenu
+    $('.contextmenu').hide();
+    $('.content').contextmenu(function(e) {
+        $('.contextmenu').show();
+        $('.contextmenu').offset({left: e.pageX, top: e.pageY});
+    });
+    $('body').click(function(){
+        $('.contextmenu').hide();
+    });
+    $('.content').click(function(){
+        $('.contextmenu').hide();
+    });
+    
+    //Disable Selection
+    $('.column').disableSelection();
+
 
 
 </script>
