@@ -29,6 +29,10 @@ body {
 	margin-right: 0;
 }
 
+.ui.grid > .column.daria_margin_top_0 {
+	margin-top: 0;
+}
+
 
 .ui.table > .ui.checkbox.daria_checkbox_padding_top_3 {
 	padding-top: 3px;
