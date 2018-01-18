@@ -27,9 +27,63 @@
 	<!-- Menu Top Fixed -->
 	<div class="ui top fixed menu">
 		<a class="item" href="index.html">Daria Prototype</a>
-        <a class="active item" href="#">Projects</a>
-        <a class="item" href="#">Datasets</a>
-        <a class="item" href="#">Experiments</a>
+        <div class="ui simple dropdown item" onclick="location.href='index.html'">
+            Projects
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a href="index.html">
+                    <div class="item">
+                        <i class="history icon"></i>
+                        Recent projects
+                    </div>
+                </a>
+                <a href="index_table.html">
+                    <div class="item">
+                        <i class="list icon"></i>
+                        All projects
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="ui simple dropdown item" onclick="location.href='dataset.html'">
+            Datasets
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a href="dataset.html">
+                    <div class="item">
+                        <i class="list icon"></i>
+                        Dataset List
+                    </div>
+                </a>
+                <a href="dataset_new.html">
+                    <div class="item">
+                        <i class="add circle icon"></i>
+                        Create a new dataset
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="ui simple dropdown item" onclick="location.href='experiments.html'">
+            Experiments
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a href="experiments.html">
+                    <div class="item">
+                        <i class="list icon"></i>
+                        Experiments List
+                    </div>
+                </a>
+                <a href="experiments_new.html">
+                    <div class="item">
+                        <i class="add circle icon"></i>
+                        Create a new experiment
+                    </div>
+                </a>
+            </div>
+        </div>
+        
         <a class="item" href="#">Models</a>
         <a class="item" href="#">Deployment</a>
 
@@ -64,21 +118,13 @@
             <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
         </div>
         <div class="eight wide column daria_padding_top_0 daria_padding_bottom_0">
-            <button class="ui button basic ov_button_left  right floated">
+            <button class="ui button ov_button_left  right floated">
                 <i class="trash icon"></i>
                     Delete Project
             </button>
-            <button class="ui button basic ov_button_left  right floated">
-                <i class="handshake icon"></i>
-                    Delegate PO
-            </button>
-            <button class="ui button basic ov_button_left  right floated">
+            <button class="ui button ov_button_left  right floated">
                 <i class="copy icon"></i>
                     Make a copy
-            </button>
-            <button class="ui button basic ov_button right floated">
-                <i class="write icon"></i>
-                    Rename
             </button>
         </div>
     </div>
@@ -87,65 +133,126 @@
     <div class="ui divider"></div>
 
 	<!-- Card Project Info -->
-	<div class="ui padded grid">
-        <div class="four wide column daria_padding_top_0">
-            <h3>Project Information</h3>
-            <div class="ui fluid card">
-                <div class="content">
-                    <div class="header">Created at</div>
-                    <p>6/28/2017 5:58:06 PM</p>
+    <div class="ui padded divided grid">
+        <div class="three wide column" style="padding-top: 0;">
+            <h3>Configurations</h3>
+            <div class="ui list">
+                <div class="item">
+                    <a class="header">Project Information</a>
                 </div>
-                <div class="content">
-                    <div class="header">Owner</div>
-                    <a id="participants" class="ui image label">
-                        Anthony 
-                        <div class="detail">
-                            o
-                        </div>
-                    </a>
+                <div class="item">
+                    <a class="header">Resource Usage</a>
                 </div>
-                <div class="content">
-                    <div class="header">Contents</div>
-                    <a class="ui image label">
-                        Datasets
-                        <div class="detail">
-                            5
-                        </div>
-                    </a>
-                    <a class="ui image label">
-                        Experiments
-                        <div class="detail">
-                            25
-                        </div>
-                    </a>
-                    <a class="ui image label">
-                        Models 
-                        <div class="detail">
-                            2
-                        </div>
-                    </a>
+                <div class="item">
+                    <a class="header">Project Participants</a>
+                </div>
+                <div class="item">
+                    <a class="header">ProHistory</a>
                 </div>
             </div>
         </div>
-        <div class="twelve wide column daria_padding_top_0  daria_padding_left_0">
+        <div class="thirteen wide column" style="padding-top: 0;">
+            <h3>Project Information</h3>
+            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="eight wide column">
+                            <b>Project Name</b>
+                        </div>
+                        <div class="eight wide column">
+                            <button class="compact ui right floated mini button" style="margin: 0;"><i class="save icon"></i>Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="ui form">
+                        <div class="six widfield">
+                            <input type="text" name="first-name" placeholder="171029_Credit_risk_prediction_ver_0.1132">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="eight wide column">
+                            <b>Project Owner</b>
+                        </div>
+                        <div class="eight wide column">
+                            <button class="compact ui right floated mini button" style="margin: 0;"><i class="handshake icon"></i>Delegate PO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="two wide column">
+                            Name<br>
+                            Email<br>
+                            Created
+                        </div>
+                        <div class="fourteen wide column">
+                            Jinyoung Choi<br>
+                            freddie@xbrain.team<br>
+                            6/28/2017 5:58:06 PM
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <b>Dates and Renewal</b>
+                </div>
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="two wide column">
+                            Created<br>
+                            Modified<br>
+                            Last opened
+                        </div>
+                        <div class="fourteen wide column">
+                            6/28/2017 5:58:06 PM<br>
+                            6/28/2017 5:58:06 PM<br>
+                            6/28/2017 5:58:06 PM
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <b>Contents</b>
+                </div>
+                <div class="ui segment">
+                    <div class="ui horizontal list">
+                        <div class="item">
+                            <button class="circular mini ui button"  onclick="window.location.href = 'dataset.html';">
+                                <i class="database icon"></i>
+                                Datasets (10)
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="circular mini ui button"  onclick="window.location.href = 'experiments.html';">
+                                <i class="lab icon"></i>
+                                Experiments (10)
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="circular mini ui button"  onclick="window.location.href = '#.html';">
+                                <i class="cube icon"></i>
+                                models (10)
+                            </button>
+                        </div>
+                        <div class="item">
+                            <button class="circular mini ui button"  onclick="window.location.href = '#.html';">
+                                <i class="upload cloud icon"></i>
+                                Deployments (10)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+        
             <h3>Resource Usage</h3>
             <div class="ui fluid card">
                 <div class="content">
-                    <br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
-            </div>
-        </div>
-
-	</div>
-
-    <div class="ui divider"></div>
-
-    <!-- Table Participants -->
-    <div class="ui padded grid">
-        <h3>Project Participants</h3>
-    </div>
-    <div class="ui padded grid">
-        <div class="column daria_padding_bottom_0  daria_padding_top_12">
+            </div><br>
+            
+            <h3>Project Participants</h3>
             <button id="permission" class="ui button ov_button"><i class="add circle icon"></i>Add new participants</button>
             <button id="delete" class="ui button ov_button_left right floated">
                 <i class="trash icon"></i>
@@ -155,816 +262,393 @@
                 <i class="unlock alternate icon"></i>
                 Change Permission
             </button>
-        </div>
-    </div>
-    <div class="ui padded grid">
-        <div class="column daria_padding_top_12">
-            <table class="ui striped table">
-                <thead>
-                    <tr>
-                        <th>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+            <div style="padding-top: 12px;">
+                <table class="ui striped table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </th>
-                        <th>Label</th>
-                        <th>Full Name</th>
-                        <th>Email</th>
-                        <th>Permission</th>
-                        <th>Created at</th>
-                        <th>Involved at</th>
-                        <th>Last login</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Permission</th>
+                            <th>Created at</th>
+                            <th>Involved at</th>
+                            <th>Last login</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <div class="ui checkbox table_checkbox_padding_top">
+                                            <input type="checkbox" tabindex="0" class="hidden">
+                                            <label></label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>Anthony Cha</td>
-                        <td>anthony@xbrain.team</td>
-                        <td>Project Owner</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="ui padded grid centered">
-        <div class="ui pagination menu">
-            <a class="active item">
-                1
-            </a>
-            <div class="disabled item">
-                ...
+                            </td>
+                            <td>Anthony Cha</td>
+                            <td>anthony@xbrain.team</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br>
+            <div class="ui padded grid centered">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                        1
+                    </a>
+                    <div class="disabled item">
+                        ...
+                    </div>
+                    <a class="item">
+                        10
+                    </a>
+                    <a class="item">
+                        11
+                    </a>
+                    <a class="item">
+                        12
+                    </a>
+                </div>
+            </div><br>
+            
+            <h3>Project History</h3>
+            <div style="padding-top: 12px;">
+                <table class="ui striped table">
+                    <thead>
+                        <tr>
+                            <th>Edited by</th>
+                            <th>Permission</th>
+                            <th>Edited at</th>
+                            <th>Contents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                        <tr>
+                            <td>Anthony Cha</td>
+                            <td>Project Owner</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Stevie Feliciano was added as an Administrator</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br>
+            <div class="ui padded grid centered">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                        1
+                    </a>
+                    <div class="disabled item">
+                        ...
+                    </div>
+                    <a class="item">
+                        10
+                    </a>
+                    <a class="item">
+                        11
+                    </a>
+                    <a class="item">
+                        12
+                    </a>
+                </div>
             </div>
-            <a class="item">
-                10
-            </a>
-            <a class="item">
-                11
-            </a>
-            <a class="item">
-                12
-            </a>
+            
+           
+            
+            
         </div>
     </div>
-    <br>
-
-    <div class="ui divider"></div>
-
-    <!-- Table Full History -->
-    <div class="ui padded grid">
-        <h3>Full History</h3>
-    </div>
-    <div class="ui padded grid">
-        <div class="column daria_padding_bottom_0  daria_padding_top_12">
-            <button id="delete" class="ui button ov_button_left right floated">
-                <i class="trash icon"></i>
-                Delete
-            </button>
-        </div>
-    </div>
-    <div class="ui padded grid">
-        <div class="column daria_padding_top_12">
-            <table class="ui striped table">
-                <thead>
-                    <tr>
-                        <th>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </th> 
-                        <th>Edited by</th>
-                        <th>Edited at</th>
-                        <th>Contents</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <a id="participants" class="ui image label">
-                                Anthony 
-                                    <div class="detail">
-                                        o
-                                    </div>
-                            </a>
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>Anthony added Jenny Hess to the project</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="ui padded grid centered">
-        <div class="ui pagination menu">
-            <a class="active item">
-                1
-            </a>
-            <div class="disabled item">
-                ...
-            </div>
-            <a class="item">
-                10
-            </a>
-            <a class="item">
-                11
-            </a>
-            <a class="item">
-                12
-            </a>
-        </div>
-    </div>
+  
     <br><br><br>
 
     <!-- Menu Bottom Fixed -->
