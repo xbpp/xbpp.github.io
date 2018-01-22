@@ -122,11 +122,11 @@
         <div class="eight wide column daria_padding_top_0 daria_padding_bottom_0" >
             <button class="ui button ov_button_left  right floated" >
                 <i class="trash icon"></i>
-                    Delete Model
+                Delete Model
             </button>
             <button class="ui button ov_button_left  right floated" onclick="location.href='models.html'">
                 <i class="left arrow icon"></i>
-                    Return to Model List
+                Return to Model List
             </button>
         </div>
     </div>
@@ -148,13 +148,123 @@
                 <div class="item">
                     <a class="header">Features</a>
                 </div>
+                <div class="item">
+                    <a class="header">Common Information</a>
+                </div>
             </div>
         </div>
         <div class="thirteen wide column" style="padding-top: 0;">
             <h3>Performance</h3>
-            <div class="ui fluid card">
-                <div class="content">
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="five wide column">
+                            <b>ROC Curve</b>
+                        </div>
+                        <div class="eleven wide column">
+                            <div class="ui grid">
+                                <div class="eight wide column">
+                                    <b>Performance Information</b>
+                                </div>
+                                <div class="eight wide column">
+                                    <button class="compact ui right floated mini button" style="margin: 0;"><i class="refresh icon"></i>Renew Test Score</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="ui grid">
+                        <div class="five wide column">
+                            <div class="ui fluid card">
+                                <br><br><br><br><br><br><br><br><br><br><br><br>
+                            </div>
+                        </div>
+                        <div class="eleven wide column">
+                            <div class="ui list">
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Confusion Matrix
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Threshold
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Accuracy
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Position
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Recall
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            F-score
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Specifity
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="ui grid">
+                                        <div class="four wide column">
+                                            Area under curve
+                                        </div>
+                                        <div class="twelve wide column">
+                                            <div class="ui fluid label">0000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div><br>
         
@@ -166,9 +276,94 @@
             </div><br>
             
             <h3>Features</h3>
-            <div class="ui fluid card">
-                <div class="content">
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
+                <div class="ui segment">
+                    <b>Feature Selection/Transformation</b>
+                </div>
+                <div class="ui segment">
+                    <br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="ui segment">
+                    <b>Permutation Feature Importance</b>
+                </div>
+                <div class="ui segment">
+                    <br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+            
+            <h3>Common Information</h3>
+            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
+                <div class="ui segment">
+                    <b>Training Score</b>
+                </div>
+                <div class="ui segment">
+                    <p>0000</p>
+                </div>
+                <div class="ui segment">
+                    <b>Used Experiment</b>
+                </div>
+                <div class="ui segment">
+                    171029_experiment_sample_0000
+                </div>
+                <div class="ui segment">
+                    <b>Training Dates and Renewal</b>
+                </div>
+                <div class="ui segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <div class="ui grid">
+                                <div class="three wide column">
+                                    Started
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui fluid label">6/28/2017 5:58:06 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui grid">
+                                <div class="three wide column">
+                                    Completed
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui fluid label">6/28/2017 5:58:06 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <b>Size</b>
+                </div>
+                <div class="ui segment">
+                    <div class="ui list">
+                        <div class="item">
+                            <div class="ui grid">
+                                <div class="three wide column">
+                                    Training set size
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui fluid label">0000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui grid">
+                                <div class="three wide column">
+                                    Test set size
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui fluid label">0000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <b>Train : Test Ratio</b>
+                </div>
+                <div class="ui segment">
+                    <p>0000 : 0000</p>
                 </div>
             </div>
         </div>
