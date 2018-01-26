@@ -84,8 +84,8 @@
             </div>
         </div>
         
-        <a class="active item" href="models.html">Models</a>
-        <a class="item" href="deployment.html">Deployment</a>
+        <a class="item" href="models.html">Models</a>
+        <a class="active item" href="deployment.html">Deployment</a>
 
         <div class="right menu">
             <a class="item">
@@ -108,7 +108,7 @@
                 <i class="right chevron icon divider"></i>
                 <a class="section" href="index.html">171029_Credit_risk_prediction_ver_0.1132</a>
                 <i class="right chevron icon divider"></i>
-                <div class="active section">Models</div>
+                <div class="active section">Deployment</div>
             </div>
         </div>
     </div>
@@ -127,17 +127,19 @@
     </div>
     <div class="ui padded grid">
         <div class="column daria_padding_bottom_0  daria_padding_top_12">
+            <div class="ui buttons">
+                <div class="ui button">Sorting</div>
+                <div class="ui floating dropdown icon button">
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">Published Models</div>
+                        <div class="item">Trained Models</div>
+                    </div>
+                </div>
+            </div>
             <button id="delete" class="ui button ov_button_left right floated">
                 <i class="trash icon"></i>
                 Delete
-            </button>
-            <button id="copy" class="ui button ov_button_left right floated">
-                <i class="copy icon"></i>
-                Make a copy
-            </button>
-            <button id="schemaAfter" class="ui button ov_button right floated">
-                <i class="exchange icon"></i>
-                Compare to
             </button>
         </div>
     </div>
@@ -156,12 +158,13 @@
                                 </div>
                             </div>
                         </th> 
-                        <th>Model Name</th>
-                        <th>Start time</th>
-                        <th>End time</th>
-                        <th>Used Experiment</th>
-                        <th>Optimization Metric</th>
+                        <th>Name</th>
                         <th>Score</th>
+                        <th>Status</th>
+                        <th>Optimization Metric</th>
+                        <th>Published at</th>
+                        <th>Trained at</th>
+                        <th>API key</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -180,17 +183,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -208,17 +209,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -236,17 +235,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
                             <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -264,17 +261,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -292,17 +287,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -320,17 +313,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -348,17 +339,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -376,17 +365,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -404,17 +391,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>
@@ -432,17 +417,15 @@
                         <td>
                             models_sample_0000
                         </td>
-                        <td>
-                            6/28/2017 5:58:06 PM
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>171029_experiment_sample_0000</td>
-                        <td>Classification</td>
                         <td>0000</td>
+                        <td>Done</td>
+                        <td>Classification</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>6/28/2017 5:58:06 PM</td>
+                        <td>e1269737-236c-4e4c-8fad-c35aaaf804da</td>
                         <td>
-                            <button class="circular mini ui right floated button" onclick="location.href='models_detail.html'">
-                                <i class="bar chart icon"></i>
-                                Detail
+                            <button class="circular mini ui right floated button" onclick="location.href='deployment_test.html'">
+                                Test
                             </button>
                         </td>
                     </tr>

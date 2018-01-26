@@ -86,8 +86,8 @@
             </div>
         </div>
         
-        <a class="active item" href="models.html">Models</a>
-        <a class="item" href="deployment.html">Deployment</a>
+        <a class="item" href="models.html">Models</a>
+        <a class="active item" href="deployment.html">Deployment</a>
 
         <div class="right menu">
             <a class="item">
@@ -106,17 +106,16 @@
     <div class="ui padded grid">
         <div class="column daria_padding_bottom_0">
             <div class="ui breadcrumb">
-                <a class="section" href="index.html">Home</a>
+                <a class="section" href="index.html">Projects</a>
                 <i class="right chevron icon divider"></i>
-                <a class="section" href="index_table.html">All Projects</a>
+                <a class="section" href="index.html">171029_Credit_risk_prediction_ver_0.1132</a>
                 <i class="right chevron icon divider"></i>
-                <div class="section">Models</div>
+                <a class="section" href="deployment.html">Deployment</a>
                 <i class="right chevron icon divider"></i>
-                <div class="active section">Detail</div>
+                <div class="active section">Test</div>
             </div>
         </div>
     </div>
-
     <div class="ui padded grid">
         <div class="eight wide column daria_padding_top_0 daria_padding_bottom_0">
             <h2>171029_Credit_risk_prediction_ver_0.1132</h2>
@@ -133,233 +132,152 @@
     <div class="ui divider"></div>
 
 	<!-- Card Project Info -->
+    
     <div class="ui padded divided grid">
         <div class="three wide column" style="padding-top: 0;">
-            <h3>Model Evaluation Results</h3>
-            <div class="ui list">
-                <div class="item">
-                    <a class="header">Performance</a>
+            <div class="ui secondary pointing menu">
+                <a class="active item" data-tab="batch">Batch Prediction</a>
+                <a class="item" data-tab="realtime">Realtime Prediction</a>
+            </div>
+            <div class="ui tab  active" data-tab="batch">
+                <div class="ui list">
+                    <div class="item">
+                        <a class="header">Uploading Status</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Performance metrics</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Request</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Response</a>
+                    </div>
                 </div>
-                <div class="item">
-                    <a class="header">Visualization</a>
-                </div>
-                <div class="item">
-                    <a class="header">Features</a>
-                </div>
-                <div class="item">
-                    <a class="header">Common Information</a>
+            </div>
+            <div class="ui tab " data-tab="realtime">
+                <div class="ui list">
+                    <div class="item">
+                        <a class="header">Feature Set</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Performance metrics</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Request</a>
+                    </div>
+                    <div class="item">
+                        <a class="header">API Response</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="thirteen wide column" style="padding-top: 0;">
-            <h3>Performance</h3>
-            <div class="ui fluid card">
-                <div class="content">
-                    <div class="ui grid">
-                        <div class="five wide column">
-                            <b>ROC Curve</b>
-                        </div>
-                        <div class="eleven wide column">
-                            <b>Performance Information</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="ui grid">
-                        <div class="five wide column">
-                            <div class="ui fluid card">
-                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
-                            </div>
-                        </div>
-                        <div class="eleven wide column">
-                            <div class="ui list">
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Threshold
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui range" id="range-2"></div>
-                                            <br>
-                                            <div class="ui input">
-                                                <input type="text" id="input-2">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><br>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Accuracy
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Precision
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Recall
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            F-score
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Specifity
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="ui grid">
-                                        <div class="four wide column">
-                                            Area under curve
-                                        </div>
-                                        <div class="twelve wide column">
-                                            <div class="ui fluid label">0000</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <button class="ui button ov_button_left  right floated" id="matrix">
-                        Show Confusion Matrix
+            <div class="ui grid">
+                <div class="column column daria_padding_bottom_0">
+                    <button class="ui button ov_button">
+                        <i class="upload icon"></i>
+                        Upload a local file
                     </button>
-                    <button class="ui button ov_button_left  right floated" id="renew">
-                        Renew Test Score
+                    <button id="delete" class="ui button ov_button_left right floated">
+                        <i class="remove icon"></i>
+                        Abort
                     </button>
-                </div>
-            </div><br>
-            
-            <h3>Visualization</h3>
-            <div class="ui fluid card">
-                <div class="content">
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-            </div><br>
-            
-            <h3>Features</h3>
-            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
-                <div class="ui segment">
-                    <b>Feature Selection/Transformation</b>
-                </div>
-                <div class="ui segment">
-                    <br><br><br><br><br><br><br><br><br>
-                </div>
-                <div class="ui segment">
-                    <b>Permutation Feature Importance</b>
-                </div>
-                <div class="ui segment">
-                    <br><br><br><br><br><br><br><br><br>
+                    <button id="copy" class="ui disabled button ov_button_left right floated">
+                        <i class="history icon"></i>
+                        History
+                    </button>
                 </div>
             </div>
             
-            <h3>Common Information</h3>
-            <div class="ui segments" style="margin-top: 0; margin-bottom: 0;">
-                <div class="ui segment">
-                    <b>Training Score</b>
-                </div>
-                <div class="ui segment">
-                    <p>0000</p>
-                </div>
-                <div class="ui segment">
-                    <b>Used Experiment</b>
-                </div>
-                <div class="ui segment">
-                    171029_experiment_sample_0000
-                </div>
-                <div class="ui segment">
-                    <b>Training Dates and Renewal</b>
-                </div>
-                <div class="ui segment">
-                    <div class="ui list">
-                        <div class="item">
-                            <div class="ui grid">
-                                <div class="three wide column">
-                                    Started
+            <div class="ui grid">
+                <div class="column daria_padding_top_12">
+                    <h3>Uploading Progress</h3>
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <b>Sequence</b>
+                        </div>
+                        <div class="content">
+                            <div class="ui four steps">
+                                <div class="active step">
+                                    <div class="content">
+                                        <div class="title">Upload</div>
+                                    </div>
                                 </div>
-                                <div class="thirteen wide column">
-                                    <div class="ui fluid label">6/28/2017 5:58:06 PM</div>
+                                <div class="disabled step">
+                                    <div class="content">
+                                        <div class="title">Parse</div>
+                                    </div>
+                                </div>
+                                <div class="disabled step">
+                                    <div class="content">
+                                        <div class="title">Generate predictions</div>
+                                    </div>
+                                </div>
+                                <div class="disabled step">
+                                    <div class="content">
+                                        <div class="title">Generate output file</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="ui grid">
-                                <div class="three wide column">
-                                    Completed
+                        <div class="content">
+                            <b>Status message</b>
+                        </div>
+                        <div class="content">
+                            <br><br><br><br><br>
+                        </div>
+                        <div class="content">
+                            <button class="ui disabled button ov_button_left  right floated" id="matrix">
+                                <i class="download icon"></i>
+                                Download
+                            </button>
+                        </div>
+                    </div><br>
+                   
+                    <h3>API Performance metrics</h3>
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <div class="ui equal width grid">
+                                <div class="column">
+                                    <b>Traffic</b>
                                 </div>
-                                <div class="thirteen wide column">
-                                    <div class="ui fluid label">6/28/2017 5:58:06 PM</div>
+                                <div class="column">
+                                    <b>Erorrs</b>
+                                </div>
+                                <div class="column">
+                                    <b>Latency</b>
                                 </div>
                             </div>
                         </div>
+                        <div class="content">
+                            <div class="ui equal width grid">
+                                <div class="column">
+                                    <br><br><br>
+                                </div>
+                                <div class="column">
+                                    <br><br><br>
+                                </div>
+                                <div class="column">
+                                    <br><br><br>
+                                </div>
+                            </div>    
+                        </div>
+                    </div><br>
+                    <h3>API Request</h3>
+                    <div class="ui fluid card">
+                        <br><br><br><br><br>
+                    </div><br>
+                    <h3>API Response</h3>
+                    <div class="ui fluid card">
+                        <br><br><br><br><br>
                     </div>
                 </div>
-                <div class="ui segment">
-                    <b>Size</b>
-                </div>
-                <div class="ui segment">
-                    <div class="ui list">
-                        <div class="item">
-                            <div class="ui grid">
-                                <div class="three wide column">
-                                    Training set size
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div class="ui fluid label">0000</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="ui grid">
-                                <div class="three wide column">
-                                    Test set size
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div class="ui fluid label">0000</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui segment">
-                    <b>Train : Test Ratio</b>
-                </div>
-                <div class="ui segment">
-                    <p>0000 : 0000</p>
-                </div>
+
             </div>
         </div>
+        
+        
     </div>
   
     <br><br><br>
@@ -1698,6 +1616,11 @@
     </div>
 
 <script type="text/javascript">
+    
+        //tab
+        $('.menu .item')
+          .tab()
+        ;
 
 		//Checkbox
 		$('.ui.checkbox')
