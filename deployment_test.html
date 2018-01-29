@@ -155,13 +155,10 @@
                     </div>
                 </div>
             </div>
-            <div class="ui tab " data-tab="realtime">
+            <div class="ui tab" data-tab="realtime">
                 <div class="ui list">
                     <div class="item">
                         <a class="header">Feature Set</a>
-                    </div>
-                    <div class="item">
-                        <a class="header">API Performance metrics</a>
                     </div>
                     <div class="item">
                         <a class="header">API Request</a>
@@ -173,110 +170,161 @@
             </div>
         </div>
         <div class="thirteen wide column" style="padding-top: 0;">
-            <div class="ui grid">
-                <div class="column column daria_padding_bottom_0">
-                    <button class="ui button ov_button">
-                        <i class="upload icon"></i>
-                        Upload a local file
-                    </button>
-                    <button id="delete" class="ui button ov_button_left right floated">
-                        <i class="remove icon"></i>
-                        Abort
-                    </button>
-                    <button id="copy" class="ui disabled button ov_button_left right floated">
-                        <i class="history icon"></i>
-                        History
-                    </button>
+            
+            <div class="ui tab  active" data-tab="batch">
+                <div class="ui grid">
+                    <div class="column column daria_padding_bottom_0">
+                        <button class="ui button ov_button">
+                            <i class="upload icon"></i>
+                            Upload a local file
+                        </button>
+                        <button id="abort" class="ui button ov_button_left right floated">
+                            <i class="remove icon"></i>
+                            Abort
+                        </button>
+                        <button id="history" class="ui button ov_button_left right floated">
+                            <i class="history icon"></i>
+                            History
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="ui grid">
+                    <div class="column daria_padding_top_12">
+                        <h3>Uploading Progress</h3>
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <b>Sequence</b>
+                            </div>
+                            <div class="content">
+                                <div class="ui four steps">
+                                    <div class="active step">
+                                        <div class="content">
+                                            <div class="title">Upload</div>
+                                        </div>
+                                    </div>
+                                    <div class="disabled step">
+                                        <div class="content">
+                                            <div class="title">Parse</div>
+                                        </div>
+                                    </div>
+                                    <div class="disabled step">
+                                        <div class="content">
+                                            <div class="title">Generate predictions</div>
+                                        </div>
+                                    </div>
+                                    <div class="disabled step">
+                                        <div class="content">
+                                            <div class="title">Generate output file</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <b>Status message</b>
+                            </div>
+                            <div class="content">
+                                <br><br><br><br><br>
+                            </div>
+                            <div class="content">
+                                <button class="ui disabled button ov_button_left  right floated" id="matrix">
+                                    <i class="download icon"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </div><br>
+
+                        <h3>API Performance metrics</h3>
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <div class="ui equal width grid">
+                                    <div class="column">
+                                        <b>Traffic</b>
+                                    </div>
+                                    <div class="column">
+                                        <b>Erorrs</b>
+                                    </div>
+                                    <div class="column">
+                                        <b>Latency</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="ui equal width grid">
+                                    <div class="column">
+                                        <br><br><br>
+                                    </div>
+                                    <div class="column">
+                                        <br><br><br>
+                                    </div>
+                                    <div class="column">
+                                        <br><br><br>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div><br>
+                        <h3>API Request</h3>
+                        <div class="ui fluid card">
+                            <br><br><br><br><br>
+                        </div><br>
+                        <h3>API Response</h3>
+                        <div class="ui fluid card">
+                            <br><br><br><br><br>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="ui grid">
-                <div class="column daria_padding_top_12">
-                    <h3>Uploading Progress</h3>
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <b>Sequence</b>
-                        </div>
-                        <div class="content">
-                            <div class="ui four steps">
-                                <div class="active step">
-                                    <div class="content">
-                                        <div class="title">Upload</div>
-                                    </div>
-                                </div>
-                                <div class="disabled step">
-                                    <div class="content">
-                                        <div class="title">Parse</div>
-                                    </div>
-                                </div>
-                                <div class="disabled step">
-                                    <div class="content">
-                                        <div class="title">Generate predictions</div>
-                                    </div>
-                                </div>
-                                <div class="disabled step">
-                                    <div class="content">
-                                        <div class="title">Generate output file</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <b>Status message</b>
-                        </div>
-                        <div class="content">
-                            <br><br><br><br><br>
-                        </div>
-                        <div class="content">
-                            <button class="ui disabled button ov_button_left  right floated" id="matrix">
-                                <i class="download icon"></i>
-                                Download
-                            </button>
-                        </div>
-                    </div><br>
-                   
-                    <h3>API Performance metrics</h3>
-                    <div class="ui fluid card">
-                        <div class="content">
-                            <div class="ui equal width grid">
-                                <div class="column">
-                                    <b>Traffic</b>
-                                </div>
-                                <div class="column">
-                                    <b>Erorrs</b>
-                                </div>
-                                <div class="column">
-                                    <b>Latency</b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="ui equal width grid">
-                                <div class="column">
-                                    <br><br><br>
-                                </div>
-                                <div class="column">
-                                    <br><br><br>
-                                </div>
-                                <div class="column">
-                                    <br><br><br>
-                                </div>
-                            </div>    
-                        </div>
-                    </div><br>
-                    <h3>API Request</h3>
-                    <div class="ui fluid card">
-                        <br><br><br><br><br>
-                    </div><br>
-                    <h3>API Response</h3>
-                    <div class="ui fluid card">
-                        <br><br><br><br><br>
+            <div class="ui tab" data-tab="realtime">
+                <div class="ui grid">
+                    <div class="column column daria_padding_bottom_0">
+                        <button id="abort" class="ui button ov_button_left right floated">
+                            <i class="remove icon"></i>
+                            Abort
+                        </button>
+                        <button id="history_realtime" class="ui button ov_button_left right floated">
+                            <i class="history icon"></i>
+                            History
+                        </button>
                     </div>
                 </div>
+            
+                <div class="ui grid">
+                    <div class="column daria_padding_top_12">
+                        <h3>Feature set</h3>
+                        <div class="ui fluid card">
+                            <div class="content">
+                                <div class="ui form">
+                                    <div class="inline field">
+                                        <label>Feature Name / Type</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <button class="ui disabled button ov_button_left  right floated" id="matrix">
+                                    <i class="download icon"></i>
+                                    Download
+                                </button>
+                                <button class="ui button ov_button_left  right floated" id="matrix">
+                                    <i class="upload icon"></i>
+                                    Test
+                                </button>
+                            </div>
+                        </div><br>
 
+                        <h3>API Request</h3>
+                        <div class="ui fluid card">
+                            <br><br><br><br><br>
+                        </div><br>
+                        <h3>API Response</h3>
+                        <div class="ui fluid card">
+                            <br><br><br><br><br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
         
     </div>
   
@@ -293,1327 +341,99 @@
 
     
 
-<!-- Modal Delete Project -->
-<div id="renew-modal" class="ui fullscreen modal">
-    <i class="close icon"></i>
-    <div class="header">      
-        Renew Test Score
-    </div>
-<div class="content">
-    <div class="column daria_padding_top_12">
-            <table class="ui striped table">
-                <thead>
-                    <tr>
-                        <th>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </th> 
-                        <th>Dataset Name</th>
-                        <th>Created by</th>
-                        <th>Last Edited</th>
-                        <th>Number of Features</th>
-                        <th>Number of Records</th>
-                        <th>Size</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="ui form">
-                                <div class="inline field">
-                                    <div class="ui checkbox table_checkbox_padding_top">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            Titanic
-                        </td>
-                        <td>
-                            Jinyoung Choi
-                        </td>
-                        <td>6/28/2017 5:58:06 PM</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                </tbody>
-            </table><br>
-            <div class="ui padded grid centered">
-                <div class="ui pagination menu">
-                    <a class="active item">
-                        1
-                    </a>
-                    <div class="disabled item">
-                        ...
+    <!-- Modal Delete Project -->
+    <div id="history_realtime-modal" class="ui fullscreen modal">
+        <i class="close icon"></i>
+        <div class="header">      
+            History
+        </div>
+        <div class="content">
+            <div class="column daria_padding_top_12">
+                <table class="ui striped table">
+                    <thead>
+                        <tr> 
+                            <th>Requested at</th>
+                            <th>Responded at</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                        <tr>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>6/28/2017 5:58:06 PM</td>
+                            <td>Error message</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <div class="ui padded grid centered">
+                    <div class="ui pagination menu">
+                        <a class="active item">
+                            1
+                        </a>
+                        <div class="disabled item">
+                            ...
+                        </div>
+                        <a class="item">
+                            10
+                        </a>
+                        <a class="item">
+                            11
+                        </a>
+                        <a class="item">
+                            12
+                        </a>
                     </div>
-                    <a class="item">
-                        10
-                    </a>
-                    <a class="item">
-                        11
-                    </a>
-                    <a class="item">
-                        12
-                    </a>
                 </div>
             </div>
         </div>
-    
-        
-</div>
-<div class="ui actions form">
-    <div class="ui cancel button">Cancel</div>
-    <div class="ui approve button">Renew</div>
-</div>
-</div>
-    
-    <!-- Modal Matirx -->
-    <div id="matrix-modal" class="ui fullscreen modal">
-        <div class="header">
-            Confusion Matrix
-        </div>
-        <div class="scrolling content">
-            <table class="ui definition celled table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                        <th>XBrain</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                    <tr>
-                        <td>XBrain</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                        <td>0000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="ui actions form">
-            <div class="ui cancel button">Cancel</div>
-        </div>
+
     </div>
+
 
 <script type="text/javascript">
     
@@ -1628,17 +448,11 @@
 
 	    //Modal
 	    $(document).ready(function(){
-	    	$('#renew').click(function(){
-	    		$('#renew-modal').modal('show');
+	    	$('#history_realtime').click(function(){
+	    		$('#history_realtime-modal').modal('show');
 	    	});
 	    });
     
-        $(document).ready(function(){
-	    	$('#matrix').click(function(){
-	    		$('#matrix-modal').modal('show');
-	    	});
-	    });
-
 	    //Dropdown
 	    $('.ui.dropdown')
 	    .dropdown({
