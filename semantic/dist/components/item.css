@@ -142,7 +142,7 @@
   margin: -0.35714286rem 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 
 /* Default Header Size */
@@ -186,7 +186,7 @@
   max-width: auto;
   font-size: 1em;
   line-height: 1.71428571rem;
-  color: #212121;
+  color: #616161;
 }
 
 /*--------------
@@ -238,10 +238,10 @@
 
 /* Header */
 .ui.items > .item > .content > a.header {
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 .ui.items > .item > .content > a.header:hover {
-  color: #221616;
+  color: #432d2d;
 }
 
 /* Meta */
@@ -249,7 +249,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.items > .item .meta > a:not(.ui):hover {
-  color: #212121;
+  color: #616161;
 }
 
 /*--------------
@@ -452,7 +452,7 @@
 }
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #221616;
+  color: #432d2d;
 }
 
 /*--------------

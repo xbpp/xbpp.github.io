@@ -61,14 +61,14 @@
 /* Active Icon */
 .ui.rating .active.icon {
   background: transparent;
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 
 /* Selected Icon */
 .ui.rating .icon.selected,
 .ui.rating .icon.selected.active {
   background: transparent;
-  color: #212121;
+  color: #616161;
 }
 
 /*-------------------

@@ -1,3 +1,10 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.breadcrumb a {
+  color: #828282;
+}
+.ui.breadcrumb a:hover {
+  color: #253858;
+  font-weight: bold;
+}

@@ -286,53 +286,53 @@ i.inverted.circular.green.icon {
 
 /* Teal */
 i.teal.icon {
-  color: #00897b !important;
+  color: #cdecea !important;
 }
 i.inverted.teal.icon {
   color: #6DFFFF !important;
 }
 i.inverted.bordered.teal.icon,
 i.inverted.circular.teal.icon {
-  background-color: #00897b !important;
+  background-color: #cdecea !important;
   color: #FFFFFF !important;
 }
 
 /* Blue */
 i.blue.icon {
-  color: #303F9F !important;
+  color: #3949ab !important;
 }
 i.inverted.blue.icon {
-  color: #54C8FF !important;
+  color: #5c6bc0 !important;
 }
 i.inverted.bordered.blue.icon,
 i.inverted.circular.blue.icon {
-  background-color: #303F9F !important;
+  background-color: #3949ab !important;
   color: #FFFFFF !important;
 }
 
 /* Violet */
 i.violet.icon {
-  color: #6435C9 !important;
+  color: #253858 !important;
 }
 i.inverted.violet.icon {
   color: #A291FB !important;
 }
 i.inverted.bordered.violet.icon,
 i.inverted.circular.violet.icon {
-  background-color: #6435C9 !important;
+  background-color: #253858 !important;
   color: #FFFFFF !important;
 }
 
 /* Purple */
 i.purple.icon {
-  color: #A333C8 !important;
+  color: #7986cb !important;
 }
 i.inverted.purple.icon {
   color: #DC73FF !important;
 }
 i.inverted.bordered.purple.icon,
 i.inverted.circular.purple.icon {
-  background-color: #A333C8 !important;
+  background-color: #7986cb !important;
   color: #FFFFFF !important;
 }
 
@@ -351,27 +351,27 @@ i.inverted.circular.pink.icon {
 
 /* Brown */
 i.brown.icon {
-  color: #A5673F !important;
+  color: #eceff1 !important;
 }
 i.inverted.brown.icon {
   color: #D67C1C !important;
 }
 i.inverted.bordered.brown.icon,
 i.inverted.circular.brown.icon {
-  background-color: #A5673F !important;
+  background-color: #eceff1 !important;
   color: #FFFFFF !important;
 }
 
 /* Grey */
 i.grey.icon {
-  color: #FAFAFA !important;
+  color: #eceff1 !important;
 }
 i.inverted.grey.icon {
   color: #DCDDDE !important;
 }
 i.inverted.bordered.grey.icon,
 i.inverted.circular.grey.icon {
-  background-color: #FAFAFA !important;
+  background-color: #eceff1 !important;
   color: #FFFFFF !important;
 }
 
