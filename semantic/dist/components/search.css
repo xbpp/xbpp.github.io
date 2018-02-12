@@ -29,7 +29,7 @@
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #212121;
+  color: #616161;
   -webkit-box-shadow: 0em 0em 0em 0em transparent inset;
           box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -87,7 +87,7 @@
   overflow: hidden;
   font-size: 1em;
   padding: 0.85714286em 24px;
-  color: #212121;
+  color: #616161;
   line-height: 1.33;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
@@ -122,7 +122,7 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 .ui.search > .results .result .description {
   margin-top: 0;
@@ -145,12 +145,12 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  color: #212121;
+  color: #616161;
 }
 .ui.search > .results > .message .description {
   margin-top: 0.25rem;
   font-size: 1em;
-  color: #212121;
+  color: #616161;
 }
 
 /* View All Results */
@@ -159,7 +159,7 @@
   border-top: none;
   background: #F3F4F5;
   padding: 0.92857143em 1em;
-  color: #212121;
+  color: #616161;
   font-weight: bold;
   text-align: center;
 }
@@ -208,7 +208,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #FAFAFA transparent transparent;
+  border-color: #eceff1 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -235,7 +235,7 @@
   background: #F3F4F5;
 }
 .ui.category.search > .results .category.active > .name {
-  color: #212121;
+  color: #616161;
 }
 .ui.search > .results .result.active,
 .ui.category.search > .results .category .result.active {
@@ -246,10 +246,10 @@
           box-shadow: none;
 }
 .ui.search > .results .result.active .title {
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 .ui.search > .results .result.active .description {
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 
 

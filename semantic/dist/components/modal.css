@@ -82,7 +82,7 @@
   padding: 12px 24px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 .ui.modal > .header:not(.ui) {
@@ -223,7 +223,7 @@
   .ui.modal > .close {
     top: 12.08928571px;
     right: 1rem;
-    color: #212121;
+    color: #616161;
   }
 }
 
@@ -314,10 +314,10 @@
   right: 1.5rem;
 }
 .ui.inverted.dimmer > .basic.modal {
-  color: #212121;
+  color: #616161;
 }
 .ui.inverted.dimmer > .ui.basic.modal > .header {
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 
 /* Tablet and Mobile */
@@ -417,7 +417,7 @@
 .ui.fullscreen.modal > .close {
   top: 12.08928571px;
   right: 1rem;
-  color: #212121;
+  color: #616161;
 }
 
 /*--------------

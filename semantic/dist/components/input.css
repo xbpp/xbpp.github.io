@@ -25,7 +25,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: #212121;
+  color: #616161;
 }
 .ui.input input {
   margin: 0em;
@@ -41,7 +41,7 @@
   padding: 0.75em 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #212121;
+  color: #616161;
   border-radius: 0.28571429rem;
   -webkit-transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -58,13 +58,13 @@
 
 /* browsers require these rules separate */
 .ui.input input::-webkit-input-placeholder {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 .ui.input input::-moz-placeholder {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 .ui.input input:-ms-input-placeholder {
-  color: #e0e0e0;
+  color: #ffffff;
 }
 
 
@@ -94,7 +94,7 @@
 .ui.input.down input {
   border-color: rgba(0, 0, 0, 0.3);
   background: #FAFAFA;
-  color: #212121;
+  color: #616161;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -127,7 +127,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #FAFAFA transparent transparent;
+  border-color: #eceff1 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -140,7 +140,7 @@
 
 .ui.input.focus input,
 .ui.input input:focus {
-  border-color: #85B7D9;
+  border-color: #7986cb;
   background: #FFFFFF;
   color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: none;
@@ -148,15 +148,15 @@
 }
 .ui.input.focus input::-webkit-input-placeholder,
 .ui.input input:focus::-webkit-input-placeholder {
-  color: #949494;
+  color: #d4d4d4;
 }
 .ui.input.focus input::-moz-placeholder,
 .ui.input input:focus::-moz-placeholder {
-  color: #949494;
+  color: #d4d4d4;
 }
 .ui.input.focus input:-ms-input-placeholder,
 .ui.input input:focus:-ms-input-placeholder {
-  color: #949494;
+  color: #d4d4d4;
 }
 
 /*--------------------
@@ -333,7 +333,7 @@
   border-left-color: transparent;
 }
 .ui.labeled.input:not([class*="corner labeled"]) .label:first-child + input:focus {
-  border-left-color: #85B7D9;
+  border-left-color: #7986cb;
 }
 
 /* Regular Label on Right */
@@ -347,7 +347,7 @@
   border-bottom-left-radius: 0px;
 }
 .ui[class*="right labeled"].input input:focus {
-  border-right-color: #85B7D9 !important;
+  border-right-color: #7986cb !important;
 }
 
 /* Corner Label */
@@ -432,7 +432,7 @@
 
 /* Input Focus */
 .ui.action.input:not([class*="left action"]) input:focus {
-  border-right-color: #85B7D9 !important;
+  border-right-color: #7986cb !important;
 }
 
 /* Button on Left */
@@ -454,7 +454,7 @@
 
 /* Input Focus */
 .ui[class*="left action"].input > input:focus {
-  border-left-color: #85B7D9 !important;
+  border-left-color: #7986cb !important;
 }
 
 /*--------------------

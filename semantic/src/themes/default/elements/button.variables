@@ -259,7 +259,7 @@
 @coloredBoxShadow: @shadowBoxShadow;
 
 /* Colored */
-@brownTextColor: @invertedTextColor;
+@brownTextColor: @violet;
 @brownTextShadow: @invertedTextShadow;
 @redTextColor: @invertedTextColor;
 @redTextShadow: @invertedTextShadow;
@@ -281,9 +281,9 @@
 @oliveTextShadow: @invertedTextShadow;
 @yellowTextColor: @invertedTextColor;
 @yellowTextShadow: @invertedTextShadow;
-@tealTextColor: @invertedTextColor;
+@tealTextColor: @violet;
 @tealTextShadow: @invertedTextShadow;
-@greyTextColor: @invertedTextColor;
+@greyTextColor: @violet;
 @greyTextShadow: @invertedTextShadow;
 
 /* Inverted */

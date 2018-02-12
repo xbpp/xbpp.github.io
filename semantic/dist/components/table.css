@@ -24,7 +24,7 @@
           box-shadow: none;
   border-radius: 0.28571429rem;
   text-align: left;
-  color: #212121;
+  color: #616161;
   border-collapse: separate;
   border-spacing: 0px;
 }
@@ -57,7 +57,7 @@
   cursor: auto;
   background: #FAFAFA;
   text-align: inherit;
-  color: #212121;
+  color: #616161;
   padding: 12px 24px;
   vertical-align: inherit;
   font-style: none;
@@ -89,7 +89,7 @@
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   background: #FAFAFA;
   text-align: inherit;
-  color: #212121;
+  color: #616161;
   padding: 12px 24px;
   vertical-align: middle;
   font-style: normal;
@@ -363,13 +363,13 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  -webkit-box-shadow: 0px 0px 0px #212121 inset;
-          box-shadow: 0px 0px 0px #212121 inset;
+  -webkit-box-shadow: 0px 0px 0px #616161 inset;
+          box-shadow: 0px 0px 0px #616161 inset;
 }
 .ui.table tr.active,
 .ui.table td.active {
   background: #E0E0E0 !important;
-  color: #212121 !important;
+  color: #616161 !important;
 }
 
 /*--------------
@@ -533,7 +533,7 @@
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
   background: #E0E0E0 !important;
-  color: #212121 !important;
+  color: #616161 !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
@@ -683,37 +683,37 @@
 
 /* Teal */
 .ui.teal.table {
-  border-top: 0.2em solid #00897b;
+  border-top: 0.2em solid #cdecea;
 }
 .ui.inverted.teal.table {
-  background-color: #00897b !important;
+  background-color: #cdecea !important;
   color: #FFFFFF !important;
 }
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #303F9F;
+  border-top: 0.2em solid #3949ab;
 }
 .ui.inverted.blue.table {
-  background-color: #303F9F !important;
+  background-color: #3949ab !important;
   color: #FFFFFF !important;
 }
 
 /* Violet */
 .ui.violet.table {
-  border-top: 0.2em solid #6435C9;
+  border-top: 0.2em solid #253858;
 }
 .ui.inverted.violet.table {
-  background-color: #6435C9 !important;
+  background-color: #253858 !important;
   color: #FFFFFF !important;
 }
 
 /* Purple */
 .ui.purple.table {
-  border-top: 0.2em solid #A333C8;
+  border-top: 0.2em solid #7986cb;
 }
 .ui.inverted.purple.table {
-  background-color: #A333C8 !important;
+  background-color: #7986cb !important;
   color: #FFFFFF !important;
 }
 
@@ -728,19 +728,19 @@
 
 /* Brown */
 .ui.brown.table {
-  border-top: 0.2em solid #A5673F;
+  border-top: 0.2em solid #eceff1;
 }
 .ui.inverted.brown.table {
-  background-color: #A5673F !important;
+  background-color: #eceff1 !important;
   color: #FFFFFF !important;
 }
 
 /* Grey */
 .ui.grey.table {
-  border-top: 0.2em solid #FAFAFA;
+  border-top: 0.2em solid #eceff1;
 }
 .ui.inverted.grey.table {
-  background-color: #FAFAFA !important;
+  background-color: #eceff1 !important;
   color: #FFFFFF !important;
 }
 
@@ -882,7 +882,7 @@
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
-  color: #212121;
+  color: #616161;
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;

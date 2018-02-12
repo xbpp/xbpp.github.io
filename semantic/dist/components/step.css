@@ -72,7 +72,7 @@
   margin: 0em 0em;
   padding: 12px 2em;
   background: #FFFFFF;
-  color: #212121;
+  color: #616161;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0em;
@@ -147,7 +147,7 @@
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.92857143em;
-  color: #212121;
+  color: #616161;
 }
 .ui.steps .step > .description {
   width: 100%;
@@ -361,11 +361,11 @@
   background: #F3F4F5;
 }
 .ui.steps .step.active .title {
-  color: #212121;
+  color: #424242;
 }
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
-  color: rgba(0, 0, 0, 0.85);
+  color: #424242;
 }
 
 /* Active Arrow */
@@ -389,7 +389,7 @@
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #DCDDDE;
-  color: #212121;
+  color: #616161;
 }
 
 /* Completed */

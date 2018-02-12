@@ -35,7 +35,8 @@
 /* Sub Header */
 @subHeaderMargin: 0em;
 @subHeaderLineHeight: 1.2em;
-@subHeaderColor: @mutedTextColor;
+@subHeaderColor: #828282;
+@subHeaderFontWeight: bold;
 
 /* Icon */
 @iconOpacity: 1;

@@ -14,3 +14,6 @@
 	margin-bottom: 0;
 	margin-left: 6px;
 }
+.ui.buttons.select{
+    width: 250px;
+}
