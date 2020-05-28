@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Search
+ * # Semantic UI 2.2.11 - Search
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25,11 +25,11 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1.21428571em;
-  padding: 0.75em 1em;
+  padding: 0.67857143em 1em;
   font-size: 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: 0em 0em 0em 0em transparent inset;
           box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -86,8 +86,8 @@
   display: block;
   overflow: hidden;
   font-size: 1em;
-  padding: 0.85714286em 24px;
-  color: #616161;
+  padding: 0.85714286em 1.14285714em;
+  color: rgba(0, 0, 0, 0.87);
   line-height: 1.33;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
 }
@@ -118,11 +118,11 @@
   margin: 0em 6em 0em 0em;
 }
 .ui.search > .results .result .title {
-  margin: -1.21428571rem 0em 0em;
+  margin: -0.14285714em 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 .ui.search > .results .result .description {
   margin-top: 0;
@@ -145,12 +145,12 @@
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.search > .results > .message .description {
   margin-top: 0.25rem;
   font-size: 1em;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* View All Results */
@@ -159,7 +159,7 @@
   border-top: none;
   background: #F3F4F5;
   padding: 0.92857143em 1em;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   font-weight: bold;
   text-align: center;
 }
@@ -208,7 +208,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #eceff1 transparent transparent;
+  border-color: #767676 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -221,7 +221,7 @@
 
 .ui.search > .results .result:hover,
 .ui.category.search > .results .category .result:hover {
-  background: #FAFAFA;
+  background: #F9FAFB;
 }
 .ui.search .action:hover {
   background: #E0E0E0;
@@ -235,7 +235,7 @@
   background: #F3F4F5;
 }
 .ui.category.search > .results .category.active > .name {
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.search > .results .result.active,
 .ui.category.search > .results .category .result.active {
@@ -246,10 +246,10 @@
           box-shadow: none;
 }
 .ui.search > .results .result.active .title {
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 .ui.search > .results .result.active .description {
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 
@@ -330,7 +330,7 @@
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
   -webkit-transition: background 0.1s ease, border-color 0.1s ease;
   transition: background 0.1s ease, border-color 0.1s ease;
-  padding: 0.85714286em 24px;
+  padding: 0.85714286em 1.14285714em;
 }
 .ui.category.search > .results .category:last-child .result:last-child {
   border-bottom: none;
@@ -381,7 +381,7 @@
 ---------------*/
 
 .ui.mini.search {
-  font-size: 12px;
+  font-size: 0.78571429em;
 }
 .ui.small.search {
   font-size: 0.92857143em;
@@ -390,7 +390,7 @@
   font-size: 1em;
 }
 .ui.large.search {
-  font-size: 24px;
+  font-size: 1.14285714em;
 }
 .ui.big.search {
   font-size: 1.28571429em;

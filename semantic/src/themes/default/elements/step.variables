@@ -20,7 +20,7 @@
 @horizontalMargin: 0em;
 
 @arrowSize: @relativeLarge;
-@verticalPadding: 12px;
+@verticalPadding: @relativeLarge;
 @horizontalPadding: 2em;
 
 @transition:
@@ -48,7 +48,7 @@
 /* Title */
 @titleFontFamily: @headerFont;
 @titleFontWeight: bold;
-@titleFontSize: 14px;
+@titleFontSize: @relativeLarge;
 @titleColor: @darkTextColor;
 
 /* Description */

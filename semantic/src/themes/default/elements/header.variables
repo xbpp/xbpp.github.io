@@ -12,11 +12,11 @@
 @lineHeight: @headerLineHeight;
 @lineHeightOffset: @headerLineHeightOffset;
 
-@topMargin: 0;
-@bottomMargin: 0;
-@margin: 0;
+@topMargin: @headerTopMargin;
+@bottomMargin: @headerBottomMargin;
+@margin: @topMargin 0em @bottomMargin;
 
-@firstMargin: 0;
+@firstMargin: -@lineHeightOffset;
 @lastMargin: 0em;
 @horizontalPadding: 0em;
 @verticalPadding: 0em;
@@ -35,13 +35,12 @@
 /* Sub Header */
 @subHeaderMargin: 0em;
 @subHeaderLineHeight: 1.2em;
-@subHeaderColor: #828282;
-@subHeaderFontWeight: bold;
+@subHeaderColor: @mutedTextColor;
 
 /* Icon */
 @iconOpacity: 1;
 @iconSize: 1.5em;
-@iconOffset: 0em;
+@iconOffset: @lineHeightOffset;
 @iconMargin: 0.75rem;
 @iconAlignment: middle;
 
@@ -126,11 +125,11 @@
 @hugeBlock: @huge;
 
 /* Attached */
-@attachedOffset: 0;
+@attachedOffset: -1px;
 @attachedBoxShadow: none;
-@attachedBorder: 0px solid @solidBorderColor;
-@attachedVerticalPadding: 12px;
-@attachedHorizontalPadding: 24px;
+@attachedBorder: 1px solid @solidBorderColor;
+@attachedVerticalPadding: @blockVerticalPadding;
+@attachedHorizontalPadding: @blockHorizontalPadding;
 @attachedBackground: @white;
 @attachedBorderRadius: @blockBorderRadius;
 

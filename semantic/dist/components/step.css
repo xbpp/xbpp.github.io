@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Step
+ * # Semantic UI 2.2.11 - Step
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28,7 +28,7 @@
   background: '';
   -webkit-box-shadow: none;
           box-shadow: none;
-  line-height: 24px;
+  line-height: 1.14285714em;
   border-radius: 0.28571429rem;
   border: 1px solid rgba(34, 36, 38, 0.15);
 }
@@ -70,9 +70,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0em 0em;
-  padding: 12px 2em;
+  padding: 1.14285714em 2em;
   background: #FFFFFF;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0em;
@@ -94,8 +94,8 @@
   right: 0%;
   border: medium none;
   background-color: #FFFFFF;
-  width: 24px;
-  height: 24px;
+  width: 1.14285714em;
+  height: 1.14285714em;
   border-style: solid;
   border-color: rgba(34, 36, 38, 0.15);
   border-width: 0px 1px 1px 0px;
@@ -136,7 +136,7 @@
 /* Title */
 .ui.steps .step .title {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 1.14285714em;
   font-weight: bold;
 }
 .ui.steps .step > .title {
@@ -147,7 +147,7 @@
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.92857143em;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.steps .step > .description {
   width: 100%;
@@ -239,12 +239,12 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-radius: 0em;
-  padding: 12px 2em;
+  padding: 1.14285714em 2em;
   border-right: none;
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 .ui.vertical.steps .step:first-child {
-  padding: 12px 2em;
+  padding: 1.14285714em 2em;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 .ui.vertical.steps .step:last-child {
@@ -301,10 +301,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 0em;
-    padding: 12px 2em;
+    padding: 1.14285714em 2em;
   }
   .ui.steps:not(.unstackable) .step:first-child {
-    padding: 12px 2em;
+    padding: 1.14285714em 2em;
     border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   }
   .ui.steps:not(.unstackable) .step:last-child {
@@ -339,7 +339,7 @@
 .ui.steps .link.step:hover,
 .ui.steps a.step:hover::after,
 .ui.steps a.step:hover {
-  background: #FAFAFA;
+  background: #F9FAFB;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -361,11 +361,11 @@
   background: #F3F4F5;
 }
 .ui.steps .step.active .title {
-  color: #424242;
+  color: #4183C4;
 }
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 /* Active Arrow */
@@ -389,7 +389,7 @@
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #DCDDDE;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Completed */
@@ -444,10 +444,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 0em;
-    padding: 12px 2em;
+    padding: 1.14285714em 2em;
   }
   .ui[class*="tablet stackable"].steps .step:first-child {
-    padding: 12px 2em;
+    padding: 1.14285714em 2em;
     border-radius: 0.28571429rem 0.28571429rem 0em 0em;
   }
   .ui[class*="tablet stackable"].steps .step:last-child {

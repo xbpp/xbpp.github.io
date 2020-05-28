@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Table
+ * # Semantic UI 2.2.11 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -18,13 +18,13 @@
 .ui.table {
   width: 100%;
   background: #FFFFFF;
-  margin: 0;
+  margin: 1em 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0.28571429rem;
   text-align: left;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   border-collapse: separate;
   border-spacing: 0px;
 }
@@ -55,10 +55,10 @@
 }
 .ui.table thead th {
   cursor: auto;
-  background: #FAFAFA;
+  background: #F9FAFB;
   text-align: inherit;
-  color: #616161;
-  padding: 12px 24px;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.92857143em 0.78571429em;
   vertical-align: inherit;
   font-style: none;
   font-weight: bold;
@@ -87,10 +87,10 @@
 .ui.table tfoot th {
   cursor: auto;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
-  background: #FAFAFA;
+  background: #F9FAFB;
   text-align: inherit;
-  color: #616161;
-  padding: 12px 24px;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.78571429em 0.78571429em;
   vertical-align: middle;
   font-style: normal;
   font-weight: normal;
@@ -119,7 +119,7 @@
 
 /* Table Cells */
 .ui.table td {
-  padding: 12px 24px;
+  padding: 0.78571429em 0.78571429em;
   text-align: inherit;
 }
 
@@ -363,13 +363,13 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  -webkit-box-shadow: 0px 0px 0px #616161 inset;
-          box-shadow: 0px 0px 0px #616161 inset;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
 }
 .ui.table tr.active,
 .ui.table td.active {
   background: #E0E0E0 !important;
-  color: #616161 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 
 /*--------------
@@ -513,7 +513,7 @@
 .ui.table tbody tr td.selectable > a:not(.ui) {
   display: block;
   color: inherit;
-  padding: 12px 24px;
+  padding: 0.78571429em 0.78571429em;
 }
 
 /* Other States */
@@ -533,7 +533,7 @@
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
   background: #E0E0E0 !important;
-  color: #616161 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
@@ -574,7 +574,7 @@
   bottom: 0px;
   margin-bottom: 0em;
   top: 0px;
-  margin-top: 0;
+  margin-top: 1em;
   border-radius: 0.28571429rem 0.28571429rem 0em 0em;
 }
 .ui.table[class*="top attached"]:first-child {
@@ -586,7 +586,7 @@
   bottom: 0px;
   margin-top: 0em;
   top: 0px;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   -webkit-box-shadow: none, none;
           box-shadow: none, none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
@@ -683,73 +683,73 @@
 
 /* Teal */
 .ui.teal.table {
-  border-top: 0.2em solid #cdecea;
+  border-top: 0.2em solid #00B5AD;
 }
 .ui.inverted.teal.table {
-  background-color: #cdecea !important;
+  background-color: #00B5AD !important;
   color: #FFFFFF !important;
 }
 
 /* Blue */
 .ui.blue.table {
-  border-top: 0.2em solid #3949ab;
+  border-top: 0.2em solid #2185D0;
 }
 .ui.inverted.blue.table {
-  background-color: #3949ab !important;
+  background-color: #2185D0 !important;
   color: #FFFFFF !important;
 }
 
 /* Violet */
 .ui.violet.table {
-  border-top: 0.2em solid #253858;
+  border-top: 0.2em solid #6435C9;
 }
 .ui.inverted.violet.table {
-  background-color: #253858 !important;
+  background-color: #6435C9 !important;
   color: #FFFFFF !important;
 }
 
 /* Purple */
 .ui.purple.table {
-  border-top: 0.2em solid #7986cb;
+  border-top: 0.2em solid #A333C8;
 }
 .ui.inverted.purple.table {
-  background-color: #7986cb !important;
+  background-color: #A333C8 !important;
   color: #FFFFFF !important;
 }
 
 /* Pink */
 .ui.pink.table {
-  border-top: 0.2em solid #ff8a80;
+  border-top: 0.2em solid #E03997;
 }
 .ui.inverted.pink.table {
-  background-color: #ff8a80 !important;
+  background-color: #E03997 !important;
   color: #FFFFFF !important;
 }
 
 /* Brown */
 .ui.brown.table {
-  border-top: 0.2em solid #eceff1;
+  border-top: 0.2em solid #A5673F;
 }
 .ui.inverted.brown.table {
-  background-color: #eceff1 !important;
+  background-color: #A5673F !important;
   color: #FFFFFF !important;
 }
 
 /* Grey */
 .ui.grey.table {
-  border-top: 0.2em solid #eceff1;
+  border-top: 0.2em solid #767676;
 }
 .ui.inverted.grey.table {
-  background-color: #eceff1 !important;
+  background-color: #767676 !important;
   color: #FFFFFF !important;
 }
 
 /* Black */
 .ui.black.table {
-  border-top: 0.2em solid #B0BEC5;
+  border-top: 0.2em solid #1B1C1D;
 }
 .ui.inverted.black.table {
-  background-color: #B0BEC5 !important;
+  background-color: #1B1C1D !important;
   color: #FFFFFF !important;
 }
 
@@ -882,7 +882,7 @@
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;
@@ -1090,11 +1090,11 @@
 ---------------*/
 
 .ui.compact.table th {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 .ui.compact.table td {
-  padding: 0.5em 24px;
+  padding: 0.5em 0.7em;
 }
 
 /* Very */
@@ -1124,9 +1124,6 @@
 /* Large */
 .ui.large.table {
   font-size: 1.1em;
-}
-.ui.fixed.table td {
-  overflow: visible;
 }
 
 

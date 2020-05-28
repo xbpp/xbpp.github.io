@@ -13,7 +13,7 @@
 @background: #FFFFFF;
 @fontFamily: @pageFont;
 @itemBackground: none;
-@fontWeight: bold;
+@fontWeight: normal;
 @borderWidth: 1px;
 @border: @borderWidth solid @borderColor;
 @boxShadow: @subtleShadow;
@@ -21,15 +21,15 @@
 @minHeight: (@itemVerticalPadding * 2) + 1em;
 
 /* Menu Item */
-@itemVerticalPadding: 17px;
-@itemHorizontalPadding: 27px;
+@itemVerticalPadding: @relativeSmall;
+@itemHorizontalPadding: @relativeLarge;
 @itemTextTransform: none;
 @itemTransition:
   background @defaultDuration @defaultEasing,
   box-shadow @defaultDuration @defaultEasing,
   color @defaultDuration @defaultEasing
 ;
-@itemFontWeight: bold;
+@itemFontWeight: normal;
 @itemTextColor: @textColor;
 
 /* Divider */
@@ -55,8 +55,8 @@
 
 /* Icon */
 @iconFloat: none;
-@iconMargin: 0em;
-@iconOpacity: 1;
+@iconMargin: 0em @relative5px 0em 0em;
+@iconOpacity: 0.9;
 
 /* Dropdown Icon */
 @dropdownIconFloat: right;
@@ -108,8 +108,8 @@
 @inputVerticalPadding: @relative8px;
 
 /* Image */
-@imageMargin: 0em;
-@imageWidth: 4em;
+@imageMargin: -0.3em 0em;
+@imageWidth: 2.5em;
 @verticalImageWidth: auto;
 
 /* Label */
@@ -400,12 +400,12 @@
 @invertedMenuPressedColor: @invertedSelectedTextColor;
 
 /* Inverted Active */
-@invertedActiveBackground: #4857b1;
+@invertedActiveBackground: @strongTransparentWhite;
 @invertedActiveColor: @invertedSelectedTextColor;
 @invertedArrowActiveColor: #3D3E3F;
 
 /* Inverted Active Hover  */
-@invertedActiveHoverBackground: #4857b1;
+@invertedActiveHoverBackground: @invertedActiveBackground;
 @invertedActiveHoverColor: @white;
 @invertedArrowActiveHoverColor: @invertedArrowActiveColor;
 
@@ -418,10 +418,10 @@
 
 /* Inverted Colored */
 @invertedColoredDividerBackground: @dividerBackground;
-@invertedColoredActiveBackground: #4857b1;
+@invertedColoredActiveBackground: @strongTransparentBlack;
 
 /* Fixed */
-@fixedPrecedingGridMargin: 48px;
+@fixedPrecedingGridMargin: 2.75rem;
 
 /* Floated */
 @floatedDistance: 0.5rem;

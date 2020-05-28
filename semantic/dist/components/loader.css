@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Loader
+ * # Semantic UI 2.2.11 - Loader
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -52,7 +52,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #eceff1 transparent transparent;
+  border-color: #767676 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -154,13 +154,13 @@
 
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.inverted.dimmer .ui.loader:before {
   border-color: rgba(0, 0, 0, 0.1);
 }
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: #eceff1 transparent transparent;
+  border-color: #767676 transparent transparent;
 }
 
 
@@ -216,7 +216,7 @@
 .ui.mini.loader {
   width: 1rem;
   height: 1rem;
-  font-size: 12px;
+  font-size: 0.78571429em;
 }
 .ui.inverted.dimmer .ui.tiny.loader,
 .ui.tiny.loader {
@@ -240,7 +240,7 @@
 .ui.large.loader {
   width: 3.42857143rem;
   height: 3.42857143rem;
-  font-size: 24px;
+  font-size: 1.14285714em;
 }
 .ui.inverted.dimmer .ui.big.loader,
 .ui.big.loader {
@@ -264,35 +264,35 @@
 /* Text Loader */
 .ui.mini.text.loader {
   min-width: 1rem;
-  padding-top: 13rem;
+  padding-top: 1.78571429rem;
 }
 .ui.tiny.text.loader {
   min-width: 1.14285714rem;
-  padding-top: 13.14285714rem;
+  padding-top: 1.92857143rem;
 }
 .ui.small.text.loader {
   min-width: 1.71428571rem;
-  padding-top: 13.71428571rem;
+  padding-top: 2.5rem;
 }
 .ui.text.loader {
   min-width: 2.28571429rem;
-  padding-top: 14.28571429rem;
+  padding-top: 3.07142857rem;
 }
 .ui.large.text.loader {
   min-width: 3.42857143rem;
-  padding-top: 15.42857143rem;
+  padding-top: 4.21428571rem;
 }
 .ui.big.text.loader {
   min-width: 3.71428571rem;
-  padding-top: 15.71428571rem;
+  padding-top: 4.5rem;
 }
 .ui.huge.text.loader {
   min-width: 4.14285714rem;
-  padding-top: 16.14285714rem;
+  padding-top: 4.92857143rem;
 }
 .ui.massive.text.loader {
   min-width: 4.57142857rem;
-  padding-top: 16.57142857rem;
+  padding-top: 5.35714286rem;
 }
 
 /*-------------------

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Grid
+ * # Semantic UI 2.2.11 - Grid
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34,10 +34,10 @@
 -----------------------*/
 
 .ui.grid {
-  margin-top: -24px;
-  margin-bottom: -24px;
-  margin-left: -24px;
-  margin-right: -24px;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 .ui.relaxed.grid {
   margin-left: -1.5rem;
@@ -50,7 +50,7 @@
 
 /* Preserve Rows Spacing on Consecutive Grids */
 .ui.grid + .grid {
-  margin-top: 24px;
+  margin-top: 1rem;
 }
 
 /*-------------------
@@ -64,13 +64,13 @@
   position: relative;
   display: inline-block;
   width: 6.25%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   vertical-align: top;
 }
 .ui.grid > * {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*-------------------
@@ -96,8 +96,8 @@
           align-items: stretch;
   width: 100% !important;
   padding: 0rem;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /*-------------------
@@ -107,8 +107,8 @@
 
 /* Vertical padding when no rows */
 .ui.grid > .column:not(.row) {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .ui.grid > .row > .column {
   margin-top: 0em;
@@ -148,10 +148,10 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 24px 24px;
+  margin: 1rem 1rem;
 }
 .ui.grid .column + .ui.vertical.divider {
-  height: calc(50% -  24px );
+  height: calc(50% -  1rem );
 }
 
 /* Remove Border on Last Horizontal Segment */
@@ -1051,8 +1051,8 @@
 /* Swap from padding to margin on columns to have dividers align */
 .ui[class*="vertically divided"].grid > .column:not(.row),
 .ui[class*="vertically divided"].grid > .row > .column {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
@@ -1092,9 +1092,9 @@
   content: "";
   top: 0em;
   left: 0px;
-  width: calc(100% -  48px );
+  width: calc(100% -  2rem );
   height: 1px;
-  margin: 0% 24px;
+  margin: 0% 1rem;
   -webkit-box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
           box-shadow: 0px -1px 0px 0px rgba(34, 36, 38, 0.15);
 }
@@ -1342,10 +1342,10 @@
 .ui.grid > .row > .brown.column,
 .ui.grid > .row > .grey.column,
 .ui.grid > .row > .black.column {
-  margin-top: -24px;
-  margin-bottom: -24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Red */
@@ -1392,7 +1392,7 @@
 .ui.grid > .teal.row,
 .ui.grid > .teal.column,
 .ui.grid > .row > .teal.column {
-  background-color: #cdecea !important;
+  background-color: #00B5AD !important;
   color: #FFFFFF;
 }
 
@@ -1400,7 +1400,7 @@
 .ui.grid > .blue.row,
 .ui.grid > .blue.column,
 .ui.grid > .row > .blue.column {
-  background-color: #3949ab !important;
+  background-color: #2185D0 !important;
   color: #FFFFFF;
 }
 
@@ -1408,7 +1408,7 @@
 .ui.grid > .violet.row,
 .ui.grid > .violet.column,
 .ui.grid > .row > .violet.column {
-  background-color: #253858 !important;
+  background-color: #6435C9 !important;
   color: #FFFFFF;
 }
 
@@ -1416,7 +1416,7 @@
 .ui.grid > .purple.row,
 .ui.grid > .purple.column,
 .ui.grid > .row > .purple.column {
-  background-color: #7986cb !important;
+  background-color: #A333C8 !important;
   color: #FFFFFF;
 }
 
@@ -1424,7 +1424,7 @@
 .ui.grid > .pink.row,
 .ui.grid > .pink.column,
 .ui.grid > .row > .pink.column {
-  background-color: #ff8a80 !important;
+  background-color: #E03997 !important;
   color: #FFFFFF;
 }
 
@@ -1432,7 +1432,7 @@
 .ui.grid > .brown.row,
 .ui.grid > .brown.column,
 .ui.grid > .row > .brown.column {
-  background-color: #eceff1 !important;
+  background-color: #A5673F !important;
   color: #FFFFFF;
 }
 
@@ -1440,7 +1440,7 @@
 .ui.grid > .grey.row,
 .ui.grid > .grey.column,
 .ui.grid > .row > .grey.column {
-  background-color: #eceff1 !important;
+  background-color: #767676 !important;
   color: #FFFFFF;
 }
 
@@ -1448,7 +1448,7 @@
 .ui.grid > .black.row,
 .ui.grid > .black.column,
 .ui.grid > .row > .black.column {
-  background-color: #B0BEC5 !important;
+  background-color: #1B1C1D !important;
   color: #FFFFFF;
 }
 
@@ -1646,8 +1646,8 @@
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
     display: inline-block !important;
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     margin: 0em;
@@ -1738,8 +1738,8 @@
   }
   .ui.grid > .doubling.row > .column,
   .ui.doubling.grid > .row > .column {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
     margin: 0em !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -1842,7 +1842,7 @@
     margin: 0em 0em !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    padding: 24px 24px !important;
+    padding: 1rem 1rem !important;
   }
   .ui.stackable.grid:not(.vertically) > .row {
     margin: 0em;
@@ -1859,8 +1859,8 @@
 /* Don't pad inside segment or nested grid */
   .ui.grid .ui.stackable.grid,
   .ui.segment:not(.vertical) .ui.stackable.page.grid {
-    margin-left: -24px !important;
-    margin-right: -24px !important;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
   }
   
 /* Divided Stackable */
@@ -1883,8 +1883,8 @@
     border-top: 1px solid rgba(34, 36, 38, 0.15);
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
   .ui.stackable.celled.grid > .row {
     -webkit-box-shadow: none !important;

@@ -14,7 +14,7 @@
 
 @googleFontName    : @fontName;
 @importGoogleFonts : true;
-@googleFontSizes   : '300,400,600,700,400italic,700italic,900';
+@googleFontSizes   : '400,700,400italic,700italic';
 @googleSubset      : 'latin';
 
 @googleProtocol    : 'https://';
@@ -47,8 +47,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @indigo700;
-@secondaryColor      : @grey900;
+@primaryColor        : @blue;
+@secondaryColor      : @black;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -57,10 +57,10 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : 900;
-@headerLineHeight : unit( (48 / @emSize), rem);
+@headerFontWeight : bold;
+@headerLineHeight : unit((18 / 14), em);
 
-@h1 : unit((30 / 14), rem);
+@h1 : unit((28 / 14), rem);
 @h2 : unit((24 / 14), rem);
 @h3 : unit((18 / 14), rem);
 @h4 : unit((15 / 14), rem);
@@ -72,7 +72,7 @@
 
 /* This adjusts the default form input across all elements */
 @inputBackground        : @white;
-@inputVerticalPadding   : @relative12px;
+@inputVerticalPadding   : @relative11px;
 @inputHorizontalPadding : @relative14px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
 
@@ -89,10 +89,10 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: #7986cb;
+@focusedFormBorderColor: #85B7D9;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #7986cb;
+@focusedFormMutedBorderColor: #96C8DA;
 
 /*-------------------
         Sizes
@@ -117,11 +117,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #ffffff;
+@pageBackground      : #FFFFFF;
 @pageOverflowX       : hidden;
 
-@lineHeight          : unit( (24 / @emSize), rem);
-@textColor           : #616161;
+@lineHeight          : 1.4285em;
+@textColor           : rgba(0, 0, 0, 0.87);
 
 /*-------------------
       Paragraph
@@ -134,8 +134,7 @@
        Links
 --------------------*/
 
-@linkFontWeight      : 700;
-@linkColor           : @grey900;
+@linkColor           : #4183C4;
 @linkUnderline       : none;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
@@ -221,17 +220,14 @@
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
-@teal             : #cdecea;
-@blue             : #3949ab;
-@violet           : #253858;
-@purple           : #7986cb;
-@pink             : #ff8a80;
-@brown            : #eceff1;
-@grey             : #eceff1;
-@black            : #B0BEC5;
-@indigo700        : #303f9f;
-@grey900          : #424242;
-@lightblue        : #5c6bc0;
+@teal             : #00B5AD;
+@blue             : #2185D0;
+@violet           : #6435C9;
+@purple           : #A333C8;
+@pink             : #E03997;
+@brown            : #A5673F;
+@grey             : #767676;
+@black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E;
@@ -240,7 +236,7 @@
 @lightOlive       : #D9E778;
 @lightGreen       : #2ECC40;
 @lightTeal        : #6DFFFF;
-@lightBlue        : #5c6bc0;
+@lightBlue        : #54C8FF;
 @lightViolet      : #A291FB;
 @lightPurple      : #DC73FF;
 @lightPink        : #FF8EDF;
@@ -250,7 +246,7 @@
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
-@offWhite         : #FAFAFA;
+@offWhite         : #F9FAFB;
 @darkWhite        : #F3F4F5;
 @midWhite         : #DCDDDE;
 @white            : #FFFFFF;
@@ -399,11 +395,11 @@
 @massive         : unit( round(@massiveSize * @emSize) / @emSize, rem);
 
 /* em */
-@relativeMini    : 12px;
+@relativeMini    : unit( round(@miniSize * @emSize) / @emSize, em);
 @relativeTiny    : unit( round(@tinySize * @emSize) / @emSize, em);
 @relativeSmall   : unit( round(@smallSize * @emSize) / @emSize, em);
 @relativeMedium  : unit( round(@mediumSize * @emSize) / @emSize, em);
-@relativeLarge   : 24px;
+@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
 @relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
 @relativeHuge    : unit( round(@hugeSize * @emSize) / @emSize, em);
 @relativeMassive : unit( round(@massiveSize * @emSize) / @emSize, em);
@@ -429,7 +425,7 @@
      Neutral Text
 --------------------*/
 
-@darkTextColor               : #424242;
+@darkTextColor               : rgba(0, 0, 0, 0.85);
 @mutedTextColor              : rgba(0, 0, 0, 0.6);
 @lightTextColor              : rgba(0, 0, 0, 0.4);
 
@@ -505,7 +501,7 @@
 
 /* Header Spacing */
 @headerTopMargin    : ~"calc(2rem - "@headerLineHeightOffset~")";
-@headerBottomMargin : 0;
+@headerBottomMargin : 1rem;
 @headerMargin       : @headerTopMargin 0em @headerBottomMargin;
 
 /* Minimum Mobile Width */

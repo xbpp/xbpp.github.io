@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Item
+ * # Semantic UI 2.2.11 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -44,7 +44,7 @@
   z-index: '';
 }
 .ui.card {
-  margin: 0px;
+  margin: 1em 0em;
 }
 .ui.cards > .card a,
 .ui.card a {
@@ -150,7 +150,7 @@
   border-top: 1px solid rgba(34, 36, 38, 0.1);
   background: none;
   margin: 0em;
-  padding: 12px 24px;
+  padding: 1em 1em;
   -webkit-box-shadow: none;
           box-shadow: none;
   font-size: 1em;
@@ -170,16 +170,16 @@
   display: block;
   margin: '';
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 /* Default Header Size */
 .ui.cards > .card > .content > .header:not(.ui),
 .ui.card > .content > .header:not(.ui) {
   font-weight: bold;
-  font-size: 1.07142857rem;
-  margin-top: -0.35714286rem;
-  line-height: 3.42857143rem;
+  font-size: 1.28571429em;
+  margin-top: -0.21425em;
+  line-height: 1.28571429em;
 }
 .ui.cards > .card > .content > .meta + .description,
 .ui.cards > .card > .content > .header + .description,
@@ -303,11 +303,11 @@
 /* Header */
 .ui.cards > .card > .content > a.header,
 .ui.card > .content > a.header {
-  color: #424242;
+  color: rgba(0, 0, 0, 0.85);
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #432d2d;
+  color: #1e70bf;
 }
 
 /* Meta */
@@ -317,7 +317,7 @@
 }
 .ui.cards > .card .meta > a:not(.ui):hover,
 .ui.card .meta > a:not(.ui):hover {
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /*--------------
@@ -405,7 +405,7 @@
   background: none;
   width: auto;
   margin: 0em 0em;
-  padding: 24px;
+  padding: 0.75em 1em;
   top: 0em;
   left: 0em;
   color: rgba(0, 0, 0, 0.4);
@@ -420,7 +420,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #432d2d;
+  color: #1e70bf;
 }
 
 
@@ -578,112 +578,112 @@ a.ui.card:hover,
 .ui.teal.cards > .card,
 .ui.cards > .teal.card,
 .ui.teal.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #cdecea, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #cdecea, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #00B5AD, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #00B5AD, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.teal.cards > .card:hover,
 .ui.cards > .teal.card:hover,
 .ui.teal.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #b8e7e4, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #b8e7e4, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #009c95, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #009c95, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Blue */
 .ui.blue.cards > .card,
 .ui.cards > .blue.card,
 .ui.blue.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #3949ab, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #3949ab, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #2185D0, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #2185D0, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.blue.cards > .card:hover,
 .ui.cards > .blue.card:hover,
 .ui.blue.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #2e3d9d, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #2e3d9d, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1678c2, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1678c2, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Violet */
 .ui.violet.cards > .card,
 .ui.cards > .violet.card,
 .ui.violet.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #253858, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #253858, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #6435C9, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #6435C9, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.violet.cards > .card:hover,
 .ui.cards > .violet.card:hover,
 .ui.violet.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1b2c48, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1b2c48, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #5829bb, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #5829bb, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Purple */
 .ui.purple.cards > .card,
 .ui.cards > .purple.card,
 .ui.purple.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #7986cb, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #7986cb, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #A333C8, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #A333C8, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.purple.cards > .card:hover,
 .ui.cards > .purple.card:hover,
 .ui.purple.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #6272c9, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #6272c9, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #9627ba, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #9627ba, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Pink */
 .ui.pink.cards > .card,
 .ui.cards > .pink.card,
 .ui.pink.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #ff8a80, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #ff8a80, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #E03997, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #E03997, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.pink.cards > .card:hover,
 .ui.cards > .pink.card:hover,
 .ui.pink.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #ff7366, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #ff7366, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #e61a8d, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #e61a8d, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Brown */
 .ui.brown.cards > .card,
 .ui.cards > .brown.card,
 .ui.brown.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #eceff1, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #eceff1, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #A5673F, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #A5673F, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.brown.cards > .card:hover,
 .ui.cards > .brown.card:hover,
 .ui.brown.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #dde3e7, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #dde3e7, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #975b33, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #975b33, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Grey */
 .ui.grey.cards > .card,
 .ui.cards > .grey.card,
 .ui.grey.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #eceff1, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #eceff1, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #767676, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #767676, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.grey.cards > .card:hover,
 .ui.cards > .grey.card:hover,
 .ui.grey.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #fbfbfc, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #fbfbfc, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #838383, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #838383, 0px 1px 3px 0px #BCBDBD;
 }
 
 /* Black */
 .ui.black.cards > .card,
 .ui.cards > .black.card,
 .ui.black.card {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #B0BEC5, 0px 1px 3px 0px #D4D4D5;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #B0BEC5, 0px 1px 3px 0px #D4D4D5;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1B1C1D, 0px 1px 3px 0px #D4D4D5;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #1B1C1D, 0px 1px 3px 0px #D4D4D5;
 }
 .ui.black.cards > .card:hover,
 .ui.cards > .black.card:hover,
 .ui.black.card:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #bfcad0, 0px 1px 3px 0px #BCBDBD;
-          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #bfcad0, 0px 1px 3px 0px #BCBDBD;
+  -webkit-box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #27292a, 0px 1px 3px 0px #BCBDBD;
+          box-shadow: 0px 0px 0px 1px #D4D4D5, 0px 2px 0px 0px #27292a, 0px 1px 3px 0px #BCBDBD;
 }
 
 /*--------------
@@ -698,49 +698,49 @@ a.ui.card:hover,
   width: 100%;
 }
 .ui.two.cards {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 .ui.two.cards > .card {
-  width: calc( 50%  -  24px );
-  margin-left: 12px;
-  margin-right: 12px;
+  width: calc( 50%  -  2em );
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .ui.three.cards {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -1em;
+  margin-right: -1em;
 }
 .ui.three.cards > .card {
-  width: calc( 33.33333333%  -  24px );
-  margin-left: 12px;
-  margin-right: 12px;
+  width: calc( 33.33333333%  -  2em );
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .ui.four.cards {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
 }
 .ui.four.cards > .card {
-  width: calc( 25%  -  24px );
-  margin-left: 12px;
-  margin-right: 12px;
+  width: calc( 25%  -  1.5em );
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
 .ui.five.cards {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
 }
 .ui.five.cards > .card {
-  width: calc( 20%  -  24px );
-  margin-left: 12px;
-  margin-right: 12px;
+  width: calc( 20%  -  1.5em );
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
 .ui.six.cards {
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
 }
 .ui.six.cards > .card {
-  width: calc( 16.66666667%  -  24px );
-  margin-left: 12px;
-  margin-right: 12px;
+  width: calc( 16.66666667%  -  1.5em );
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
 .ui.seven.cards {
   margin-left: -0.5em;
@@ -798,76 +798,76 @@ a.ui.card:hover,
     margin-right: 0em;
   }
   .ui.three.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.three.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.four.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.four.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.five.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.five.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.six.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.six.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.seven.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.seven.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.eight.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.eight.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.nine.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.nine.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.ten.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.ten.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 
@@ -883,76 +883,76 @@ a.ui.card:hover,
     margin-right: 0em;
   }
   .ui.three.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.three.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.four.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.four.doubling.cards > .card {
-    width: calc( 50%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 50%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.five.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.five.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.six.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.six.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.eight.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1em;
+    margin-right: -1em;
   }
   .ui.eight.doubling.cards > .card {
-    width: calc( 33.33333333%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 33.33333333%  -  2em );
+    margin-left: 1em;
+    margin-right: 1em;
   }
   .ui.eight.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
   }
   .ui.eight.doubling.cards > .card {
-    width: calc( 25%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 25%  -  1.5em );
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
   .ui.nine.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
   }
   .ui.nine.doubling.cards > .card {
-    width: calc( 25%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 25%  -  1.5em );
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
   .ui.ten.doubling.cards {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
   }
   .ui.ten.doubling.cards > .card {
-    width: calc( 20%  -  24px );
-    margin-left: 12px;
-    margin-right: 12px;
+    width: calc( 20%  -  1.5em );
+    margin-left: 0.75em;
+    margin-right: 0.75em;
   }
 }
 

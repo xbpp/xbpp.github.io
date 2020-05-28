@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Popup
+ * # Semantic UI 2.2.11 - Popup
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25,13 +25,13 @@
   min-width: min-content;
   z-index: 1900;
   border: 1px solid #D4D4D5;
-  line-height: 1.71428571rem;
+  line-height: 1.4285em;
   max-width: 250px;
   background: #FFFFFF;
   padding: 0.833em 1em;
   font-weight: normal;
   font-style: normal;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 0.28571429rem;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
           box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
@@ -39,7 +39,7 @@
 .ui.popup > .header {
   padding: 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 1.14285714em;
   line-height: 1.2;
   font-weight: bold;
 }
@@ -101,13 +101,13 @@
   white-space: nowrap;
   font-size: 1rem;
   border: 1px solid #D4D4D5;
-  line-height: 1.71428571rem;
+  line-height: 1.4285em;
   max-width: none;
   background: #FFFFFF;
   padding: 0.833em 1em;
   font-weight: normal;
   font-style: normal;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
   border-radius: 0.28571429rem;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
           box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
@@ -215,12 +215,12 @@
 
 /* Arrow Position */
 [data-tooltip][data-inverted]:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
 }
 
 /* Popup  */
 [data-tooltip][data-inverted]:after {
-  background: #B0BEC5;
+  background: #1B1C1D;
   color: #FFFFFF;
   border: none;
   -webkit-box-shadow: none;
@@ -391,22 +391,22 @@
 
 /* Inverted Arrow Color */
 [data-inverted][data-position~="bottom"][data-tooltip]:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
   -webkit-box-shadow: -1px -1px 0px 0px #bababc;
           box-shadow: -1px -1px 0px 0px #bababc;
 }
 [data-inverted][data-position="left center"][data-tooltip]:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
   -webkit-box-shadow: 1px -1px 0px 0px #bababc;
           box-shadow: 1px -1px 0px 0px #bababc;
 }
 [data-inverted][data-position="right center"][data-tooltip]:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
   -webkit-box-shadow: -1px 1px 0px 0px #bababc;
           box-shadow: -1px 1px 0px 0px #bababc;
 }
 [data-inverted][data-position~="top"][data-tooltip]:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
 }
 [data-position~="bottom"][data-tooltip]:before {
   -webkit-transform-origin: center bottom;
@@ -602,14 +602,14 @@
 
 /* Inverted Arrow Color */
 .ui.inverted.bottom.popup:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
 }
 .ui.inverted.right.center.popup:before,
 .ui.inverted.left.center.popup:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
 }
 .ui.inverted.top.popup:before {
-  background: #B0BEC5;
+  background: #1B1C1D;
 }
 
 
@@ -692,7 +692,7 @@
 
 /* Inverted colors  */
 .ui.inverted.popup {
-  background: #B0BEC5;
+  background: #1B1C1D;
   color: #FFFFFF;
   border: none;
   -webkit-box-shadow: none;
@@ -703,7 +703,7 @@
   color: #FFFFFF;
 }
 .ui.inverted.popup:before {
-  background-color: #B0BEC5;
+  background-color: #1B1C1D;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }

@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.13 - Accordion
+ * # Semantic UI 2.2.11 - Accordion
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33,7 +33,7 @@
   padding: 0.5em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Content */
@@ -84,7 +84,7 @@
 }
 .ui.accordion.menu .item .title > .dropdown.icon {
   float: right;
-  margin: 0.35714286rem 0em 0em 1em;
+  margin: 0.21425em 0em 0em 1em;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -162,12 +162,12 @@
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 .ui.styled.accordion .accordion .title:hover,
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: #616161;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 /* Active */

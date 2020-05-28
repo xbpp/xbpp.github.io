@@ -7,8 +7,8 @@
 --------------------*/
 
 /* Button */
-@verticalMargin: 0;
-@horizontalMargin: 0;
+@verticalMargin: 0em;
+@horizontalMargin: 0.25em;
 @backgroundColor: #E0E1E2;
 @backgroundImage: none;
 @background: @backgroundColor @backgroundImage;
@@ -16,7 +16,7 @@
 
 /* Button defaults to using same height as input globally */
 @verticalPadding: @inputVerticalPadding;
-@horizontalPadding: 24px;
+@horizontalPadding: 1.5em;
 
 /* Text */
 @textTransform: none;
@@ -259,7 +259,7 @@
 @coloredBoxShadow: @shadowBoxShadow;
 
 /* Colored */
-@brownTextColor: @violet;
+@brownTextColor: @invertedTextColor;
 @brownTextShadow: @invertedTextShadow;
 @redTextColor: @invertedTextColor;
 @redTextShadow: @invertedTextShadow;
@@ -281,9 +281,9 @@
 @oliveTextShadow: @invertedTextShadow;
 @yellowTextColor: @invertedTextColor;
 @yellowTextShadow: @invertedTextShadow;
-@tealTextColor: @violet;
+@tealTextColor: @invertedTextColor;
 @tealTextShadow: @invertedTextShadow;
-@greyTextColor: @violet;
+@greyTextColor: @invertedTextColor;
 @greyTextShadow: @invertedTextShadow;
 
 /* Inverted */

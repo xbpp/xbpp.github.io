@@ -16,8 +16,8 @@
 
 @minWidth: 320px;
 
-@gutterWidth: 48px;
-@rowSpacing: 48px;
+@gutterWidth: 2rem;
+@rowSpacing: 2rem;
 
 @tableWidth: ~"calc(100% + "@gutterWidth~")";
 @columnMaxImageWidth: 100%;
