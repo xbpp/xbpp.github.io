@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.11 - Item
+ * # Semantic UI 2.4.2 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32,7 +32,7 @@
   width: 290px;
   min-height: 0px;
   background: #FFFFFF;
-  padding: 0em;
+  padding: 10px;
   border: none;
   border-radius: 0.28571429rem;
   -webkit-box-shadow: 0px 1px 3px 0px #D4D4D5, 0px 0px 0px 1px #D4D4D5;
@@ -176,8 +176,8 @@
 /* Default Header Size */
 .ui.cards > .card > .content > .header:not(.ui),
 .ui.card > .content > .header:not(.ui) {
-  font-weight: bold;
-  font-size: 1.28571429em;
+  font-weight: 800;
+  font-size: 1.5em;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
 }
@@ -266,7 +266,7 @@
 
 .ui.cards > .card .meta,
 .ui.card .meta {
-  font-size: 1em;
+  font-size: 0.9em;
   color: rgba(0, 0, 0, 0.4);
 }
 .ui.cards > .card .meta *,
